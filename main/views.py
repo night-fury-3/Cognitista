@@ -316,9 +316,9 @@ def query(request):
     reduce_chat_history = ""
     latest_records = buffermodel.objects.order_by('-created_at')
 
-    if new_chat == False:
+    if new_chat == "false":
             for index, record in enumerate(latest_records):
-                if index < 2:
+                if index < 4:
                     stuff_chain.memory.save_context({'human_input': record.query}, {'output': record.answer})
                     reduce_chat_history += f"Human: {record.query}\nBot: {record.answer}\n"
                     reduce_chain.memory.save_context({'human_input': record.query}, {'output': record.answer})

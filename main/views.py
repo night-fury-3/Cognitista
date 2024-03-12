@@ -14,19 +14,15 @@ from dotenv import load_dotenv
 from langchain.prompts import PromptTemplate
 from langchain.memory import ConversationBufferMemory
 
-# from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain_openai import OpenAIEmbeddings
 
-# from langchain.vectorstores import Pinecone
 from langchain.llms import Together, Bedrock
-# from langchain.chat_models import BedrockChat
 from langchain_community.chat_models import BedrockChat
 from langchain.chat_models import ChatOpenAI
 from langchain.chains.question_answering import load_qa_chain
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_pinecone import PineconeVectorStore
 
-# from langchain.document_loaders import PyMuPDFLoader
 from langchain_community.document_loaders import PyMuPDFLoader
 
 from langchain_community.chat_models import BedrockChat as Sonnet
@@ -82,7 +78,7 @@ def index(request):
 
     for index in indexes:
         index_list.append(index.index_name)
-    # index_list = pinecone.list_indexes()
+
     try:
         selected_index = index_list[0]
     except:
@@ -103,7 +99,6 @@ def index(request):
             filename = filename[:24] + "..."
         documents.append({'id': doc.id, 'index':index, 'collection': doc.collection_name, 'name': filename, 'created_at': doc.created_at, 'size': doc.size})
     
-
     eindex_list = index_list[1:]
     data = {'collections': collections, 'documents': documents, "index_list": eindex_list, "selected_index": selected_index, 'aindex_list': index_list}
 

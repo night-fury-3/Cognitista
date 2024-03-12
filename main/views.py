@@ -240,9 +240,6 @@ def getCollectionList(request):
     if results:
         for result in results:
             collection_lists.append({'name': result.collection_name})
-            
-    # ['name': 'collection_name']
-    # collection_lists = [{'name': "collection"}]
     
     data = {"success": "ok", "data": collection_lists}
     return JsonResponse(data)
@@ -260,7 +257,6 @@ def query(request):
     new_chat = request.POST.get('new_chat')
 
     print(f"New Chat => {new_chat}")
-    # doc_mode = request.POST.get('doc_mode')
     doc_mode = "stuff"
     
     print(model)
@@ -269,7 +265,6 @@ def query(request):
     print(embedding_model)
 
     prompt_content = promptmodel.objects.get(title = prompt_title).prompt
-    # prompt_content = "Plz generate answer."
     template = """"""
         
     end = """Context: {context}
@@ -371,23 +366,7 @@ def getDocuments(request):
         documents.append({'id': doc.id, 'index': 'index-1', 'collection': doc.collection_name, 'name': filename, 'created_at': doc.created_at, 'size': doc.size})
     
     data = {'collections': collections, 'documents': documents}
-    
-    # data = {
-    #     'collections': [
-    #         {'id': "1", 'name': "collection-1"},
-    #         {'id': "2", 'name': "collection-2"},
-    #         {'id': "3", 'name': "collection-3"},
-    #         {'id': "4", 'name': "collection-4"},
-    #         {'id': "5", 'name': "collection-5"},
-    #     ],
-    #     'documents': [
-    #         {'id': "1", 'index': "index-1", 'collection': "collection-1", 'name': "document-1", 'author': "admin", 'size': "2M",  'created_at': "2013-05-01"},
-    #         {'id': "2", 'index': "index-1", 'collection': "collection-1", 'name': "document-2", 'author': "admin", 'size': "25M", 'created_at': "2013-05-01"},
-    #         {'id': "3", 'index': "index-1", 'collection': "collection-2", 'name': "document-3", 'author': "admin", 'size': "25M", 'created_at': "2013-05-01"},
-    #         {'id': "4", 'index': "index-1", 'collection': "collection-2", 'name': "document-4", 'author': "admin", 'size': "15M", 'created_at': "2013-05-01"},
-    #         {'id': "5", 'index': "index-1", 'collection': "collection-3", 'name': "document-5", 'author': "admin", 'size': "25M", 'created_at': "2013-05-01"},
-    #     ],
-    # }
+
     data = {"success": "ok", "data": data}
     return JsonResponse(data)
 

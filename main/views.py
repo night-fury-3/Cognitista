@@ -7,7 +7,7 @@ from django.urls import reverse
 from django.http import HttpResponseRedirect
 from django.contrib.auth import authenticate, login, logout
 from .models import collection, filemodel, promptmodel, buffermodel, indexmodel
-
+from django.http import StreamingHttpResponse
 import json, os
 from dotenv import load_dotenv
 
@@ -345,7 +345,12 @@ def query(request):
         reduce_chain.memory.clear()
     
     print("final answer =>", final_answer)
-    return JsonResponse({"success": "ok", "response": final_answer})
+    return StreamingHttpResponse(generate(final_answer))
+
+def generate(final_answer):
+    for character in final_answer:
+        yield character
+        time.sleep(0.005)
 
 def getDocuments(request):
     index = request.POST.get('index')

@@ -210,27 +210,6 @@ def deletePrompt(request):
     data = {"success": "ok", "data": "lkskdfjalskd"}
     return JsonResponse(data)
 
-# def getindexinfo(request):
-#     index_name = request.POST.get("index_name")
-
-#     collections = []
-    
-#     results = collection.objects.filter(index_name = index_name)
-#     if results:
-#         for result in results:
-#             collections.append({'id': result.id, 'name': result.collection_name})
-        
-#     documents = []
-
-#     results = filemodel.objects.filter(index_name = index_name)
-
-#     for doc in results:
-#         filename = doc.file_name[:-4]
-#         if len(filename) > 24:
-#             filename = filename[:24] + "..."
-#         documents.append({'id': doc.id, 'index':index_name, 'collection': doc.collection_name, 'name': filename, 'created_at': doc.created_at, 'size': doc.size})
-
-#     return JsonResponse({"collections": collections, "documents": documents})
 def getCollectionList(request):
     index = request.POST.get('id')
     
@@ -456,42 +435,35 @@ def uploadDocuments(request):
                 separator = "\n", chunk_size=coll_set.chunk_size, chunk_overlap=coll_set.overlap, length_function = len,
             )
             
-            # try:
-            upload_model.save()
-            
-            file = os.path.join("uploads", my_file.name)
-
-            loader = PyMuPDFLoader(file)
-            data = loader.load()
-            texts = text_splitter.split_documents(data)
-            all_texts = []
-            all_texts.extend(texts)
-            
-            res = filemodel.objects.get(uploaded_name = uploaded_filename)
-            res.size = len(all_texts)
-            res.save()
-            
-            embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key, model=embedding_model)
-            
-            for text in texts:
-                text.metadata['collection_name'] = collection_name
-                text.metadata['file_name'] = real_filename
-            
-            # Pinecone.from_texts(
-            #     [t.page_content for t in all_texts], embeddings, 
-            #         index_name=index_name, metadatas = metalist)
-
-            PineconeVectorStore.from_documents(texts, embeddings, index_name=index_name)
-            # Pinecone.from_texts(
-            #     [t.page_content for t in all_texts], embeddings, 
-            #         index_name=index_name)
-            
-            data = {"success": "ok"}
-            print("Good")
+            try:
+                upload_model.save()
                 
-            # except Exception as e:
-            #     data = {"success": "bad"}
-            #     print("Bad")
+                file = os.path.join("uploads", my_file.name)
+    
+                loader = PyMuPDFLoader(file)
+                data = loader.load()
+                texts = text_splitter.split_documents(data)
+                all_texts = []
+                all_texts.extend(texts)
+                
+                res = filemodel.objects.get(uploaded_name = uploaded_filename)
+                res.size = len(all_texts)
+                res.save()
+                
+                embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key, model=embedding_model)
+                
+                for text in texts:
+                    text.metadata['collection_name'] = collection_name
+                    text.metadata['file_name'] = real_filename
+                
+                PineconeVectorStore.from_documents(texts, embeddings, index_name=index_name)
+                
+                data = {"success": "ok"}
+                print("Good")
+                
+            except Exception as e:
+                data = {"success": "bad"}
+                print("Bad")
                 
         return JsonResponse(data)
     

@@ -6,23 +6,28 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from django.http import HttpResponseRedirect
 from django.contrib.auth import authenticate, login, logout
-from .models import collection, filemodel, promptmodel, buffermodel, indexmodel
 from django.http import StreamingHttpResponse
+from .models import collection, filemodel, promptmodel, buffermodel, indexmodel
+
 import json, os
 from dotenv import load_dotenv
 
 from langchain.prompts import PromptTemplate
 from langchain.memory import ConversationBufferMemory
 
+# from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain_openai import OpenAIEmbeddings
 
+# from langchain.vectorstores import Pinecone
 from langchain.llms import Together, Bedrock
+# from langchain.chat_models import BedrockChat
 from langchain_community.chat_models import BedrockChat
 from langchain.chat_models import ChatOpenAI
 from langchain.chains.question_answering import load_qa_chain
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_pinecone import PineconeVectorStore
 
+# from langchain.document_loaders import PyMuPDFLoader
 from langchain_community.document_loaders import PyMuPDFLoader
 
 from langchain_community.chat_models import BedrockChat as Sonnet
@@ -78,7 +83,7 @@ def index(request):
 
     for index in indexes:
         index_list.append(index.index_name)
-
+    # index_list = pinecone.list_indexes()
     try:
         selected_index = index_list[0]
     except:
@@ -99,6 +104,7 @@ def index(request):
             filename = filename[:24] + "..."
         documents.append({'id': doc.id, 'index':index, 'collection': doc.collection_name, 'name': filename, 'created_at': doc.created_at, 'size': doc.size})
     
+
     eindex_list = index_list[1:]
     data = {'collections': collections, 'documents': documents, "index_list": eindex_list, "selected_index": selected_index, 'aindex_list': index_list}
 
@@ -210,6 +216,27 @@ def deletePrompt(request):
     data = {"success": "ok", "data": "lkskdfjalskd"}
     return JsonResponse(data)
 
+# def getindexinfo(request):
+#     index_name = request.POST.get("index_name")
+
+#     collections = []
+    
+#     results = collection.objects.filter(index_name = index_name)
+#     if results:
+#         for result in results:
+#             collections.append({'id': result.id, 'name': result.collection_name})
+        
+#     documents = []
+
+#     results = filemodel.objects.filter(index_name = index_name)
+
+#     for doc in results:
+#         filename = doc.file_name[:-4]
+#         if len(filename) > 24:
+#             filename = filename[:24] + "..."
+#         documents.append({'id': doc.id, 'index':index_name, 'collection': doc.collection_name, 'name': filename, 'created_at': doc.created_at, 'size': doc.size})
+
+#     return JsonResponse({"collections": collections, "documents": documents})
 def getCollectionList(request):
     index = request.POST.get('id')
     
@@ -219,6 +246,9 @@ def getCollectionList(request):
     if results:
         for result in results:
             collection_lists.append({'name': result.collection_name})
+            
+    # ['name': 'collection_name']
+    # collection_lists = [{'name': "collection"}]
     
     data = {"success": "ok", "data": collection_lists}
     return JsonResponse(data)
@@ -234,8 +264,8 @@ def query(request):
 
     query = request.POST.get('message')
     new_chat = request.POST.get('new_chat')
-
-    print(f"New Chat => {new_chat}")
+ 
+    # doc_mode = request.POST.get('doc_mode')
     doc_mode = "stuff"
     
     print(model)
@@ -244,6 +274,7 @@ def query(request):
     print(embedding_model)
 
     prompt_content = promptmodel.objects.get(title = prompt_title).prompt
+    # prompt_content = "Plz generate answer."
     template = """"""
         
     end = """Context: {context}
@@ -273,7 +304,6 @@ def query(request):
     elif model == "togethercomputer/llama-2-70b-chat" or model == "lmsys/vicuna-13b-v1.5":
         llm = Together(model=model, temperature=temperature, max_tokens=1024, top_k=1, together_api_key=together_api_key)
     elif "sonnet" in model:
-        print("Hello World!")
         llm = Sonnet(model_id="anthropic.claude-3-sonnet-20240229-v1:0", model_kwargs={"temperature": 0.1})
     else:
         llm = BedrockChat(model_id=model, model_kwargs={"temperature": float(temperature)})
@@ -283,7 +313,6 @@ def query(request):
         token_num += llm.get_num_tokens(doc.page_content)
     token_num += llm.get_num_tokens(query)
     
-    print("Hello")
     stuff_chain = load_qa_chain(llm, chain_type="stuff", prompt=prompt, memory=memory)
     reduce_chain = load_qa_chain(llm, chain_type="map_reduce", return_intermediate_steps=False, question_prompt=prompt, memory=memory)
     
@@ -291,17 +320,21 @@ def query(request):
     latest_records = buffermodel.objects.order_by('-created_at')
 
     if new_chat == "false":
-            for index, record in enumerate(latest_records):
-                if index < 4:
-                    stuff_chain.memory.save_context({'human_input': record.query}, {'output': record.answer})
-                    reduce_chat_history += f"Human: {record.query}\nBot: {record.answer}\n"
-                    reduce_chain.memory.save_context({'human_input': record.query}, {'output': record.answer})
-                else:
-                    record.delete()
+        for index, record in enumerate(latest_records):
+            if index < 4:
+                print("Query => ", record.query)
+                print("Answer => ", record.answer)
+                stuff_chain.memory.save_context({'human_input': record.query}, {'output': record.answer})
+                reduce_chat_history += f"Human: {record.query}\nBot: {record.answer}\n"
+                reduce_chain.memory.save_context({'human_input': record.query}, {'output': record.answer})
+            else:
+                record.delete()
     else:
         for index, record in enumerate(latest_records):
             record.delete()
-            
+    
+    # print("Memory", stuff_chain.memory, "\n\n")
+    
     if doc_mode == "stuff":
         output = stuff_chain({"input_documents": docs, "human_input": query}, return_only_outputs=False)
         
@@ -312,22 +345,25 @@ def query(request):
 
         stuff_chain.memory.clear()
         g_token = llm.get_num_tokens(output['output_text'])
-        final_answer = output["output_text"] + f"\nInput Tokens {token_num}.\nGenerated Tokens {g_token}."   
+        final_answer = output["output_text"]
+        other_info = f"\nInput Tokens {token_num}. Generated Tokens {g_token}." 
     else:
         reduce_res = reduce_chain({"input_documents": docs, "human_input": query, "question": query}, return_only_outputs=True)
         g_token = llm.get_num_tokens(reduce_res['output_text'])
-        final_answer = reduce_res["output_text"] + f"\nInput Tokens {token_num}.\nGenerated Tokens {g_token}."
+        final_answer = reduce_res["output_text"]
+        other_info = f"\nInput Tokens {token_num}. Generated Tokens {g_token}." 
         buffer = buffermodel()
         buffer.query = query
         buffer.answer = reduce_res["output_text"]
         buffer.save()
         reduce_chain.memory.clear()
     
-    print("final answer =>", final_answer)
-    return StreamingHttpResponse(generate(final_answer))
+    return StreamingHttpResponse(generate(final_answer, other_info))
+    # return JsonResponse({"success": "ok", "response": final_answer, "info": other_info})
 
-def generate(final_answer):
-    for character in final_answer:
+def generate(final_answer, other_info):
+    string = final_answer + other_info
+    for character in string:
         yield character
         time.sleep(0.005)
 
@@ -350,7 +386,23 @@ def getDocuments(request):
         documents.append({'id': doc.id, 'index': 'index-1', 'collection': doc.collection_name, 'name': filename, 'created_at': doc.created_at, 'size': doc.size})
     
     data = {'collections': collections, 'documents': documents}
-
+    
+    # data = {
+    #     'collections': [
+    #         {'id': "1", 'name': "collection-1"},
+    #         {'id': "2", 'name': "collection-2"},
+    #         {'id': "3", 'name': "collection-3"},
+    #         {'id': "4", 'name': "collection-4"},
+    #         {'id': "5", 'name': "collection-5"},
+    #     ],
+    #     'documents': [
+    #         {'id': "1", 'index': "index-1", 'collection': "collection-1", 'name': "document-1", 'author': "admin", 'size': "2M",  'created_at': "2013-05-01"},
+    #         {'id': "2", 'index': "index-1", 'collection': "collection-1", 'name': "document-2", 'author': "admin", 'size': "25M", 'created_at': "2013-05-01"},
+    #         {'id': "3", 'index': "index-1", 'collection': "collection-2", 'name': "document-3", 'author': "admin", 'size': "25M", 'created_at': "2013-05-01"},
+    #         {'id': "4", 'index': "index-1", 'collection': "collection-2", 'name': "document-4", 'author': "admin", 'size': "15M", 'created_at': "2013-05-01"},
+    #         {'id': "5", 'index': "index-1", 'collection': "collection-3", 'name': "document-5", 'author': "admin", 'size': "25M", 'created_at': "2013-05-01"},
+    #     ],
+    # }
     data = {"success": "ok", "data": data}
     return JsonResponse(data)
 
@@ -439,7 +491,7 @@ def uploadDocuments(request):
                 upload_model.save()
                 
                 file = os.path.join("uploads", my_file.name)
-    
+
                 loader = PyMuPDFLoader(file)
                 data = loader.load()
                 texts = text_splitter.split_documents(data)
@@ -455,8 +507,10 @@ def uploadDocuments(request):
                 for text in texts:
                     text.metadata['collection_name'] = collection_name
                     text.metadata['file_name'] = real_filename
-                
+
                 PineconeVectorStore.from_documents(texts, embeddings, index_name=index_name)
+
+                os.remove(file)
                 
                 data = {"success": "ok"}
                 print("Good")

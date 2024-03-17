@@ -699,6 +699,7 @@ var new_chat = true;
 		},
 		cognitistaChat: function (text) {
 			var botText = '';
+			var infoText = '';
 			var append = true;
 			var option_select = false
 			TechwaveUserMessageCount = $('.fn__chatbot .chat__item.active .chat__box').length;
@@ -736,14 +737,8 @@ var new_chat = true;
 					data: sendData,
 					xhrFields: {
 						onprogress: function (e) {
-							console.log(e.currentTarget.response);
-						}
-					},
-					success: function (result) {
-						if (result.success === "ok") {
-							isPaused = false;
-							botText = result.response;
-
+							// console.log(e.currentTarget.response);
+							var substr = e.currentTarget.response;
 							const regex = {
 								"bold_italic": /\*\*\*(.*?)\*\*\*/g,
 								"bold": /\*\*(.*?)\*\*/g,
@@ -751,83 +746,107 @@ var new_chat = true;
 								"monospace": /\`(.*?)\`/g,
 								"strike": /\~\~(.*?)\~\~/g
 							}
+							for (let key in regex) {
+								substr = substr.replace(regex[key], (match, group) => {
+									if (key == "bold") return "<span class='bold'>" + group + "</span>";
+									else if (key == "italic") return "<span class='italic'>" + group + "</span>";
+									else if (key == "bold_italic") return "<span class='bold italic'>" + group + "</span>";
+									else if (key == "monospace") return "<span class='monospace'>" + group + "</span>";
+									else if (key == "strike") return "<span class='strike'>" + group + "</span>";
 
-
-
-							// setTimeout(function () {
-
-							// 	// $('.fn__chatbot .chat__item.active .chat__box.bot__chat:last-child .chat').html(botText);
-							// 	var i = 0;
-							// 	var interval = setInterval(function () {
-							// 		if (i < botText.length) {
-							// 			if (i != 0)
-							// 				$('.fn__chatbot .chat__item.active .chat__box.bot__chat:last-child .chat').append(botText.charAt(i));
-							// 			else
-							// 				$('.fn__chatbot .chat__item.active .chat__box.bot__chat:last-child .chat').html(botText.charAt(i));
-							// 			i++;
-							// 		} else {
-							// 			clearInterval(interval);
-							// 		}
-							// 	}, 10);
-
-
-							// 	$('.fn__chat_comment button').removeClass('disabled');
-							// 	if ($('.techwave_fn_intro').length) {
-							// 		$("html, body").animate({ scrollTop: $('#fn__chat_textarea').offset().top - $(window).height() + 100 });
-							// 	} else {
-							// 		$("html, body").animate({ scrollTop: $(document).height() - $(window).height() });
-							// 	}
-							// }, 2000);
-
-
-
-							// $('.fn__chatbot .chat__item.active .chat__box.bot__chat:last-child .chat').html(botText);
-							var i = 0;
-
-							function timer() {
-								if (i < botText.length && isPaused == false) {
-									if (i != 0) {
-										var substr = botText.substring(0, i + 1);
-										for (let key in regex) {
-											substr = substr.replace(regex[key], (match, group) => {
-												if (key == "bold") return "<span class='bold'>" + group + "</span>";
-												else if (key == "italic") return "<span class='italic'>" + group + "</span>";
-												else if (key == "bold_italic") return "<span class='bold italic'>" + group + "</span>";
-												else if (key == "monospace") return "<span class='monospace'>" + group + "</span>";
-												else if (key == "strike") return "<span class='strike'>" + group + "</span>";
-
-											})
-										}
-										$('.fn__chatbot .chat__item.active .chat__box.bot__chat:last-child .chat').html(substr);
-									}
-
-									else
-										$('.fn__chatbot .chat__item.active .chat__box.bot__chat:last-child .chat').html(botText.charAt(i));
-
-									i++;
-
-									setTimeout(timer, 10);
-								}
-								else if (i == botText.length) {
-									$('.fn__chatbot .chat__item.active .chat__box.bot__chat:last-child .chat').html(botText);
-								}
+								})
 							}
-
-							timer()
-
-
-
-							$('.fn__chat_comment button').removeClass('disabled');
-							if ($('.techwave_fn_intro').length) {
-								$("html, body").animate({ scrollTop: $('#fn__chat_textarea').offset().top - $(window).height() + 100 });
-							} else {
-								$("html, body").animate({ scrollTop: $(document).height() - $(window).height() });
-							}
-
-
-							new_chat = false;
+							$('.fn__chatbot .chat__item.active .chat__box.bot__chat:last-child .chat').html(substr);
 						}
-						else console.error("Found an error in messaging...");
+					},
+					success: function (result) {
+						$('.fn__chat_comment button').removeClass('disabled');
+						if ($('.techwave_fn_intro').length) {
+							$("html, body").animate({ scrollTop: $('#fn__chat_textarea').offset().top - $(window).height() + 100 });
+						} else {
+							$("html, body").animate({ scrollTop: $(document).height() - $(window).height() });
+						}
+
+
+						new_chat = false;
+						// if (result.success === "ok") {
+						// 	isPaused = false;
+						// 	botText = result.response;
+						// 	infoText = result.info;
+
+
+
+
+
+						// 	// setTimeout(function () {
+
+						// 	// 	// $('.fn__chatbot .chat__item.active .chat__box.bot__chat:last-child .chat').html(botText);
+						// 	// 	var i = 0;
+						// 	// 	var interval = setInterval(function () {
+						// 	// 		if (i < botText.length) {
+						// 	// 			if (i != 0)
+						// 	// 				$('.fn__chatbot .chat__item.active .chat__box.bot__chat:last-child .chat').append(botText.charAt(i));
+						// 	// 			else
+						// 	// 				$('.fn__chatbot .chat__item.active .chat__box.bot__chat:last-child .chat').html(botText.charAt(i));
+						// 	// 			i++;
+						// 	// 		} else {
+						// 	// 			clearInterval(interval);
+						// 	// 		}
+						// 	// 	}, 10);
+
+
+						// 	// 	$('.fn__chat_comment button').removeClass('disabled');
+						// 	// 	if ($('.techwave_fn_intro').length) {
+						// 	// 		$("html, body").animate({ scrollTop: $('#fn__chat_textarea').offset().top - $(window).height() + 100 });
+						// 	// 	} else {
+						// 	// 		$("html, body").animate({ scrollTop: $(document).height() - $(window).height() });
+						// 	// 	}
+						// 	// }, 2000);
+
+
+
+						// 	// $('.fn__chatbot .chat__item.active .chat__box.bot__chat:last-child .chat').html(botText);
+						// 	// var i = 0;
+
+						// 	// function timer() {
+						// 	// 	if (i < botText.length && isPaused == false) {
+						// 	// 		if (i != 0) {
+						// 	// 			var substr = botText.substring(0, i + 1);
+						// 	// 			for (let key in regex) {
+						// 	// 				substr = substr.replace(regex[key], (match, group) => {
+						// 	// 					if (key == "bold") return "<span class='bold'>" + group + "</span>";
+						// 	// 					else if (key == "italic") return "<span class='italic'>" + group + "</span>";
+						// 	// 					else if (key == "bold_italic") return "<span class='bold italic'>" + group + "</span>";
+						// 	// 					else if (key == "monospace") return "<span class='monospace'>" + group + "</span>";
+						// 	// 					else if (key == "strike") return "<span class='strike'>" + group + "</span>";
+
+						// 	// 				})
+						// 	// 			}
+						// 	// 			$('.fn__chatbot .chat__item.active .chat__box.bot__chat:last-child .chat').html(substr);
+						// 	// 		}
+
+						// 	// 		else
+						// 	// 			$('.fn__chatbot .chat__item.active .chat__box.bot__chat:last-child .chat').html(botText.charAt(i));
+
+						// 	// 		i++;
+
+						// 	// 		setTimeout(timer, 10);
+						// 	// 	}
+						// 	// 	else if (i == botText.length) {
+
+						// 	// 		console.log(infoText);
+						// 	// 		botText = botText + "\n" + "<span style='font-size: 14px'>" + infoText + "</span>";
+						// 	// 		$('.fn__chatbot .chat__item.active .chat__box.bot__chat:last-child .chat').html(botText);
+						// 	// 		// $('.fn__chatbot .chat__item.active .chat__box.bot__chat:last-child .chat').append(info_text);
+
+						// 	// 	}
+						// 	// }
+
+						// 	// timer()
+
+
+						// }
+						// else console.error("Found an error in messaging...");
 					},
 					error: function (xhr, status, error) {
 						console.error('Error occurred: ', error);
@@ -846,6 +865,7 @@ var new_chat = true;
 					else load_text = "<span class='think'>" + "Thinking..." + "</span>";
 
 					$('.fn__chatbot .chat__item.active').append('<div class="chat__box bot__chat"><div class="author"><span>Cognitista AI</span></div><div class="chat"><frenify_typing><h3>' + load_text + '</h3></frenify></div></div>');
+
 					if ($('.techwave_fn_intro').length) {
 						$("html, body").animate({ scrollTop: $('#fn__chat_textarea').offset().top - $(window).height() + 100 });
 					} else {
@@ -855,6 +875,8 @@ var new_chat = true;
 					if (option_select) $('.fn__chat_comment button').removeClass('disabled');
 
 				}, 200);
+
+
 
 			}
 		},

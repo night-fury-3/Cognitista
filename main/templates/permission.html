@@ -454,7 +454,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="sign-in.html">
+											<a href="{% url 'signout' %}">
 												<span class="icon"><img src="{% static 'svg/logout.svg' %}" alt=""
 														class="fn__svg"></span>
 												<span class="text">Log Out</span>
@@ -617,7 +617,7 @@
 								</ul>
 							</li>
 							<li>
-								<a href="sign-in.html" class="fn__tooltip menu__item" data-position="right"
+								<a href="{% url 'signout' %}" class="fn__tooltip menu__item" data-position="right"
 									title="Log Out">
 									<span class="icon"><img src="{% static 'svg/logout.svg' %}" alt=""
 											class="fn__svg"></span>
@@ -660,7 +660,7 @@
 								<div class="header_top">
 									<h1 class="title">Index & Collection Permission</h1>
 								</div>
-								<div class="fn_permission_division" id="index_permission_bar">	
+								<div class="fn_permission_division" id="index_permission_bar">
 								</div>
 								<div class="header_top">
 									<h1 class="title">Prompt Permission</h1>
@@ -718,7 +718,7 @@
 <script>
 	function llm_permission(llm) {
 		var username = $("#permission_userSelect").val();
-		
+
 		var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
 
 		var sendData = {
@@ -743,7 +743,7 @@
 
 	function prompt_permission(prompt) {
 		var username = $("#permission_userSelect").val();
-		
+
 		var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
 
 		var sendData = {
@@ -804,10 +804,11 @@
 
 		for (var i = 0; i < elements.length; i++) {
 			var element = elements.get(i);
-			if (element.checked!=status) collection_permission(element.name, index);
+			if (element.checked != status) collection_permission(element.name, index);
 			element.checked = status;
 		}
 
 	}
 </script>
+
 </html>

@@ -47,23 +47,27 @@ pc = Pinecone(api_key=pinecone_api_key)
 
 @login_required(login_url="/accounts/signin/")
 def home(request):
+    email = request.user.email
     data = {
         'online_users': 8,
-        'total_members': 25
+        'total_members': 25,
+        'is_admin': check_admin(email)
     }
     
     return render(request, 'index.html', data)
 
 @login_required(login_url="/accounts/signin/")
 def chatbot(request):
-    
     email = request.user.email
     name = User.objects.get(email=email)
-    prompt_data = promptmodel.objects.filter(email=email)
+    prompt_data = promptpermissionmodel.objects.filter(email=email, status=True)
     prompt_list = []
     if prompt_data.count() != 0:
         for prompt in prompt_data:
-            prompt_list.append({"title": prompt.title, "content": prompt.prompt})
+            # prompt_list.append({"title": prompt.title, "content": prompt.prompt})
+            title = prompt.value
+            content = promptmodel.objects.get(title=title).prompt
+            prompt_list.append({"title": title, "content": content})
     
     index_list = []
     index_data = indexmodel.objects.all()
@@ -81,40 +85,17 @@ def chatbot(request):
         
         model_list.append({"llm": key, "value": value})
     data = {
-        'prompt_list': prompt_list, 'index_list': index_list, 'name': name, 'email': email, 'model_list': model_list
+        'prompt_list': prompt_list, 'index_list': index_list, 'name': name, 'email': email, 'model_list': model_list, 'is_admin': check_admin(email)
     }
     return render(request, 'ai-chat-bot.html', data)
 
 
 @login_required(login_url="/accounts/signin/")
 def permission(request):
+    email = request.user.email
     user_list = [user.username for user in User.objects.all()]    
 
-    # index_list = [index.index_name for index in indexmodel.objects.all()]
-
-    # collection_list = {}
-    # for index in index_list:
-    #     collection_list[index] = [coll.collection_name for coll in collection.filter(index_name=index)]
-    
-    # data = {}
-    # for user_email in user_list:
-    #     user_name = User.objects.get(email=user_email).username
-    #     data[user_name] = {}
-    #     for index_name, collections in collection_list.items():
-    #         data[user_name][index_name] = {}
-    #         data[user_name][index_name]['collections'] = {}
-    #         for collection_name in collections:
-    #             try:
-    #                 status = permissionmodel.objects.get(email=user_email, index_name=index_name, collection_name=collection_name).status
-    #                 if status == True:
-    #                     data[user_name][index_name]['total_status'] = True
-    #                     data[user_name][index_name]['collections'][collection_name] = True 
-    #                 else:
-    #                     data[user_name][index_name]['collections'][collection_name] = False
-    #             except:
-    #                 data[user_name][index_name]['collections'][collection_name] = False
-
-    return render(request, 'permission.html', {'user_list': user_list})
+    return render(request, 'permission.html', {'user_list': user_list, "is_admin": check_admin(email)})
 
 def getpermissioninfo(request):
     user_name = request.POST.get('user_name')
@@ -166,7 +147,8 @@ def getpermissioninfo(request):
                 prompt_data[prompt] = True
         except:
             pass
-        
+    
+    print(prompt_data)
     return JsonResponse({"index_data": index_data, "llm_data": llm_data, "prompt_data": prompt_data})
 
 def setllmpermission(request):
@@ -185,6 +167,14 @@ def setllmpermission(request):
         
     return JsonResponse({"success": "ok"})
 
+def setadminpermission(request):
+    id = request.POST.get("id")
+    status = User.objects.get(id=id).is_staff
+    status = not status
+    print(status)
+    User.objects.filter(id=id).update(is_staff=status)
+
+    return JsonResponse({"success": "ok"})
 def setpromptpermission(request):
     username = request.POST.get('username')
     prompt = request.POST.get('prompt')
@@ -220,8 +210,17 @@ def setcollectionpermission(request):
         
     return JsonResponse({"success": "ok"})
 
+def check_admin(email):
+    status = False
+
+    if User.objects.get(email=email).is_staff:
+        status = True
+
+    return status
 @login_required(login_url="/accounts/signin/")
 def index(request):
+    email = request.user.email
+
     index_list = []
     indexes = indexmodel.objects.all()
 
@@ -250,7 +249,7 @@ def index(request):
     
 
     eindex_list = index_list[1:]
-    data = {'collections': collections, 'documents': documents, "index_list": eindex_list, "selected_index": selected_index, 'aindex_list': index_list}
+    data = {'collections': collections, 'documents': documents, "index_list": eindex_list, "selected_index": selected_index, 'aindex_list': index_list, 'is_admin': check_admin(email)}
 
     return render(request, 'index_config.html', data)
 
@@ -260,23 +259,25 @@ def prompt(request):
     data = []
     prompts = promptmodel.objects.filter(email = email)
     for prompt in prompts:
-        data.append({"id": prompt.id, "title": prompt.title, "prompt": prompt.prompt})
+        data.append({"id": prompt.id, "title": prompt.title, "prompt": prompt.prompt, "is_admin": check_admin(email)})
         
     return render(request, 'prompt_config.html', {"prompts": data})
 
 def documentation(request):
-    return render(request, 'documentation.html')
+    email = request.user.email
+    return render(request, 'documentation.html', {"is_admin": check_admin(email)})
 
 def faq(request):
-    
-    return render(request, 'faq.html')
+    email = request.user.email
+    return render(request, 'faq.html', {"is_admin": check_admin(email)})
 
 def contact(request):
-    
-    return render(request, 'contact.html')
+    email = request.user.email
+    return render(request, 'contact.html', {"is_admin": check_admin(email)})
 
 @login_required(login_url="/accounts/signin/")
 def accounts(request):
+    email = request.user.email
     result = []
     users = User.objects.all()
     for user in users:
@@ -285,7 +286,7 @@ def accounts(request):
             status = True
         result.append({'id': user.id, 'username': user.username, 'email': user.email, 'admin': status})
 
-    data = {"success": "ok", "data": result}
+    data = {"success": "ok", "data": result, "is_admin":check_admin(email)}
     return render(request, 'accounts.html', data)
 
 def signin(request):

@@ -211,7 +211,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="sign-in.html">
+											<a href="{% url 'signout' %}">
 												<span class="icon"><img src="svg/logout.svg" alt=""
 														class="fn__svg"></span>
 												<span class="text">Log Out</span>
@@ -301,6 +301,7 @@
 					<!-- !#1 navigation group -->
 
 					<!-- #2 navigation group -->
+					{% if is_admin %}
 					<div class="nav_group">
 						<h2 class="group__title">Configuration</h2>
 						<ul class="group__list">
@@ -344,6 +345,7 @@
 							</li>
 						</ul>
 					</div>
+					{% endif %}
 					<!-- #3 navigation group -->
 					<div class="nav_group">
 						<h2 class="group__title">Support</h2>
@@ -385,7 +387,7 @@
 								</ul>
 							</li>
 							<li>
-								<a href="sign-in.html" class="fn__tooltip menu__item" data-position="right"
+								<a href="{% url 'signout' %}" class="fn__tooltip menu__item" data-position="right"
 									title="Log Out">
 									<span class="icon"><img src="{% static 'svg/logout.svg' %}" alt=""
 											class="fn__svg"></span>

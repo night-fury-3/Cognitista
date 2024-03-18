@@ -269,7 +269,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="sign-in.html">
+											<a href="{% url 'signout' %}">
 												<span class="icon"><img src="{% static 'svg/logout.svg' %}" alt=""
 														class="fn__svg"></span>
 												<span class="text">Log Out</span>
@@ -342,7 +342,7 @@
 						</ul>
 					</div>
 					<!-- !#1 home group -->
-
+					{% if is_admin %}
 					<!-- #2 Configuration group -->
 					<div class="nav_group">
 						<h2 class="group__title">Configuration</h2>
@@ -389,6 +389,7 @@
 							</li>
 						</ul>
 					</div>
+					{% endif %}
 					<!-- !#3 Admin group -->
 
 					<!-- #4 navigation group -->
@@ -432,7 +433,7 @@
 								</ul>
 							</li>
 							<li>
-								<a href="sign-in.html" class="fn__tooltip menu__item" data-position="right"
+								<a href="{% url 'signout' %}" class="fn__tooltip menu__item" data-position="right"
 									title="Log Out">
 									<span class="icon"><img src="{% static 'svg/logout.svg' %}" alt=""
 											class="fn__svg"></span>
@@ -516,9 +517,11 @@
 													<label class="fn__toggle">
 														<span class="t_in">
 															{% if item.admin == True %}
-															<input type="checkbox" userId="{{item.id}}" checked>
+															<input type="checkbox" userId="{{item.id}}" checked
+																id="{{item.id}}" onchange="setadmin(this.id)">
 															{% else %}
-															<input type="checkbox" userId="{{item.id}}">
+															<input type="checkbox" userId="{{item.id}}" id="{{item.id}}"
+																onchange="setadmin(this.id)">
 															{% endif %}
 															<span class="t_slider"></span>
 															<span class="t_content"></span>
@@ -595,5 +598,28 @@
 	<!-- !Scripts -->
 
 </body>
+<script>
+	function setadmin(id) {
+		var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
+
+		var sendData = {
+			"id": id,
+		};
+
+		$.ajax({
+			url: '/setadminpermission',
+			method: 'POST',
+			headers: { 'X-CSRFToken': csrfToken },
+			data: sendData,
+			success: function (result) {
+				console.log(result);
+			},
+			error: function (xhr, status, error) {
+				console.error('Error occurred: ', error);
+				alert("Error occurred!");
+			}
+		});
+	}
+</script>
 
 </html>

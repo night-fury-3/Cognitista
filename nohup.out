@@ -9523,3 +9523,392 @@ Django version 4.2.7, using settings 'cognitista.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 
+Watching for file changes with StatReloader
+Performing system checks...
+
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Together`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Bedrock`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/chat_models/__init__.py:31: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+System check identified no issues (0 silenced).
+March 18, 2024 - 12:01:27
+Django version 4.2.7, using settings 'cognitista.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+[18/Mar/2024 12:02:14] "GET /permission HTTP/1.1" 302 0
+[18/Mar/2024 12:02:14] "GET /accounts/signin/?next=/permission HTTP/1.1" 200 3805
+[18/Mar/2024 12:02:14] "GET /static/css/plugins.css HTTP/1.1" 200 19908
+[18/Mar/2024 12:02:14] "GET /static/js/init.js HTTP/1.1" 200 77287
+[18/Mar/2024 12:02:14] "GET /static/css/style.css HTTP/1.1" 200 185924
+[18/Mar/2024 12:02:23] "POST /accounts/signin/ HTTP/1.1" 302 0
+[18/Mar/2024 12:02:24] "GET / HTTP/1.1" 200 17777
+[18/Mar/2024 12:02:24] "GET /static/svg/search.svg HTTP/1.1" 200 1096
+[18/Mar/2024 12:02:24] "GET /static/svg/smallscreen.svg HTTP/1.1" 200 1283
+[18/Mar/2024 12:02:24] "GET /static/svg/close.svg HTTP/1.1" 200 1266
+[18/Mar/2024 12:02:24] "GET /static/svg/setting.svg HTTP/1.1" 200 2439
+[18/Mar/2024 12:02:24] "GET /static/svg/moon.svg HTTP/1.1" 200 1090
+[18/Mar/2024 12:02:24] "GET /static/img/user/user.jpg HTTP/1.1" 200 4355
+[18/Mar/2024 12:02:24] "GET /static/svg/chat.svg HTTP/1.1" 200 1998
+[18/Mar/2024 12:02:24] "GET /static/svg/billing.svg HTTP/1.1" 200 2242
+[18/Mar/2024 12:02:24] "GET /static/svg/person.svg HTTP/1.1" 200 1114
+[18/Mar/2024 12:02:24] "GET /static/svg/arrow.svg HTTP/1.1" 200 779
+[18/Mar/2024 12:02:24] "GET /static/svg/image.svg HTTP/1.1" 200 1916
+[18/Mar/2024 12:02:24] "GET /static/svg/question.svg HTTP/1.1" 200 1617
+[18/Mar/2024 12:02:24] "GET /static/svg/logout.svg HTTP/1.1" 200 1410
+[18/Mar/2024 12:02:24] "GET /static/svg/cube.svg HTTP/1.1" 200 1608
+[18/Mar/2024 12:02:24] "GET /static/svg/share.svg HTTP/1.1" 200 1564
+[18/Mar/2024 12:02:24] "GET /static/svg/home.svg HTTP/1.1" 200 1341
+[18/Mar/2024 12:02:24] "GET /static/img/logo-retina-full.png HTTP/1.1" 200 11542
+[18/Mar/2024 12:02:24] "GET /static/img/logo-desktop-full.png HTTP/1.1" 200 11542
+[18/Mar/2024 12:02:24] "GET /static/svg/language.svg HTTP/1.1" 200 1915
+[18/Mar/2024 12:02:24] "GET /static/svg/sun.svg HTTP/1.1" 200 2396
+[18/Mar/2024 12:02:24] "GET /static/svg/fullscreen.svg HTTP/1.1" 200 1223
+[18/Mar/2024 12:02:24] "GET /static/img/logo-retina-mini.png HTTP/1.1" 200 1197
+[18/Mar/2024 12:02:24] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 200 1079
+[18/Mar/2024 12:02:35] "GET /accounts HTTP/1.1" 200 18851
+[18/Mar/2024 12:02:39] "GET /accounts/signup/ HTTP/1.1" 200 3712
+[18/Mar/2024 12:03:04] "POST /accounts/signup/ HTTP/1.1" 302 0
+[18/Mar/2024 12:03:04] "GET /accounts HTTP/1.1" 200 19715
+[18/Mar/2024 12:03:24] "POST /changeUserAuth HTTP/1.1" 200 17
+[18/Mar/2024 12:03:50] "GET / HTTP/1.1" 302 0
+[18/Mar/2024 12:03:50] "GET /accounts/signin/?next=/ HTTP/1.1" 200 3805
+[18/Mar/2024 12:03:50] "GET /static/css/plugins.css HTTP/1.1" 200 19908
+[18/Mar/2024 12:03:50] "GET /static/js/jquery.js HTTP/1.1" 200 89501
+[18/Mar/2024 12:03:50] "GET /static/css/style.css HTTP/1.1" 200 185924
+[18/Mar/2024 12:03:50] "GET /static/js/init.js HTTP/1.1" 200 77287
+[18/Mar/2024 12:03:51] "GET /static/js/plugins.js HTTP/1.1" 200 92951
+[18/Mar/2024 12:04:01] "POST /accounts/signin/ HTTP/1.1" 302 0
+[18/Mar/2024 12:04:01] "GET /accounts/signin/ HTTP/1.1" 200 3805
+[18/Mar/2024 12:04:10] "POST /accounts/signin/ HTTP/1.1" 302 0
+[18/Mar/2024 12:04:10] "GET /accounts/signin/ HTTP/1.1" 200 3805
+[18/Mar/2024 12:04:28] "GET /accounts HTTP/1.1" 200 19723
+[18/Mar/2024 12:04:28] "GET /static/css/style.css HTTP/1.1" 304 0
+[18/Mar/2024 12:04:28] "GET /static/css/plugins.css HTTP/1.1" 304 0
+[18/Mar/2024 12:04:28] "GET /static/svg/search.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:04:28] "GET /static/svg/close.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:04:28] "GET /static/img/logo-retina-full.png HTTP/1.1" 200 11542
+[18/Mar/2024 12:04:28] "GET /static/img/user/user.jpg HTTP/1.1" 200 4355
+[18/Mar/2024 12:04:28] "GET /static/svg/fullscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:04:28] "GET /static/js/init.js HTTP/1.1" 200 77287
+[18/Mar/2024 12:04:28] "GET /static/js/plugins.js HTTP/1.1" 200 92951
+[18/Mar/2024 12:04:28] "GET /static/svg/language.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:04:28] "GET /static/svg/smallscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:04:28] "GET /static/js/jquery.js HTTP/1.1" 200 89501
+[18/Mar/2024 12:04:28] "GET /static/svg/chat.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:04:29] "GET /static/svg/sun.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:04:29] "GET /static/svg/moon.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:04:29] "GET /static/svg/logout.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:04:29] "GET /static/svg/person.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:04:29] "GET /static/svg/arrow.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:04:29] "GET /static/svg/share.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:04:29] "GET /static/svg/setting.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:04:29] "GET /static/svg/billing.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:04:29] "GET /static/svg/cube.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:04:29] "GET /static/svg/image.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:04:29] "GET /static/svg/home.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:04:29] "GET /static/svg/question.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:04:29] "GET /static/img/logo-desktop-full.png HTTP/1.1" 200 11542
+[18/Mar/2024 12:04:29] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 200 1079
+[18/Mar/2024 12:04:29] "GET /static/img/logo-retina-mini.png HTTP/1.1" 200 1197
+[18/Mar/2024 12:04:45] "POST /accounts/signin/ HTTP/1.1" 302 0
+[18/Mar/2024 12:04:45] "GET /accounts/signin/ HTTP/1.1" 200 3805
+[18/Mar/2024 12:04:51] "POST /accounts/signin/ HTTP/1.1" 302 0
+[18/Mar/2024 12:04:51] "GET / HTTP/1.1" 200 17777
+[18/Mar/2024 12:04:51] "GET /static/svg/language.svg HTTP/1.1" 200 1915
+[18/Mar/2024 12:04:51] "GET /static/svg/smallscreen.svg HTTP/1.1" 200 1283
+[18/Mar/2024 12:04:51] "GET /static/svg/close.svg HTTP/1.1" 200 1266
+[18/Mar/2024 12:04:51] "GET /static/svg/search.svg HTTP/1.1" 200 1096
+[18/Mar/2024 12:04:51] "GET /static/svg/fullscreen.svg HTTP/1.1" 200 1223
+[18/Mar/2024 12:04:52] "GET /static/img/logo-desktop-full.png HTTP/1.1" 200 11542
+[18/Mar/2024 12:04:52] "GET /static/img/user/user.jpg HTTP/1.1" 200 4355
+[18/Mar/2024 12:04:52] "GET /static/svg/chat.svg HTTP/1.1" 200 1998
+[18/Mar/2024 12:04:52] "GET /static/svg/image.svg HTTP/1.1" 200 1916
+[18/Mar/2024 12:04:52] "GET /static/svg/arrow.svg HTTP/1.1" 200 779
+[18/Mar/2024 12:04:52] "GET /static/svg/person.svg HTTP/1.1" 200 1114
+[18/Mar/2024 12:04:52] "GET /static/svg/logout.svg HTTP/1.1" 200 1410
+[18/Mar/2024 12:04:52] "GET /static/svg/cube.svg HTTP/1.1" 200 1608
+[18/Mar/2024 12:04:52] "GET /static/svg/question.svg HTTP/1.1" 200 1617
+[18/Mar/2024 12:04:52] "GET /static/svg/home.svg HTTP/1.1" 200 1341
+[18/Mar/2024 12:04:52] "GET /static/svg/setting.svg HTTP/1.1" 200 2439
+[18/Mar/2024 12:04:52] "GET /static/svg/share.svg HTTP/1.1" 200 1564
+[18/Mar/2024 12:04:52] "GET /static/svg/moon.svg HTTP/1.1" 200 1090
+[18/Mar/2024 12:04:52] "GET /static/svg/billing.svg HTTP/1.1" 200 2242
+[18/Mar/2024 12:04:52] "GET /static/img/logo-retina-full.png HTTP/1.1" 200 11542
+[18/Mar/2024 12:04:52] "GET /static/svg/sun.svg HTTP/1.1" 200 2396
+[18/Mar/2024 12:04:52] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 200 1079
+[18/Mar/2024 12:04:52] "GET /static/img/logo-retina-mini.png HTTP/1.1" 200 1197
+[18/Mar/2024 12:04:57] "GET /accounts HTTP/1.1" 200 19723
+[18/Mar/2024 12:05:00] "POST /changeUserAuth HTTP/1.1" 200 17
+[18/Mar/2024 12:05:01] "POST /changeUserAuth HTTP/1.1" 200 17
+[18/Mar/2024 12:10:39] "GET /accounts HTTP/1.1" 200 19723
+[18/Mar/2024 12:10:39] "GET /static/css/plugins.css HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/css/style.css HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/svg/close.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/svg/search.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/svg/fullscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/svg/language.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/svg/smallscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/svg/sun.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/img/user/user.jpg HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/svg/moon.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/js/jquery.js HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/svg/share.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/svg/image.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/svg/cube.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/svg/question.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/js/plugins.js HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/svg/setting.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/svg/logout.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/img/logo-desktop-full.png HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/svg/person.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/svg/billing.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/img/logo-retina-full.png HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/svg/arrow.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/img/logo-retina-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/svg/home.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:10:39] "GET /static/svg/chat.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:10:45] "GET /accounts HTTP/1.1" 200 19723
+[18/Mar/2024 12:10:48] "GET /accounts HTTP/1.1" 200 19723
+/home/rarciola/Cognitista/main/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Together`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Bedrock`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/chat_models/__init__.py:31: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 485, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 24, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 494, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rarciola/Cognitista/cognitista/urls.py", line 20, in <module>
+    path('', include('main.urls')),
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rarciola/Cognitista/main/urls.py", line 37, in <module>
+    path('setadminpermission', views.setadminpermission, name="setadminpermission"),
+AttributeError: module 'main.views' has no attribute 'setadminpermission'
+/home/rarciola/Cognitista/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Together`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Bedrock`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/chat_models/__init__.py:31: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+System check identified no issues (0 silenced).
+March 18, 2024 - 12:20:25
+Django version 4.2.7, using settings 'cognitista.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+/home/rarciola/Cognitista/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Together`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Bedrock`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/chat_models/__init__.py:31: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+System check identified no issues (0 silenced).
+March 18, 2024 - 12:20:35
+Django version 4.2.7, using settings 'cognitista.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+[18/Mar/2024 12:20:37] "GET /accounts HTTP/1.1" 200 20343
+[18/Mar/2024 12:20:37] "GET /static/css/plugins.css HTTP/1.1" 304 0
+[18/Mar/2024 12:20:37] "GET /static/css/style.css HTTP/1.1" 304 0
+[18/Mar/2024 12:20:37] "GET /static/svg/close.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:20:37] "GET /static/svg/search.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:20:37] "GET /static/svg/fullscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:20:37] "GET /static/svg/language.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:20:37] "GET /static/js/jquery.js HTTP/1.1" 304 0
+[18/Mar/2024 12:20:37] "GET /static/svg/smallscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:20:37] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 12:20:37] "GET /static/js/plugins.js HTTP/1.1" 304 0
+[18/Mar/2024 12:20:37] "GET /static/svg/image.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:20:37] "GET /static/svg/cube.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:20:37] "GET /static/svg/share.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:20:37] "GET /static/svg/question.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:20:37] "GET /static/svg/sun.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:20:37] "GET /static/svg/moon.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:20:38] "GET /static/svg/person.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:20:38] "GET /static/svg/home.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:20:38] "GET /static/svg/setting.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:20:38] "GET /static/svg/billing.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:20:38] "GET /static/svg/logout.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:20:38] "GET /static/svg/arrow.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:20:38] "GET /static/svg/chat.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:20:38] "GET /static/img/user/user.jpg HTTP/1.1" 304 0
+[18/Mar/2024 12:20:38] "GET /static/img/logo-desktop-full.png HTTP/1.1" 304 0
+[18/Mar/2024 12:20:38] "GET /static/img/logo-retina-full.png HTTP/1.1" 304 0
+[18/Mar/2024 12:20:38] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 12:20:38] "GET /static/img/logo-retina-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 12:20:39] "POST /changeUserAuth HTTP/1.1" 200 17
+[18/Mar/2024 12:20:39] "POST /setadminpermission HTTP/1.1" 200 17
+[18/Mar/2024 12:20:40] "GET /accounts HTTP/1.1" 200 20351
+[18/Mar/2024 12:20:42] "POST /changeUserAuth HTTP/1.1" 200 17
+[18/Mar/2024 12:20:42] "POST /setadminpermission HTTP/1.1" 200 17
+[18/Mar/2024 12:20:43] "GET /accounts HTTP/1.1" 200 20351
+[18/Mar/2024 12:20:45] "GET /accounts HTTP/1.1" 200 20351
+[18/Mar/2024 12:20:47] "POST /changeUserAuth HTTP/1.1" 200 17
+[18/Mar/2024 12:20:47] "POST /setadminpermission HTTP/1.1" 200 17
+[18/Mar/2024 12:20:48] "GET /accounts HTTP/1.1" 200 20351
+[18/Mar/2024 12:21:30] "GET /accounts HTTP/1.1" 200 20351
+/home/rarciola/Cognitista/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Together`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Bedrock`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/chat_models/__init__.py:31: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+System check identified no issues (0 silenced).
+March 18, 2024 - 12:21:58
+Django version 4.2.7, using settings 'cognitista.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+[18/Mar/2024 12:21:58] "GET /accounts HTTP/1.1" 200 20351
+/home/rarciola/Cognitista/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Together`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Bedrock`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/chat_models/__init__.py:31: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+System check identified no issues (0 silenced).
+March 18, 2024 - 12:22:16
+Django version 4.2.7, using settings 'cognitista.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+

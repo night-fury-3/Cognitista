@@ -6726,13 +6726,13 @@ a.fn__like.no_border .fn__svg {
 }
 
 .fn_permission_division .divider {
-	border-right: 2px solid var(--techwave-main-color);
-	padding-right: 25px;
+	/* border-right: 2px solid var(--techwave-main-color); */
+	padding: 25px;
 
 }
 
 .fn_permission_division .divider .header {
-	border-bottom: 1px solid var(--techwave-body-color);
+	/* border-bottom: 1px solid var(--techwave-body-color); */
 	padding-bottom: 10px;
 	font-size: 20px;
 }

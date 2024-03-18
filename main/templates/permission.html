@@ -655,64 +655,14 @@
 								<div class="header_top">
 									<h1 class="title">LLM Permission</h1>
 								</div>
-								<div class="fn_permission_division">
-									<label class="fn__toggle">
-										Negative Prompt
-										<span class="t_in">
-											<input type="checkbox" checked id="negative_prompt">
-											<span class="t_slider"></span>
-											<span class="t_content"></span>
-										</span>
-									</label>
+								<div class="fn_permission_division" id="llm_permission_bar">
 								</div>
 								<div class="header_top">
 									<h1 class="title">Index & Collection Permission</h1>
 								</div>
-								<div class="fn_permission_division">
-									<div class="divider">
-										<div class="header">
-											<label class="fn__toggle">
-												Negative Prompt
-												<span class="t_in">
-													<input type="checkbox" checked id="negative_prompt">
-													<span class="t_slider"></span>
-													<span class="t_content"></span>
-												</span>
-											</label>
-										</div>
-										<div class="content">
-											<label class="fn__toggle">
-												Negative Promptasdfdsa
-												<span class="t_in">
-													<input type="checkbox" checked id="negative_prompt">
-													<span class="t_slider"></span>
-													<span class="t_content"></span>
-												</span>
-											</label>
-										</div>
-									</div>
-									<div class="divider">
-										<div class="header">
-											<label class="fn__toggle">
-												Negative Prompt
-												<span class="t_in">
-													<input type="checkbox" checked id="negative_prompt">
-													<span class="t_slider"></span>
-													<span class="t_content"></span>
-												</span>
-											</label>
-										</div>
-										<div class="content">
-											<label class="fn__toggle">
-												Negative Promptasdfdsa
-												<span class="t_in">
-													<input type="checkbox" checked id="negative_prompt">
-													<span class="t_slider"></span>
-													<span class="t_content"></span>
-												</span>
-											</label>
-										</div>
-									</div>
+								<div class="fn_permission_division" id="index_permission_bar">
+									
+									
 								</div>
 							</div>
 							<!-- !Generation Header -->
@@ -761,5 +711,74 @@
 	<!-- !Scripts -->
 
 </body>
+<script>
+	function llm_permission(llm) {
+		var username = $("#permission_userSelect").val();
+		
+		var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
 
+		var sendData = {
+			"username": username,
+			"llm": llm,
+		};
+
+		$.ajax({
+			url: '/setllmpermission',
+			method: 'POST',
+			headers: { 'X-CSRFToken': csrfToken },
+			data: sendData,
+			success: function (result) {
+				console.log(result);
+			},
+			error: function (xhr, status, error) {
+				console.error('Error occurred: ', error);
+				alert("Error occurred!");
+			}
+		});
+	}
+
+	function collection_permission(collection, index) {
+		var username = $("#permission_userSelect").val();
+
+		var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
+
+		var sendData = {
+			"username": username,
+			"collection": collection,
+			"index": index
+		};
+
+		$.ajax({
+			url: '/setcollectionpermission',
+			method: 'POST',
+			headers: { 'X-CSRFToken': csrfToken },
+			data: sendData,
+			success: function (result) {
+				console.log(result);
+			},
+			error: function (xhr, status, error) {
+				console.error('Error occurred: ', error);
+				alert("Error occurred!");
+			}
+		});
+	}
+
+	function index_permission(index) {
+		var elements = $('.' + index);
+		var status = false;
+		for (var i = 0; i < elements.length; i++) {
+			var element = elements.get(i);
+			if (element.checked) status = true;
+		}
+
+		status = !status;
+
+		for (var i = 0; i < elements.length; i++) {
+			var element = elements.get(i);
+			if (element.checked!=status) collection_permission(element.name, index);
+			element.checked = status;
+		}
+
+	}
+</script>
 </html>

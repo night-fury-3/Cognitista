@@ -49,8 +49,7 @@ class indexpermissionmodel(models.Model):
 
 class llmpermissionmodel(models.Model):
     email = models.EmailField()
-    index_name = models.CharField(max_length=50)
-    collection_name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50)
     status = models.BooleanField(default=False)
 
 class llmmodel(models.Model):

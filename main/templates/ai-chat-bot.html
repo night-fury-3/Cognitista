@@ -497,12 +497,15 @@
 									<div class="modelSelect" style="margin-top: 5px;">
 										<select id="modelSelect">
 											<option value="" selected disabled>Select a Model</option>
-											<option value="gpt-3.5-turbo-16k">
+											{% for model in model_list %}
+											<option value="{{model.llm}}">{{model.value}}</option>
+											{% endfor %}
+											<!-- <option value="gpt-3.5-turbo-16k">
 												Cognitista-Model-1</option>
 											<option value="gpt-4-1106-preview">Cognitista Standard Ultra Context
 											</option>
-											<!-- <option value="gpt-4-1106-preview">Cognitista-Model-3
-											</option> -->
+											<option value="gpt-4-1106-preview">Cognitista-Model-3
+											</option>
 											<option value="lmsys/vicuna-13b-v1.5">Vicuna v1.5 16K
 											</option>
 											<option value="togethercomputer/llama-2-70b-chat">
@@ -511,7 +514,7 @@
 											</option>
 											<option value="anthropic.claude-v2">Claude V2</option>
 											<option value="anthropic.claude-3-sonnet-20240229-v1:0">Claude Sonnet
-											</option>
+											</option> -->
 										</select>
 									</div>
 									<div class="temperatureRange" style="margin-top: 15px; margin-bottom: -5px">

@@ -102,13 +102,54 @@ var new_chat = true;
 					headers: { 'X-CSRFToken': csrfToken },
 					data: sendData,
 					success: function (result) {
-						console.log(result);
+						var llm_data = result['llm_data'];
+						var index_data = result['index_data'];
+
+						console.log(index_data);
+						// llm replace
+						$("#llm_permission_bar").html("");
+						for (var llm in llm_data) {
+							var status = llm_data[llm];
+							var status_str = "";
+							if (status)
+							status_str="checked";
+							var model_content = "<label class='fn__toggle'>" + llm +"<span class='t_in'><input type='checkbox'" + status_str + " onchange='llm_permission(this.name)' name='" + llm + "'><span class='t_slider'></span><span class='t_content'></span></span></label>";
+
+							$("#llm_permission_bar").append(model_content);
+						}
+
+						// index replace
+						$("#index_permission_bar").html("");
+						for (var index in index_data) {
+							var index_status_str = "";
+							if (index_data[index]['total_status'])
+							index_status_str = "checked";
+
+							var index_content = "<div class='header'><label class='fn__toggle'>"+ index +"<span class='t_in'><input type='checkbox' " + index_status_str + " name='"+ index+"' onchange='index_permission(this.name)'><span class='t_slider'></span><span class='t_content'></span></span></label>";
+
+							var collection_label_content = "";
+							for (var collection in index_data[index]['collections']) {
+								var collection_status_str = "";
+
+								if (index_data[index]['collections'][collection])
+								collection_status_str="checked";
+
+								collection_label_content += "<label class='fn__toggle'>" + collection +"<span class='t_in'><input type='checkbox' " + collection_status_str + " name='"+  collection +"' onchange='collection_permission(this.name, this.id)' id='"+ index +"' class='"+ index +"'><span class='t_slider'></span><span class='t_content'></span></span></label>";
+							}
+
+							var content = "<div class='divider'>" + index_content + "<div class='content'>" + collection_label_content + "</div>" + "</div>";
+
+							$("#index_permission_bar").append(content);
+						}
 					},
 					error: function (xhr, status, error) {
 						console.error('Error occurred: ', error);
 					}
 				});
 			});
+
+			
+
 		},
 		openindexmodal: function () {
 			$(".techwave_create_index_but").click(function () {
@@ -2183,6 +2224,7 @@ var new_chat = true;
 
 			// flag Value
 			$('#show_switcher').change(function () {
+				
 				FrenifyTechWave.showFlag = $(this).is(':checked');
 				if (FrenifyTechWave.showFlag) $("#propmt_preview").show(true);
 				else $("#propmt_preview").hide(true);
@@ -2200,6 +2242,9 @@ var new_chat = true;
 			FrenifyTechWave.galleryIsotope();
 		}, 500);
 	});
+
+
+	
 
 	// RESIZE Functions
 	$(window).on('resize', function () {
@@ -2230,3 +2275,5 @@ var new_chat = true;
 	});
 
 })(jQuery);
+
+

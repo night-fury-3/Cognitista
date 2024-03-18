@@ -31,6 +31,8 @@ urlpatterns = [
     path('createIndex', views.createIndex, name="createIndex"),
     path('deleteIndex', views.deleteIndex, name="deleteIndex"),
     path('getpermissioninfo', views.getpermissioninfo, name="getpermissioninfo"),
+    path('setllmpermission', views.setllmpermission, name="setllmpermission"),
+    path('setcollectionpermission', views.setcollectionpermission, name="setcollectionpermission"),
     # Authentication
     path("accounts/signout/", views.signout, name="signout"),
     path("accounts/signin/", views.signin, name="signin"),

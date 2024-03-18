@@ -7,7 +7,7 @@ from django.urls import reverse
 from django.http import HttpResponseRedirect
 from django.contrib.auth import authenticate, login, logout
 from django.http import StreamingHttpResponse
-from .models import collection, filemodel, promptmodel, buffermodel, indexmodel, llmpermissionmodel, indexpermissionmodel
+from .models import collection, filemodel, promptmodel, buffermodel, indexmodel, llmpermissionmodel, indexpermissionmodel, llmmodel
 
 import json, os
 from dotenv import load_dotenv
@@ -71,8 +71,17 @@ def chatbot(request):
     for index in index_data:
         index_list.append(index.index_name)
 
+    model_list = []
+    
+    llms = llmpermissionmodel.objects.filter(email=email, status=True)
+    
+    for llm in llms:
+        value = llm.value
+        key = llmmodel.objects.get(value=value).llm
+        
+        model_list.append({"llm": key, "value": value})
     data = {
-        'prompt_list': prompt_list, 'index_list': index_list, 'name': name, 'email': email
+        'prompt_list': prompt_list, 'index_list': index_list, 'name': name, 'email': email, 'model_list': model_list
     }
     return render(request, 'ai-chat-bot.html', data)
 
@@ -109,7 +118,7 @@ def permission(request):
 
 def getpermissioninfo(request):
     user_name = request.POST.get('user_name')
-    user_email = User.objects.get(username=user_name)
+    user_email = User.objects.get(username=user_name).email
 
     index_list = [index.index_name for index in indexmodel.objects.all()]
 
@@ -117,22 +126,72 @@ def getpermissioninfo(request):
     for index in index_list:
         collection_list[index] = [coll.collection_name for coll in collection.objects.filter(index_name=index)]
 
-    data = {}
+    index_data = {}
     for index_name, collections in collection_list.items():
-        data[index_name] = {} 
-        data[index_name]['collections'] = {}
+        index_data[index_name] = {} 
+        index_data[index_name]['total_status'] = False
+        index_data[index_name]['collections'] = {}
         for collection_name in collections:
             try:
                 status = indexpermissionmodel.objects.get(email=user_email, index_name=index_name, collection_name=collection_name).status
                 if status == True:
-                    data[index_name]['total_status'] = True
-                    data[index_name]['collections'][collection_name] = True 
+                    index_data[index_name]['total_status'] = True
+                    index_data[index_name]['collections'][collection_name] = True 
                 else:
-                    data[index_name]['collections'][collection_name] = False
+                    index_data[index_name]['collections'][collection_name] = False
             except:
-                data[index_name]['collections'][collection_name] = False
+                index_data[index_name]['collections'][collection_name] = False
 
-    return JsonResponse(data)
+    
+    llm_data = {}
+    llm_list = llmmodel.objects.all()
+    for llm in llm_list:
+        value = llm.value
+        llm_data[value] = False
+        try:
+            status = llmpermissionmodel.objects.get(email=user_email, value=value).status
+            if status == True:
+                llm_data[value] = True
+        except:
+            pass
+    
+    print(index_data)
+    return JsonResponse({"index_data": index_data, "llm_data": llm_data})
+
+def setllmpermission(request):
+    username = request.POST.get('username')
+    llm = request.POST.get('llm')
+    email = User.objects.get(username=username).email
+    try:
+        status = llmpermissionmodel.objects.get(email=email, value=llm).status
+        
+        if status == True:
+            llmpermissionmodel.objects.filter(email=email, value=llm).update(status=False)
+        else:
+            llmpermissionmodel.objects.filter(email=email, value=llm).update(status=True)
+    except:
+        llmpermissionmodel.objects.create(email=email, value=llm, status=True).save()
+        
+    return JsonResponse({"success": "ok"})
+
+
+def setcollectionpermission(request):
+    username = request.POST.get('username')
+    collection_name = request.POST.get('collection')
+    index = request.POST.get('index')
+    
+    email = User.objects.get(username=username).email
+    try:
+        status = indexpermissionmodel.objects.get(email=email, index_name=index, collection_name=collection_name).status
+        
+        if status == True:
+            indexpermissionmodel.objects.filter(email=email, index_name=index, collection_name=collection_name).update(status=False)
+        else:
+            indexpermissionmodel.objects.filter(email=email, index_name=index, collection_name=collection_name).update(status=True)
+    except:
+        indexpermissionmodel.objects.create(email=email, index_name=index, collection_name=collection_name, status=True).save()
+        
+    return JsonResponse({"success": "ok"})
 
 @login_required(login_url="/accounts/signin/")
 def index(request):
@@ -274,41 +333,17 @@ def deletePrompt(request):
     data = {"success": "ok", "data": "lkskdfjalskd"}
     return JsonResponse(data)
 
-
-
-# def getindexinfo(request):
-#     index_name = request.POST.get("index_name")
-
-#     collections = []
-    
-#     results = collection.objects.filter(index_name = index_name)
-#     if results:
-#         for result in results:
-#             collections.append({'id': result.id, 'name': result.collection_name})
-        
-#     documents = []
-
-#     results = filemodel.objects.filter(index_name = index_name)
-
-#     for doc in results:
-#         filename = doc.file_name[:-4]
-#         if len(filename) > 24:
-#             filename = filename[:24] + "..."
-#         documents.append({'id': doc.id, 'index':index_name, 'collection': doc.collection_name, 'name': filename, 'created_at': doc.created_at, 'size': doc.size})
-
-#     return JsonResponse({"collections": collections, "documents": documents})
 def getCollectionList(request):
     index = request.POST.get('id')
-    
+    email = request.user.email
     collection_lists = []
     
-    results = collection.objects.filter(index_name = index)
+    results = indexpermissionmodel.objects.filter(index_name = index, email=email, status=True)
     if results:
         for result in results:
             collection_lists.append({'name': result.collection_name})
-            
-    # ['name': 'collection_name']
-    # collection_lists = [{'name': "collection"}]
+    
+    print(collection_lists)
     
     data = {"success": "ok", "data": collection_lists}
     return JsonResponse(data)

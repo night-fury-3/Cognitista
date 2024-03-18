@@ -9912,3 +9912,1381 @@ Django version 4.2.7, using settings 'cognitista.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 
+Watching for file changes with StatReloader
+Performing system checks...
+
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Together`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Bedrock`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/chat_models/__init__.py:31: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+System check identified no issues (0 silenced).
+March 18, 2024 - 12:51:16
+Django version 4.2.7, using settings 'cognitista.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+[18/Mar/2024 12:51:18] "GET /prompt HTTP/1.1" 200 50492
+[18/Mar/2024 12:51:19] "GET / HTTP/1.1" 200 17789
+[18/Mar/2024 12:51:21] "GET /chatbot HTTP/1.1" 200 22022
+[18/Mar/2024 12:58:44] "GET /chatbot HTTP/1.1" 200 22022
+[18/Mar/2024 12:58:44] "GET /static/css/style.css HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/css/plugins.css HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/svg/close.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/svg/search.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/svg/fullscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/svg/sun.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/svg/smallscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/svg/language.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/js/jquery.js HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/js/plugins.js HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/svg/enter.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/svg/share.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/svg/question.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/svg/image.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/svg/cube.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/img/user/user.jpg HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/svg/moon.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/svg/person.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/svg/setting.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/svg/billing.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/svg/logout.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/svg/arrow.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/svg/home.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/svg/chat.svg HTTP/1.1" 304 0
+[18/Mar/2024 12:58:44] "GET /static/img/logo-desktop-full.png HTTP/1.1" 304 0
+[18/Mar/2024 12:58:45] "GET /static/img/logo-retina-full.png HTTP/1.1" 304 0
+[18/Mar/2024 12:58:45] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 12:58:45] "GET /static/img/logo-retina-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 13:15:36] "GET /chatbot HTTP/1.1" 200 22022
+[18/Mar/2024 13:15:36] "GET /static/css/plugins.css HTTP/1.1" 304 0
+[18/Mar/2024 13:15:36] "GET /static/css/style.css HTTP/1.1" 304 0
+[18/Mar/2024 13:15:36] "GET /static/svg/close.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:36] "GET /static/svg/search.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/svg/fullscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/svg/smallscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/svg/language.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/js/jquery.js HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/js/plugins.js HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/svg/cube.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/svg/enter.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/svg/question.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/svg/share.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/svg/image.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/svg/sun.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/svg/moon.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/svg/person.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/svg/logout.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/svg/arrow.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/svg/setting.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/svg/billing.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/svg/home.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/svg/chat.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/img/user/user.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/img/logo-desktop-full.png HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/img/logo-retina-full.png HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 13:15:37] "GET /static/img/logo-retina-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 13:15:38] "GET /chatbot HTTP/1.1" 200 22022
+[18/Mar/2024 13:15:38] "GET / HTTP/1.1" 200 17789
+[18/Mar/2024 13:15:40] "GET /prompt HTTP/1.1" 200 50492
+[18/Mar/2024 13:15:40] "GET /static/svg/download.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:40] "GET /static/svg/like-full.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:40] "GET /static/svg/like.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:40] "GET /static/js/prompt.js HTTP/1.1" 304 0
+[18/Mar/2024 13:15:40] "GET /static/img/gallery/main.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:40] "GET /static/img/related/1.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:40] "GET /static/img/related/3.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:40] "GET /static/img/related/2.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:40] "GET /static/img/related/4.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:40] "GET /static/img/related/5.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:40] "GET /static/img/related/7.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:40] "GET /static/img/related/6.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:41] "GET /static/img/related/8.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:41] "GET /static/img/related/11.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:41] "GET /static/img/related/10.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:41] "GET /static/img/related/9.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:41] "GET /static/img/related/12.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:41] "GET /index HTTP/1.1" 200 66071
+[18/Mar/2024 13:15:42] "GET /static/svg/check.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:42] "GET /static/svg/option.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:42] "GET /static/svg/trash.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:42] "GET /static/img/models/1.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:15:43] "GET /permission HTTP/1.1" 200 25560
+{'Company Law Assistant': True, 'Company Law 2': False, 'Company Law 3': False, 'default': False, 'defaulttest': False, 'Gaming Test': False, 'Terms and Conditions Compliance': False, 'Terms and Conditions Compliance 2': False, 'Company Law New': False, 'JW': False}
+[18/Mar/2024 13:15:46] "POST /getpermissioninfo HTTP/1.1" 200 953
+{'Company Law Assistant': False, 'Company Law 2': False, 'Company Law 3': False, 'default': False, 'defaulttest': False, 'Gaming Test': False, 'Terms and Conditions Compliance': False, 'Terms and Conditions Compliance 2': False, 'Company Law New': False, 'JW': False}
+[18/Mar/2024 13:15:51] "POST /getpermissioninfo HTTP/1.1" 200 970
+{'Company Law Assistant': False, 'Company Law 2': False, 'Company Law 3': False, 'default': False, 'defaulttest': False, 'Gaming Test': False, 'Terms and Conditions Compliance': False, 'Terms and Conditions Compliance 2': False, 'Company Law New': False, 'JW': False}
+[18/Mar/2024 13:15:55] "POST /getpermissioninfo HTTP/1.1" 200 970
+[18/Mar/2024 13:22:25] "GET /accounts HTTP/1.1" 200 18799
+[18/Mar/2024 13:22:26] "GET /static/css/plugins.css HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/css/style.css HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/svg/close.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/svg/fullscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/svg/search.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/js/jquery.js HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/js/plugins.js HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/svg/language.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/svg/sun.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/svg/moon.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/svg/smallscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/svg/person.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/svg/home.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/img/user/user.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/svg/logout.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/svg/question.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/svg/arrow.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/svg/chat.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/svg/billing.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/img/logo-retina-full.png HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/svg/setting.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/img/logo-desktop-full.png HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 13:22:26] "GET /static/img/logo-retina-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 13:22:30] "GET /chatbot HTTP/1.1" 200 18405
+[18/Mar/2024 13:22:30] "GET /static/svg/enter.svg HTTP/1.1" 200 1025
+[18/Mar/2024 13:23:23] "GET /accounts HTTP/1.1" 200 20366
+[18/Mar/2024 13:23:23] "GET /static/css/plugins.css HTTP/1.1" 304 0
+[18/Mar/2024 13:23:23] "GET /static/css/style.css HTTP/1.1" 304 0
+[18/Mar/2024 13:23:23] "GET /static/svg/search.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:23:23] "GET /static/svg/close.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:23:23] "GET /static/js/jquery.js HTTP/1.1" 304 0
+[18/Mar/2024 13:23:23] "GET /static/svg/fullscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:23:23] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 13:23:23] "GET /static/js/plugins.js HTTP/1.1" 304 0
+[18/Mar/2024 13:23:23] "GET /static/svg/billing.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:23:23] "GET /static/svg/sun.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:23:23] "GET /static/svg/person.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:23:23] "GET /static/svg/logout.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:23:24] "GET /static/svg/arrow.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:23:24] "GET /static/svg/share.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:23:24] "GET /static/img/user/user.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:23:24] "GET /static/svg/language.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:23:24] "GET /static/svg/moon.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:23:24] "GET /static/svg/smallscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:23:24] "GET /static/svg/cube.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:23:24] "GET /static/svg/home.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:23:24] "GET /static/svg/image.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:23:24] "GET /static/svg/setting.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:23:24] "GET /static/svg/chat.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:23:24] "GET /static/svg/question.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:23:24] "GET /static/img/logo-retina-full.png HTTP/1.1" 304 0
+[18/Mar/2024 13:23:24] "GET /static/img/logo-desktop-full.png HTTP/1.1" 304 0
+[18/Mar/2024 13:23:24] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 13:23:24] "GET /static/img/logo-retina-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 13:23:25] "GET /permission HTTP/1.1" 200 25560
+[18/Mar/2024 13:23:25] "GET /static/svg/like-full.svg HTTP/1.1" 200 1015
+[18/Mar/2024 13:23:25] "GET /static/img/related/1.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 13:23:25] "GET /static/svg/download.svg HTTP/1.1" 200 1297
+[18/Mar/2024 13:23:25] "GET /static/svg/like.svg HTTP/1.1" 200 1382
+[18/Mar/2024 13:23:25] "GET /static/js/prompt.js HTTP/1.1" 200 8180
+[18/Mar/2024 13:23:25] "GET /static/img/gallery/main.jpg HTTP/1.1" 200 10496
+[18/Mar/2024 13:23:26] "GET /static/img/related/4.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 13:23:26] "GET /static/img/related/2.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 13:23:26] "GET /static/img/related/3.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 13:23:26] "GET /static/img/related/5.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 13:23:26] "GET /static/img/related/6.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 13:23:26] "GET /static/img/related/7.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 13:23:26] "GET /static/img/related/8.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 13:23:26] "GET /static/img/related/9.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 13:23:26] "GET /static/img/related/10.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 13:23:26] "GET /static/img/related/11.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 13:23:26] "GET /static/img/related/12.jpg HTTP/1.1" 200 7924
+{'Company Law Assistant': False, 'Company Law 2': False, 'Company Law 3': False, 'default': False, 'defaulttest': False, 'Gaming Test': False, 'Terms and Conditions Compliance': False, 'Terms and Conditions Compliance 2': False, 'Company Law New': False, 'JW': False}
+[18/Mar/2024 13:23:30] "POST /getpermissioninfo HTTP/1.1" 200 970
+[]
+[18/Mar/2024 13:23:50] "POST /getCollectionList HTTP/1.1" 200 29
+[]
+[18/Mar/2024 13:23:55] "POST /getCollectionList HTTP/1.1" 200 29
+[18/Mar/2024 13:25:29] "GET /chatbot HTTP/1.1" 200 22022
+[18/Mar/2024 13:25:29] "GET /static/css/plugins.css HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/css/style.css HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/svg/close.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/svg/search.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/svg/fullscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/js/jquery.js HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/svg/language.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/svg/smallscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/js/plugins.js HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/svg/image.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/svg/enter.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/svg/cube.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/svg/share.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/svg/question.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/svg/sun.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/svg/billing.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/svg/arrow.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/svg/moon.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/svg/setting.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/svg/logout.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/svg/person.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/svg/home.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/svg/chat.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/img/user/user.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/img/logo-desktop-full.png HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/img/logo-retina-full.png HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 13:25:29] "GET /static/img/logo-retina-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 13:25:35] "GET /accounts/signout/ HTTP/1.1" 302 0
+[18/Mar/2024 13:25:35] "GET /accounts/signin/ HTTP/1.1" 200 3805
+[18/Mar/2024 13:25:46] "POST /accounts/signin/ HTTP/1.1" 302 0
+[18/Mar/2024 13:25:46] "GET /accounts/signin/ HTTP/1.1" 200 3805
+[18/Mar/2024 13:25:52] "POST /accounts/signin/ HTTP/1.1" 302 0
+[18/Mar/2024 13:25:52] "GET /accounts/signin/ HTTP/1.1" 200 3805
+[18/Mar/2024 13:26:00] "POST /accounts/signin/ HTTP/1.1" 302 0
+[18/Mar/2024 13:26:00] "GET /accounts/signin/ HTTP/1.1" 200 3805
+[18/Mar/2024 13:26:09] "POST /accounts/signin/ HTTP/1.1" 302 0
+[18/Mar/2024 13:26:09] "GET /accounts/signin/ HTTP/1.1" 200 3805
+[18/Mar/2024 13:26:53] "POST /accounts/signin/ HTTP/1.1" 302 0
+[18/Mar/2024 13:26:54] "GET / HTTP/1.1" 200 16266
+Not Found: /user-profile.html
+[18/Mar/2024 13:30:25] "GET /user-profile.html HTTP/1.1" 404 7698
+[18/Mar/2024 13:40:35] "GET /permission HTTP/1.1" 200 25560
+[18/Mar/2024 13:40:35] "GET /static/css/plugins.css HTTP/1.1" 304 0
+[18/Mar/2024 13:40:35] "GET /static/css/style.css HTTP/1.1" 304 0
+[18/Mar/2024 13:40:35] "GET /static/svg/share.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:35] "GET /static/svg/close.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/svg/download.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/js/jquery.js HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/svg/arrow.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/js/plugins.js HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/svg/image.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/img/user/user.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/svg/language.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/svg/search.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/svg/logout.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/svg/fullscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/svg/like-full.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/svg/person.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/svg/smallscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/svg/home.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/svg/chat.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/svg/question.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/svg/cube.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/img/gallery/main.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/svg/sun.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/svg/moon.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/svg/like.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/svg/setting.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/img/logo-retina-full.png HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/svg/billing.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/img/related/1.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/img/related/2.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/js/prompt.js HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/img/related/3.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/img/related/4.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/img/related/5.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/img/related/6.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/img/related/7.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/img/related/8.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/img/related/9.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:36] "GET /static/img/related/10.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:37] "GET /static/img/related/11.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:37] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 13:40:37] "GET /static/img/logo-desktop-full.png HTTP/1.1" 304 0
+[18/Mar/2024 13:40:37] "GET /static/img/related/12.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:40:37] "GET /static/img/logo-retina-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 13:44:06] "GET /chatbot HTTP/1.1" 200 22022
+[]
+[18/Mar/2024 13:44:11] "POST /getCollectionList HTTP/1.1" 200 29
+[18/Mar/2024 13:45:43] "GET /permission HTTP/1.1" 200 25560
+{'Company Law Assistant': True, 'Company Law 2': False, 'Company Law 3': False, 'default': False, 'defaulttest': False, 'Gaming Test': False, 'Terms and Conditions Compliance': False, 'Terms and Conditions Compliance 2': False, 'Company Law New': False, 'JW': False}
+[18/Mar/2024 13:45:46] "POST /getpermissioninfo HTTP/1.1" 200 953
+[18/Mar/2024 13:45:49] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:45:49] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:45:49] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:45:51] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:45:51] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:45:55] "POST /setpromptpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:45:56] "POST /setpromptpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:45:57] "POST /setpromptpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:45:58] "POST /setpromptpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:45:59] "POST /setpromptpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:46:01] "POST /setpromptpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:46:02] "POST /setpromptpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:46:03] "POST /setpromptpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:46:04] "POST /setpromptpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:46:08] "GET /chatbot HTTP/1.1" 200 37211
+[{'name': 'Consolidated Laws'}, {'name': 'Complete Laws'}, {'name': 'Company Law'}]
+[18/Mar/2024 13:46:12] "POST /getCollectionList HTTP/1.1" 200 110
+[18/Mar/2024 13:46:48] "GET /permission HTTP/1.1" 200 25560
+{'Company Law Assistant': True, 'Company Law 2': True, 'Company Law 3': True, 'default': True, 'defaulttest': True, 'Gaming Test': True, 'Terms and Conditions Compliance': True, 'Terms and Conditions Compliance 2': True, 'Company Law New': True, 'JW': True}
+[18/Mar/2024 13:46:52] "POST /getpermissioninfo HTTP/1.1" 200 937
+[18/Mar/2024 13:46:53] "GET / HTTP/1.1" 200 16266
+[18/Mar/2024 13:46:53] "GET /static/css/plugins.css HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/css/style.css HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/svg/search.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/svg/close.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/svg/fullscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/svg/smallscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/js/jquery.js HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/svg/language.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/svg/image.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/js/plugins.js HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/svg/moon.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/svg/sun.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/img/user/user.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/svg/person.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/svg/setting.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/svg/billing.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/img/logo-desktop-full.png HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/svg/logout.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/img/logo-retina-full.png HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/svg/arrow.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/svg/home.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/svg/chat.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/svg/question.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/img/logo-retina-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 13:46:53] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 13:46:54] "POST /setllmpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:46:54] "GET /chatbot HTTP/1.1" 200 18405
+[18/Mar/2024 13:46:55] "GET /static/svg/enter.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:46:56] "POST /setllmpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:46:56] "GET / HTTP/1.1" 200 16266
+[18/Mar/2024 13:46:57] "GET /chatbot HTTP/1.1" 200 18405
+[18/Mar/2024 13:46:57] "POST /setllmpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:47:00] "POST /setllmpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:47:02] "GET /chatbot HTTP/1.1" 200 37053
+[{'name': 'company law'}, {'name': 'Vauluation'}, {'name': 'mesga'}, {'name': 'MGA Demo 1'}]
+[18/Mar/2024 13:47:06] "POST /getCollectionList HTTP/1.1" 200 119
+[18/Mar/2024 13:47:09] "GET / HTTP/1.1" 200 16266
+[{'name': 'Consolidated Laws'}, {'name': 'Complete Laws'}, {'name': 'Company Law'}]
+[18/Mar/2024 13:47:24] "POST /getCollectionList HTTP/1.1" 200 110
+gpt-4-1106-preview
+text-embedding-3-large
+/usr/local/lib/python3.8/dist-packages/langchain_core/_api/deprecation.py:117: LangChainDeprecationWarning: The class `langchain_community.chat_models.openai.ChatOpenAI` was deprecated in langchain-community 0.0.10 and will be removed in 0.2.0. An updated version of the class exists in the langchain-openai package and should be used instead. To use it run `pip install -U langchain-openai` and import as `from langchain_openai import ChatOpenAI`.
+  warn_deprecated(
+/usr/local/lib/python3.8/dist-packages/langchain_core/_api/deprecation.py:117: LangChainDeprecationWarning: The function `__call__` was deprecated in LangChain 0.1.0 and will be removed in 0.2.0. Use invoke instead.
+  warn_deprecated(
+[18/Mar/2024 13:48:22] "POST /query HTTP/1.1" 200 1113
+gpt-4-1106-preview
+text-embedding-3-large
+[18/Mar/2024 13:49:01] "POST /query HTTP/1.1" 200 1370
+anthropic.claude-3-sonnet-20240229-v1:0
+text-embedding-3-large
+[18/Mar/2024 13:49:21] "POST /query HTTP/1.1" 200 917
+anthropic.claude-3-sonnet-20240229-v1:0
+text-embedding-3-large
+/home/rarciola/Cognitista/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Together`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Bedrock`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/chat_models/__init__.py:31: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+System check identified no issues (0 silenced).
+March 18, 2024 - 13:49:46
+Django version 4.2.7, using settings 'cognitista.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+[18/Mar/2024 13:49:50] "GET /chatbot HTTP/1.1" 200 37053
+/home/rarciola/Cognitista/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Together`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Bedrock`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/chat_models/__init__.py:31: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+System check identified no issues (0 silenced).
+March 18, 2024 - 13:49:56
+Django version 4.2.7, using settings 'cognitista.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+[18/Mar/2024 13:49:56] "GET / HTTP/1.1" 200 16266
+Internal Server Error: /chatbot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/rarciola/Cognitista/main/views.py", line 77, in chatbot
+    if count > 0:
+TypeError: '>' not supported between instances of 'QuerySet' and 'int'
+[18/Mar/2024 13:49:57] "GET /chatbot HTTP/1.1" 500 64976
+[{'name': 'Consolidated Laws'}, {'name': 'Complete Laws'}, {'name': 'Company Law'}]
+[18/Mar/2024 13:50:04] "POST /getCollectionList HTTP/1.1" 200 110
+/home/rarciola/Cognitista/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Together`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Bedrock`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/chat_models/__init__.py:31: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+System check identified no issues (0 silenced).
+March 18, 2024 - 13:50:13
+Django version 4.2.7, using settings 'cognitista.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+[18/Mar/2024 13:50:14] "GET /chatbot HTTP/1.1" 200 18175
+[18/Mar/2024 13:50:20] "GET /accounts/signout/ HTTP/1.1" 302 0
+[18/Mar/2024 13:50:20] "GET /accounts/signin/ HTTP/1.1" 200 3805
+[18/Mar/2024 13:50:22] "POST /accounts/signin/ HTTP/1.1" 302 0
+[18/Mar/2024 13:50:23] "GET / HTTP/1.1" 200 17789
+[18/Mar/2024 13:50:23] "GET /static/svg/cube.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:50:23] "GET /static/svg/share.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:50:25] "GET /permission HTTP/1.1" 200 25560
+[18/Mar/2024 13:50:26] "GET /static/svg/download.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:50:26] "GET /static/svg/like.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:50:26] "GET /static/js/prompt.js HTTP/1.1" 304 0
+[18/Mar/2024 13:50:26] "GET /static/svg/like-full.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:50:26] "GET /static/img/gallery/main.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:50:26] "GET /static/img/related/1.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:50:26] "GET /static/img/related/3.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:50:26] "GET /static/img/related/2.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:50:26] "GET /static/img/related/4.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:50:26] "GET /static/img/related/5.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:50:26] "GET /static/img/related/7.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:50:26] "GET /static/img/related/6.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:50:26] "GET /static/img/related/11.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:50:26] "GET /static/img/related/8.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:50:26] "GET /static/img/related/10.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:50:26] "GET /static/img/related/9.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:50:26] "GET /static/img/related/12.jpg HTTP/1.1" 304 0
+{'Company Law Assistant': False, 'Company Law 2': False, 'Company Law 3': False, 'default': False, 'defaulttest': False, 'Gaming Test': False, 'Terms and Conditions Compliance': False, 'Terms and Conditions Compliance 2': False, 'Company Law New': False, 'JW': False}
+[18/Mar/2024 13:50:28] "POST /getpermissioninfo HTTP/1.1" 200 970
+anthropic.claude-3-sonnet-20240229-v1:0
+text-embedding-3-large
+/usr/local/lib/python3.8/dist-packages/langchain_core/_api/deprecation.py:117: LangChainDeprecationWarning: The function `__call__` was deprecated in LangChain 0.1.0 and will be removed in 0.2.0. Use invoke instead.
+  warn_deprecated(
+[18/Mar/2024 13:50:48] "POST /query HTTP/1.1" 200 1228
+anthropic.claude-3-sonnet-20240229-v1:0
+text-embedding-3-large
+[18/Mar/2024 13:51:30] "POST /query HTTP/1.1" 200 1353
+anthropic.claude-3-sonnet-20240229-v1:0
+text-embedding-3-large
+[18/Mar/2024 13:52:05] "POST /query HTTP/1.1" 200 1798
+/home/rarciola/Cognitista/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Together`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Bedrock`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/chat_models/__init__.py:31: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+System check identified no issues (0 silenced).
+March 18, 2024 - 13:52:33
+Django version 4.2.7, using settings 'cognitista.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+/home/rarciola/Cognitista/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Together`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Bedrock`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/chat_models/__init__.py:31: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+System check identified no issues (0 silenced).
+March 18, 2024 - 13:52:42
+Django version 4.2.7, using settings 'cognitista.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+[18/Mar/2024 13:52:59] "GET /permission HTTP/1.1" 200 25560
+[18/Mar/2024 13:53:01] "GET /chatbot HTTP/1.1" 200 36823
+[18/Mar/2024 13:53:05] "GET /prompt HTTP/1.1" 200 50492
+[18/Mar/2024 13:53:07] "GET /permission HTTP/1.1" 200 25560
+{'Company Law Assistant': True, 'Company Law 2': True, 'Company Law 3': True, 'default': True, 'defaulttest': True, 'Gaming Test': True, 'Terms and Conditions Compliance': True, 'Terms and Conditions Compliance 2': True, 'Company Law New': True, 'JW': True}
+[18/Mar/2024 13:53:09] "POST /getpermissioninfo HTTP/1.1" 200 939
+[18/Mar/2024 13:53:16] "GET /chatbot HTTP/1.1" 200 36823
+/home/rarciola/Cognitista/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Together`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Bedrock`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/chat_models/__init__.py:31: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+System check identified no issues (0 silenced).
+March 18, 2024 - 13:53:55
+Django version 4.2.7, using settings 'cognitista.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+anthropic.claude-3-sonnet-20240229-v1:0
+text-embedding-3-large
+Query =>  what license types does the mga offer<br /><br />
+Answer =>  According to the Gaming Authorisations Regulations [S.L.583.05], the Malta Gaming Authority (MGA) has the power to issue the following categories of licenses:
+
+"The Authority shall have the power to issue licences of the categories set forth in the First Schedule:
+
+Provided that where Government policy requires that certain gaming services may only be provided when in possession of a Government concession, the Authority shall not issue a licence for the carrying out of such gaming service unless the applicant is in possession of such concession."
+
+The First Schedule of the regulations defines the following license categories:
+
+Part A - Type 1 gaming services
+Part B - Type 2 gaming services 
+Part C - Type 3 gaming services
+Part D - Type 4 gaming services
+
+The regulations further define these types as follows:
+
+"Type 1 gaming services" means the games defined as such in the First Schedule to the Gaming Authorisations Regulations;
+
+"Type 2 gaming services" means games provided under a former Class 2 remote gaming license during the transitional period, and after that the games defined as such in the First Schedule; 
+
+"Type 3 gaming services" means games provided under a former Class 3 remote gaming license during the transition, and after that the games defined as such in the First Schedule;
+
+"Type 4 gaming services" means games provided under a former controlled skill games license during the transition, and after that the games defined as such in the First Schedule.
+
+So in summary, the MGA offers four main categories of gaming service licenses, with the specific games covered by each category defined in the First Schedule to the Gaming Authorisations Regulations.
+
+Source: Gaming Authorisations Regulations [S.L.583.05], Article 4
+/usr/local/lib/python3.8/dist-packages/langchain_core/_api/deprecation.py:117: LangChainDeprecationWarning: The function `__call__` was deprecated in LangChain 0.1.0 and will be removed in 0.2.0. Use invoke instead.
+  warn_deprecated(
+/home/rarciola/Cognitista/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Together`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Bedrock`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/chat_models/__init__.py:31: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+System check identified no issues (0 silenced).
+March 18, 2024 - 13:54:02
+Django version 4.2.7, using settings 'cognitista.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+[18/Mar/2024 13:54:02] "GET /chatbot HTTP/1.1" 200 37053
+[18/Mar/2024 13:54:09] "GET /chatbot HTTP/1.1" 200 37053
+[18/Mar/2024 13:54:09] "GET /static/css/plugins.css HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/css/style.css HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/svg/search.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/svg/close.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/js/jquery.js HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/svg/fullscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/js/plugins.js HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/svg/moon.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/svg/smallscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/svg/arrow.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/svg/billing.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/svg/image.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/svg/cube.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/img/user/user.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/svg/language.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/svg/sun.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/svg/logout.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/svg/chat.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/svg/person.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/svg/home.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/svg/setting.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/svg/share.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:09] "GET /static/svg/question.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:10] "GET /static/img/logo-retina-full.png HTTP/1.1" 304 0
+[18/Mar/2024 13:54:10] "GET /static/img/logo-desktop-full.png HTTP/1.1" 304 0
+[18/Mar/2024 13:54:10] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 13:54:10] "GET /static/img/logo-retina-mini.png HTTP/1.1" 304 0
+[{'name': 'company law'}, {'name': 'Vauluation'}, {'name': 'mesga'}, {'name': 'MGA Demo 1'}]
+[18/Mar/2024 13:54:11] "POST /getCollectionList HTTP/1.1" 200 119
+[{'name': 'Consolidated Laws'}, {'name': 'Complete Laws'}, {'name': 'Company Law'}]
+[18/Mar/2024 13:54:14] "POST /getCollectionList HTTP/1.1" 200 110
+[{'name': 'jw'}, {'name': 'test'}]
+[18/Mar/2024 13:54:15] "POST /getCollectionList HTTP/1.1" 200 61
+[18/Mar/2024 13:54:34] "GET /index HTTP/1.1" 200 66071
+[18/Mar/2024 13:54:34] "GET /static/svg/check.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:34] "GET /static/svg/trash.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:34] "GET /static/svg/option.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:34] "GET /static/img/models/1.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:36] "GET /chatbot HTTP/1.1" 200 37053
+[{'name': 'Consolidated Laws'}, {'name': 'Complete Laws'}, {'name': 'Company Law'}]
+[18/Mar/2024 13:54:39] "POST /getCollectionList HTTP/1.1" 200 110
+[18/Mar/2024 13:54:47] "GET /static/svg/search.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:47] "GET /static/svg/close.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:47] "GET /static/svg/smallscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:47] "GET /static/svg/fullscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:47] "GET /static/svg/sun.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:47] "GET /static/svg/language.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:47] "GET /static/svg/moon.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:47] "GET /static/svg/person.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:47] "GET /static/svg/logout.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:47] "GET /static/svg/setting.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:47] "GET /static/svg/arrow.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:47] "GET /static/svg/billing.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:47] "GET /static/svg/home.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:47] "GET /static/svg/chat.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:47] "GET /static/svg/enter.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:47] "GET /static/svg/question.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:54:48] "GET /accounts/signout/ HTTP/1.1" 302 0
+[18/Mar/2024 13:54:48] "GET /accounts/signin/ HTTP/1.1" 200 3805
+[18/Mar/2024 13:54:55] "GET /chatbot HTTP/1.1" 200 18175
+[18/Mar/2024 13:54:55] "GET /static/css/plugins.css HTTP/1.1" 200 19908
+[18/Mar/2024 13:54:55] "GET /static/svg/close.svg HTTP/1.1" 200 1266
+[18/Mar/2024 13:54:55] "GET /static/svg/search.svg HTTP/1.1" 200 1096
+[18/Mar/2024 13:54:55] "GET /static/svg/fullscreen.svg HTTP/1.1" 200 1223
+[18/Mar/2024 13:54:55] "GET /static/js/jquery.js HTTP/1.1" 200 89501
+[18/Mar/2024 13:54:55] "GET /static/svg/smallscreen.svg HTTP/1.1" 200 1283
+[18/Mar/2024 13:54:55] "GET /static/css/style.css HTTP/1.1" 200 185924
+[18/Mar/2024 13:54:55] "GET /static/js/plugins.js HTTP/1.1" 200 92951
+[18/Mar/2024 13:54:55] "GET /static/svg/language.svg HTTP/1.1" 200 1915
+[18/Mar/2024 13:54:55] "GET /static/svg/sun.svg HTTP/1.1" 200 2396
+[18/Mar/2024 13:54:55] "GET /static/svg/moon.svg HTTP/1.1" 200 1090
+[18/Mar/2024 13:54:55] "GET /static/svg/person.svg HTTP/1.1" 200 1114
+[18/Mar/2024 13:54:55] "GET /static/js/init.js HTTP/1.1" 200 77287
+[18/Mar/2024 13:54:55] "GET /static/img/user/user.jpg HTTP/1.1" 200 4355
+[18/Mar/2024 13:54:55] "GET /static/svg/logout.svg HTTP/1.1" 200 1410
+[18/Mar/2024 13:54:55] "GET /static/svg/enter.svg HTTP/1.1" 200 1025
+[18/Mar/2024 13:54:55] "GET /static/svg/arrow.svg HTTP/1.1" 200 779
+[18/Mar/2024 13:54:55] "GET /static/svg/chat.svg HTTP/1.1" 200 1998
+[18/Mar/2024 13:54:55] "GET /static/svg/billing.svg HTTP/1.1" 200 2242
+[18/Mar/2024 13:54:56] "GET /static/svg/setting.svg HTTP/1.1" 200 2439
+[18/Mar/2024 13:54:56] "GET /static/svg/question.svg HTTP/1.1" 200 1617
+[18/Mar/2024 13:54:56] "GET /static/svg/home.svg HTTP/1.1" 200 1341
+[18/Mar/2024 13:54:56] "GET /static/img/logo-retina-full.png HTTP/1.1" 200 11542
+[18/Mar/2024 13:54:56] "GET /static/img/logo-desktop-full.png HTTP/1.1" 200 11542
+[18/Mar/2024 13:54:56] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 200 1079
+[18/Mar/2024 13:54:56] "GET /static/img/logo-retina-mini.png HTTP/1.1" 200 1197
+[18/Mar/2024 13:54:56] "GET /static/svg/search.svg HTTP/1.1" 200 1096
+[18/Mar/2024 13:54:56] "GET /static/svg/close.svg HTTP/1.1" 200 1266
+[18/Mar/2024 13:54:56] "GET /static/svg/search.svg HTTP/1.1" 200 1096
+[18/Mar/2024 13:54:56] "GET /static/svg/close.svg HTTP/1.1" 200 1266
+[18/Mar/2024 13:54:56] "GET /static/svg/fullscreen.svg HTTP/1.1" 200 1223
+[18/Mar/2024 13:54:56] "GET /static/svg/smallscreen.svg HTTP/1.1" 200 1283
+[18/Mar/2024 13:54:56] "GET /static/svg/person.svg HTTP/1.1" 200 1114
+[18/Mar/2024 13:54:56] "GET /static/svg/moon.svg HTTP/1.1" 200 1090
+[18/Mar/2024 13:54:56] "GET /static/svg/sun.svg HTTP/1.1" 200 2396
+[18/Mar/2024 13:54:56] "GET /static/svg/setting.svg HTTP/1.1" 200 2439
+[18/Mar/2024 13:54:56] "GET /static/svg/language.svg HTTP/1.1" 200 1915
+[18/Mar/2024 13:54:56] "GET /static/svg/billing.svg HTTP/1.1" 200 2242
+[18/Mar/2024 13:54:56] "GET /static/svg/arrow.svg HTTP/1.1" 200 779
+[18/Mar/2024 13:54:56] "GET /static/svg/logout.svg HTTP/1.1" 200 1410
+[18/Mar/2024 13:54:56] "GET /static/svg/home.svg HTTP/1.1" 200 1341
+[18/Mar/2024 13:54:56] "GET /static/svg/chat.svg HTTP/1.1" 200 1998
+[18/Mar/2024 13:54:56] "GET /static/svg/arrow.svg HTTP/1.1" 200 779
+[18/Mar/2024 13:54:56] "GET /static/svg/question.svg HTTP/1.1" 200 1617
+[18/Mar/2024 13:54:56] "GET /static/svg/arrow.svg HTTP/1.1" 200 779
+[18/Mar/2024 13:54:56] "GET /static/svg/enter.svg HTTP/1.1" 200 1025
+[18/Mar/2024 13:54:56] "GET /static/svg/logout.svg HTTP/1.1" 200 1410
+[18/Mar/2024 13:54:56] "POST /accounts/signin/ HTTP/1.1" 302 0
+[18/Mar/2024 13:54:56] "GET / HTTP/1.1" 200 16266
+[18/Mar/2024 13:54:59] "GET / HTTP/1.1" 200 16266
+[18/Mar/2024 13:54:59] "GET /static/svg/image.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:55:01] "GET /chatbot HTTP/1.1" 200 18175
+[18/Mar/2024 13:55:01] "GET /chatbot HTTP/1.1" 200 18175
+[18/Mar/2024 13:55:06] "GET / HTTP/1.1" 200 16266
+[18/Mar/2024 13:55:08] "GET /accounts/signout/ HTTP/1.1" 302 0
+[18/Mar/2024 13:55:08] "GET /accounts/signin/ HTTP/1.1" 200 3805
+[18/Mar/2024 13:55:08] "GET /permission HTTP/1.1" 200 25560
+[18/Mar/2024 13:55:08] "GET /static/svg/like-full.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:55:08] "GET /static/svg/like.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:55:08] "GET /static/svg/download.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:55:08] "GET /static/img/gallery/main.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:55:08] "GET /static/js/prompt.js HTTP/1.1" 304 0
+[18/Mar/2024 13:55:08] "GET /static/img/related/1.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:55:09] "GET /static/img/related/2.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:55:09] "GET /static/img/related/4.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:55:09] "GET /static/img/related/3.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:55:09] "GET /static/img/related/5.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:55:09] "GET /static/img/related/7.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:55:09] "GET /static/img/related/6.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:55:09] "GET /static/img/related/10.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:55:09] "GET /static/img/related/8.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:55:09] "GET /static/img/related/12.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:55:09] "GET /static/img/related/9.jpg HTTP/1.1" 304 0
+[18/Mar/2024 13:55:09] "GET /static/img/related/11.jpg HTTP/1.1" 304 0
+{'Company Law Assistant': False, 'Company Law 2': False, 'Company Law 3': False, 'default': False, 'defaulttest': False, 'Gaming Test': False, 'Terms and Conditions Compliance': False, 'Terms and Conditions Compliance 2': False, 'Company Law New': False, 'JW': False}
+[18/Mar/2024 13:55:12] "POST /getpermissioninfo HTTP/1.1" 200 970
+[18/Mar/2024 13:55:12] "POST /accounts/signin/ HTTP/1.1" 302 0
+[18/Mar/2024 13:55:12] "GET / HTTP/1.1" 200 17789
+[18/Mar/2024 13:55:14] "GET /chatbot HTTP/1.1" 200 37053
+[18/Mar/2024 13:55:16] "POST /setllmpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:55:19] "GET /permission HTTP/1.1" 200 25560
+{'Company Law Assistant': True, 'Company Law 2': True, 'Company Law 3': True, 'default': True, 'defaulttest': True, 'Gaming Test': True, 'Terms and Conditions Compliance': True, 'Terms and Conditions Compliance 2': True, 'Company Law New': True, 'JW': True}
+[18/Mar/2024 13:55:21] "POST /getpermissioninfo HTTP/1.1" 200 939
+[18/Mar/2024 13:55:23] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:55:23] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:55:23] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:55:26] "GET / HTTP/1.1" 200 17789
+[18/Mar/2024 13:55:28] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:55:30] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 13:55:33] "GET /chatbot HTTP/1.1" 200 18333
+[18/Mar/2024 13:55:33] "GET /static/svg/search.svg HTTP/1.1" 200 1096
+[18/Mar/2024 13:55:33] "GET /static/svg/close.svg HTTP/1.1" 200 1266
+[18/Mar/2024 13:55:33] "GET /static/svg/fullscreen.svg HTTP/1.1" 200 1223
+[18/Mar/2024 13:55:33] "GET /static/js/jquery.js HTTP/1.1" 200 89501
+[18/Mar/2024 13:55:33] "GET /static/css/plugins.css HTTP/1.1" 200 19908
+[18/Mar/2024 13:55:34] "GET /static/svg/smallscreen.svg HTTP/1.1" 200 1283
+[18/Mar/2024 13:55:34] "GET /static/js/init.js HTTP/1.1" 200 77287
+[18/Mar/2024 13:55:34] "GET /static/svg/language.svg HTTP/1.1" 200 1915
+[18/Mar/2024 13:55:34] "GET /static/css/style.css HTTP/1.1" 200 185924
+[18/Mar/2024 13:55:34] "GET /static/svg/sun.svg HTTP/1.1" 200 2396
+[18/Mar/2024 13:55:34] "GET /static/svg/moon.svg HTTP/1.1" 200 1090
+[18/Mar/2024 13:55:34] "GET /static/img/user/user.jpg HTTP/1.1" 200 4355
+[18/Mar/2024 13:55:34] "GET /static/svg/person.svg HTTP/1.1" 200 1114
+[18/Mar/2024 13:55:34] "GET /static/svg/billing.svg HTTP/1.1" 200 2242
+[18/Mar/2024 13:55:34] "GET /static/svg/setting.svg HTTP/1.1" 200 2439
+[18/Mar/2024 13:55:34] "GET /static/svg/question.svg HTTP/1.1" 200 1617
+[18/Mar/2024 13:55:34] "GET /static/svg/logout.svg HTTP/1.1" 200 1410
+[18/Mar/2024 13:55:34] "GET /static/svg/arrow.svg HTTP/1.1" 200 779
+[18/Mar/2024 13:55:34] "GET /static/svg/chat.svg HTTP/1.1" 200 1998
+[18/Mar/2024 13:55:34] "GET /static/svg/home.svg HTTP/1.1" 200 1341
+[18/Mar/2024 13:55:34] "GET /static/js/plugins.js HTTP/1.1" 200 92951
+[18/Mar/2024 13:55:34] "GET /static/img/logo-retina-full.png HTTP/1.1" 200 11542
+[18/Mar/2024 13:55:34] "GET /static/svg/enter.svg HTTP/1.1" 200 1025
+[18/Mar/2024 13:55:34] "GET /static/img/logo-desktop-full.png HTTP/1.1" 200 11542
+[18/Mar/2024 13:55:34] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 200 1079
+[18/Mar/2024 13:55:34] "GET /static/img/logo-retina-mini.png HTTP/1.1" 200 1197
+[18/Mar/2024 13:55:37] "GET /chatbot HTTP/1.1" 200 18333
+[{'name': 'Complete Laws'}]
+[18/Mar/2024 13:55:43] "POST /getCollectionList HTTP/1.1" 200 54
+[18/Mar/2024 13:59:13] "GET /chatbot HTTP/1.1" 200 37053
+[18/Mar/2024 13:59:14] "GET /static/svg/close.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:59:14] "GET /static/svg/search.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:59:14] "GET /static/svg/fullscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:59:14] "GET /static/svg/smallscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:59:14] "GET /static/svg/moon.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:59:14] "GET /static/svg/person.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:59:14] "GET /static/svg/billing.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:59:14] "GET /static/svg/logout.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:59:14] "GET /static/svg/setting.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:59:14] "GET /static/svg/arrow.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:59:14] "GET /static/svg/home.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:59:14] "GET /static/svg/chat.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:59:14] "GET /static/svg/question.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:59:14] "GET /static/svg/image.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:59:14] "GET /static/svg/enter.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:59:14] "GET /static/svg/language.svg HTTP/1.1" 304 0
+[18/Mar/2024 13:59:14] "GET /static/svg/sun.svg HTTP/1.1" 304 0
+Not Found: /user-settings.html
+[18/Mar/2024 14:03:27] "GET /user-settings.html HTTP/1.1" 404 7701
+/home/rarciola/Cognitista/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Together`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Bedrock`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/chat_models/__init__.py:31: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+System check identified no issues (0 silenced).
+March 18, 2024 - 14:07:25
+Django version 4.2.7, using settings 'cognitista.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+Internal Server Error: /chatbot
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+  File "/home/rarciola/Cognitista/main/views.py", line 96, in chatbot
+    return render(request, 'ai-chat-bot.html', data)
+  File "/usr/local/lib/python3.8/dist-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/usr/local/lib/python3.8/dist-packages/django/template/base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 486: 'if'. Looking for one of: elif, else, endif.
+[18/Mar/2024 14:08:16] "GET /chatbot HTTP/1.1" 500 200828
+[18/Mar/2024 14:09:50] "GET /chatbot HTTP/1.1" 200 37373
+[18/Mar/2024 14:09:50] "GET /static/css/plugins.css HTTP/1.1" 304 0
+[18/Mar/2024 14:09:50] "GET /static/css/style.css HTTP/1.1" 304 0
+[18/Mar/2024 14:09:50] "GET /static/svg/search.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:50] "GET /static/svg/close.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:50] "GET /static/svg/language.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:50] "GET /static/svg/smallscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:50] "GET /static/js/jquery.js HTTP/1.1" 304 0
+[18/Mar/2024 14:09:50] "GET /static/svg/fullscreen.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:50] "GET /static/js/plugins.js HTTP/1.1" 304 0
+[18/Mar/2024 14:09:50] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 14:09:51] "GET /static/svg/image.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:51] "GET /static/svg/enter.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:51] "GET /static/svg/share.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:51] "GET /static/svg/question.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:51] "GET /static/svg/cube.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:51] "GET /static/svg/sun.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:51] "GET /static/svg/billing.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:51] "GET /static/svg/setting.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:51] "GET /static/svg/moon.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:51] "GET /static/svg/arrow.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:51] "GET /static/svg/logout.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:51] "GET /static/svg/person.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:51] "GET /static/svg/home.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:51] "GET /static/svg/chat.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:51] "GET /static/img/user/user.jpg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:51] "GET /static/img/logo-retina-full.png HTTP/1.1" 304 0
+[18/Mar/2024 14:09:51] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 14:09:51] "GET /static/img/logo-desktop-full.png HTTP/1.1" 304 0
+[18/Mar/2024 14:09:51] "GET /static/img/logo-retina-mini.png HTTP/1.1" 304 0
+[18/Mar/2024 14:09:53] "GET /permission HTTP/1.1" 200 25560
+[18/Mar/2024 14:09:53] "GET /static/svg/download.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:53] "GET /static/svg/like-full.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:53] "GET /static/svg/like.svg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:53] "GET /static/js/prompt.js HTTP/1.1" 304 0
+[18/Mar/2024 14:09:53] "GET /static/img/related/1.jpg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:53] "GET /static/img/gallery/main.jpg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:53] "GET /static/img/related/4.jpg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:53] "GET /static/img/related/6.jpg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:53] "GET /static/img/related/3.jpg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:53] "GET /static/img/related/2.jpg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:53] "GET /static/img/related/7.jpg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:53] "GET /static/img/related/5.jpg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:53] "GET /static/img/related/8.jpg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:53] "GET /static/img/related/9.jpg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:53] "GET /static/img/related/12.jpg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:53] "GET /static/img/related/10.jpg HTTP/1.1" 304 0
+[18/Mar/2024 14:09:53] "GET /static/img/related/11.jpg HTTP/1.1" 304 0
+{'Company Law Assistant': True, 'Company Law 2': True, 'Company Law 3': True, 'default': True, 'defaulttest': True, 'Gaming Test': True, 'Terms and Conditions Compliance': True, 'Terms and Conditions Compliance 2': True, 'Company Law New': True, 'JW': True}
+[18/Mar/2024 14:09:56] "POST /getpermissioninfo HTTP/1.1" 200 939
+[18/Mar/2024 14:10:07] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:10:07] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:10:07] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:10:08] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:10:08] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:10:10] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:10:10] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:10:10] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:10:10] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:10:11] "GET / HTTP/1.1" 200 17789
+[18/Mar/2024 14:10:13] "GET /chatbot HTTP/1.1" 200 36753
+[18/Mar/2024 14:10:26] "GET /chatbot HTTP/1.1" 200 36844
+[18/Mar/2024 14:10:30] "GET /permission HTTP/1.1" 200 25560
+{'Company Law Assistant': True, 'Company Law 2': True, 'Company Law 3': True, 'default': True, 'defaulttest': True, 'Gaming Test': True, 'Terms and Conditions Compliance': True, 'Terms and Conditions Compliance 2': True, 'Company Law New': True, 'JW': True}
+[18/Mar/2024 14:10:32] "POST /getpermissioninfo HTTP/1.1" 200 951
+[18/Mar/2024 14:10:35] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:10:35] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:10:35] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:10:35] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:10:37] "GET /chatbot HTTP/1.1" 200 36963
+/home/rarciola/Cognitista/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/commands/runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/management/base.py", line 485, in check
+    all_issues = checks.run_checks(
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 14, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/checks/urls.py", line 24, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 494, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rarciola/Cognitista/cognitista/urls.py", line 20, in <module>
+    path('', include('main.urls')),
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rarciola/Cognitista/main/urls.py", line 5, in <module>
+    from . import views
+  File "/home/rarciola/Cognitista/main/views.py", line 384
+    data = {"success": "ok", "data": collection_lists, "show_collection_select"}
+                                                                               ^
+SyntaxError: invalid syntax
+/home/rarciola/Cognitista/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Together`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Bedrock`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/chat_models/__init__.py:31: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+System check identified no issues (0 silenced).
+March 18, 2024 - 14:12:04
+Django version 4.2.7, using settings 'cognitista.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+/home/rarciola/Cognitista/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Together`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Bedrock`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/chat_models/__init__.py:31: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+System check identified no issues (0 silenced).
+March 18, 2024 - 14:12:07
+Django version 4.2.7, using settings 'cognitista.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+[18/Mar/2024 14:14:50] "GET /chatbot HTTP/1.1" 200 36963
+[18/Mar/2024 14:14:58] "GET /chatbot HTTP/1.1" 200 36963
+[18/Mar/2024 14:14:58] "GET /static/css/plugins.css HTTP/1.1" 200 19908
+[18/Mar/2024 14:14:58] "GET /static/svg/close.svg HTTP/1.1" 200 1266
+[18/Mar/2024 14:14:58] "GET /static/svg/search.svg HTTP/1.1" 200 1096
+[18/Mar/2024 14:14:58] "GET /static/svg/fullscreen.svg HTTP/1.1" 200 1223
+[18/Mar/2024 14:14:58] "GET /static/svg/smallscreen.svg HTTP/1.1" 200 1283
+[18/Mar/2024 14:14:58] "GET /static/css/style.css HTTP/1.1" 200 185924
+[18/Mar/2024 14:14:58] "GET /static/js/jquery.js HTTP/1.1" 200 89501
+[18/Mar/2024 14:14:58] "GET /static/js/plugins.js HTTP/1.1" 200 92951
+[18/Mar/2024 14:14:58] "GET /static/svg/language.svg HTTP/1.1" 200 1915
+[18/Mar/2024 14:14:58] "GET /static/js/init.js HTTP/1.1" 200 77554
+[18/Mar/2024 14:14:58] "GET /static/svg/sun.svg HTTP/1.1" 200 2396
+[18/Mar/2024 14:14:58] "GET /static/svg/moon.svg HTTP/1.1" 200 1090
+[18/Mar/2024 14:14:58] "GET /static/img/user/user.jpg HTTP/1.1" 200 4355
+[18/Mar/2024 14:14:58] "GET /static/svg/person.svg HTTP/1.1" 200 1114
+[18/Mar/2024 14:14:58] "GET /static/svg/setting.svg HTTP/1.1" 200 2439
+[18/Mar/2024 14:14:58] "GET /static/svg/enter.svg HTTP/1.1" 200 1025
+[18/Mar/2024 14:14:58] "GET /static/svg/question.svg HTTP/1.1" 200 1617
+[18/Mar/2024 14:14:58] "GET /static/svg/cube.svg HTTP/1.1" 200 1608
+[18/Mar/2024 14:14:58] "GET /static/svg/image.svg HTTP/1.1" 200 1916
+[18/Mar/2024 14:14:58] "GET /static/svg/share.svg HTTP/1.1" 200 1564
+[18/Mar/2024 14:14:58] "GET /static/svg/logout.svg HTTP/1.1" 200 1410
+[18/Mar/2024 14:14:58] "GET /static/svg/billing.svg HTTP/1.1" 200 2242
+[18/Mar/2024 14:14:58] "GET /static/svg/arrow.svg HTTP/1.1" 200 779
+[18/Mar/2024 14:14:58] "GET /static/svg/home.svg HTTP/1.1" 200 1341
+[18/Mar/2024 14:14:58] "GET /static/svg/chat.svg HTTP/1.1" 200 1998
+[18/Mar/2024 14:14:58] "GET /static/img/logo-desktop-full.png HTTP/1.1" 200 11542
+[18/Mar/2024 14:14:58] "GET /static/img/logo-retina-full.png HTTP/1.1" 200 11542
+[18/Mar/2024 14:14:58] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 200 1079
+[18/Mar/2024 14:14:58] "GET /static/img/logo-retina-mini.png HTTP/1.1" 200 1197
+[18/Mar/2024 14:15:00] "GET /permission HTTP/1.1" 200 25560
+[18/Mar/2024 14:15:00] "GET /static/svg/like-full.svg HTTP/1.1" 200 1015
+[18/Mar/2024 14:15:00] "GET /static/svg/like.svg HTTP/1.1" 200 1382
+[18/Mar/2024 14:15:00] "GET /static/svg/download.svg HTTP/1.1" 200 1297
+[18/Mar/2024 14:15:00] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 14:15:00] "GET /static/img/gallery/main.jpg HTTP/1.1" 200 10496
+[18/Mar/2024 14:15:00] "GET /static/js/prompt.js HTTP/1.1" 200 8180
+[18/Mar/2024 14:15:00] "GET /static/img/related/1.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 14:15:00] "GET /static/img/related/2.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 14:15:00] "GET /static/img/related/4.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 14:15:00] "GET /static/img/related/3.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 14:15:00] "GET /static/img/related/5.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 14:15:00] "GET /static/img/related/6.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 14:15:00] "GET /static/img/related/7.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 14:15:00] "GET /static/img/related/8.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 14:15:00] "GET /static/img/related/10.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 14:15:00] "GET /static/img/related/9.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 14:15:00] "GET /static/img/related/11.jpg HTTP/1.1" 200 7924
+[18/Mar/2024 14:15:00] "GET /static/img/related/12.jpg HTTP/1.1" 200 7924
+{'Company Law Assistant': True, 'Company Law 2': True, 'Company Law 3': True, 'default': True, 'defaulttest': True, 'Gaming Test': True, 'Terms and Conditions Compliance': True, 'Terms and Conditions Compliance 2': True, 'Company Law New': True, 'JW': True}
+[18/Mar/2024 14:15:02] "POST /getpermissioninfo HTTP/1.1" 200 946
+[18/Mar/2024 14:15:05] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:15:06] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:15:07] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:15:07] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:15:08] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:15:09] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:15:10] "GET / HTTP/1.1" 200 17789
+[18/Mar/2024 14:15:10] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 14:15:11] "GET /chatbot HTTP/1.1" 200 36844
+[18/Mar/2024 14:15:15] "GET /index HTTP/1.1" 200 66071
+[18/Mar/2024 14:15:15] "GET /static/svg/check.svg HTTP/1.1" 200 834
+[18/Mar/2024 14:15:15] "GET /static/svg/option.svg HTTP/1.1" 200 2184
+[18/Mar/2024 14:15:15] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 14:15:15] "GET /static/svg/trash.svg HTTP/1.1" 200 2138
+[18/Mar/2024 14:15:15] "GET /static/img/models/1.jpg HTTP/1.1" 200 32120
+[18/Mar/2024 14:15:18] "GET /permission HTTP/1.1" 200 25560
+[18/Mar/2024 14:15:18] "GET /static/js/init.js HTTP/1.1" 304 0
+{'Company Law Assistant': True, 'Company Law 2': True, 'Company Law 3': True, 'default': True, 'defaulttest': True, 'Gaming Test': True, 'Terms and Conditions Compliance': True, 'Terms and Conditions Compliance 2': True, 'Company Law New': True, 'JW': True}
+[18/Mar/2024 14:15:20] "POST /getpermissioninfo HTTP/1.1" 200 951
+[18/Mar/2024 14:15:22] "GET /accounts/signout/ HTTP/1.1" 302 0
+[18/Mar/2024 14:15:22] "GET /accounts/signin/ HTTP/1.1" 200 3805
+[18/Mar/2024 14:15:22] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 14:15:25] "POST /accounts/signin/ HTTP/1.1" 302 0
+[18/Mar/2024 14:15:26] "GET / HTTP/1.1" 200 17789
+[18/Mar/2024 14:15:28] "GET /permission HTTP/1.1" 200 25560
+[18/Mar/2024 14:15:28] "GET /static/js/init.js HTTP/1.1" 304 0
+{'Company Law Assistant': True, 'Company Law 2': True, 'Company Law 3': True, 'default': True, 'defaulttest': True, 'Gaming Test': True, 'Terms and Conditions Compliance': True, 'Terms and Conditions Compliance 2': True, 'Company Law New': True, 'JW': True}
+[18/Mar/2024 14:15:29] "POST /getpermissioninfo HTTP/1.1" 200 951
+[18/Mar/2024 14:15:31] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:15:31] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:15:31] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:15:31] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:15:32] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:15:33] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:15:33] "POST /setcollectionpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:15:36] "GET /permission HTTP/1.1" 200 25560
+[18/Mar/2024 14:15:36] "GET /static/js/init.js HTTP/1.1" 304 0
+{'Company Law Assistant': True, 'Company Law 2': True, 'Company Law 3': True, 'default': True, 'defaulttest': True, 'Gaming Test': True, 'Terms and Conditions Compliance': True, 'Terms and Conditions Compliance 2': True, 'Company Law New': True, 'JW': True}
+[18/Mar/2024 14:15:38] "POST /getpermissioninfo HTTP/1.1" 200 949
+[18/Mar/2024 14:15:41] "GET /chatbot HTTP/1.1" 200 36963
+[18/Mar/2024 14:15:41] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 14:15:43] "POST /getCollectionList HTTP/1.1" 200 151
+[18/Mar/2024 14:15:46] "POST /getCollectionList HTTP/1.1" 200 85
+[18/Mar/2024 14:15:48] "GET /permission HTTP/1.1" 200 25560
+[18/Mar/2024 14:15:49] "GET /static/js/init.js HTTP/1.1" 304 0
+{'Company Law Assistant': True, 'Company Law 2': True, 'Company Law 3': True, 'default': True, 'defaulttest': True, 'Gaming Test': True, 'Terms and Conditions Compliance': True, 'Terms and Conditions Compliance 2': True, 'Company Law New': True, 'JW': True}
+[18/Mar/2024 14:15:51] "POST /getpermissioninfo HTTP/1.1" 200 949
+[18/Mar/2024 14:15:59] "GET / HTTP/1.1" 200 17789
+[18/Mar/2024 14:16:00] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 14:16:00] "GET /chatbot HTTP/1.1" 200 36963
+[18/Mar/2024 14:16:07] "GET /permission HTTP/1.1" 200 25560
+[18/Mar/2024 14:16:07] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 14:16:08] "GET / HTTP/1.1" 200 17789
+[18/Mar/2024 14:16:12] "GET /permission HTTP/1.1" 200 25560
+{'Company Law Assistant': True, 'Company Law 2': True, 'Company Law 3': True, 'default': True, 'defaulttest': True, 'Gaming Test': True, 'Terms and Conditions Compliance': True, 'Terms and Conditions Compliance 2': True, 'Company Law New': True, 'JW': True}
+[18/Mar/2024 14:16:14] "POST /getpermissioninfo HTTP/1.1" 200 949
+[18/Mar/2024 14:16:16] "POST /setpromptpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:16:17] "GET /chatbot HTTP/1.1" 200 35402
+[18/Mar/2024 14:16:17] "GET /static/js/init.js HTTP/1.1" 304 0
+/home/rarciola/Cognitista/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Together`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Bedrock`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/chat_models/__init__.py:31: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+System check identified no issues (0 silenced).
+March 18, 2024 - 14:17:29
+Django version 4.2.7, using settings 'cognitista.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+/home/rarciola/Cognitista/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Together`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Bedrock`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/chat_models/__init__.py:31: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+System check identified no issues (0 silenced).
+March 18, 2024 - 14:17:52
+Django version 4.2.7, using settings 'cognitista.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+/home/rarciola/Cognitista/main/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Together`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/llms/__init__.py:548: LangChainDeprecationWarning: Importing LLMs from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.llms import Bedrock`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/langchain/chat_models/__init__.py:31: LangChainDeprecationWarning: Importing chat models from langchain is deprecated. Importing from langchain will no longer be supported as of langchain==0.2.0. Please import from langchain-community instead:
+
+`from langchain_community.chat_models import ChatOpenAI`.
+
+To install langchain-community run `pip install -U langchain-community`.
+  warnings.warn(
+System check identified no issues (0 silenced).
+March 18, 2024 - 14:17:55
+Django version 4.2.7, using settings 'cognitista.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+
+[18/Mar/2024 14:19:09] "GET /chatbot HTTP/1.1" 200 35426
+[18/Mar/2024 14:19:09] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 14:19:10] "GET /permission HTTP/1.1" 200 25560
+{'Company Law Assistant': False, 'Company Law 2': True, 'Company Law 3': True, 'default': True, 'defaulttest': True, 'Gaming Test': True, 'Terms and Conditions Compliance': True, 'Terms and Conditions Compliance 2': True, 'Company Law New': True, 'JW': True}
+[18/Mar/2024 14:19:13] "POST /getpermissioninfo HTTP/1.1" 200 950
+[18/Mar/2024 14:19:14] "POST /setpromptpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:19:15] "POST /setpromptpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:19:15] "POST /setpromptpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:19:16] "POST /setpromptpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:19:17] "POST /setpromptpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:19:17] "POST /setpromptpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:19:18] "POST /setpromptpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:19:19] "POST /setpromptpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:19:20] "GET /permission HTTP/1.1" 200 25560
+{'Company Law Assistant': False, 'Company Law 2': False, 'Company Law 3': False, 'default': False, 'defaulttest': False, 'Gaming Test': False, 'Terms and Conditions Compliance': True, 'Terms and Conditions Compliance 2': False, 'Company Law New': False, 'JW': False}
+[18/Mar/2024 14:19:22] "POST /getpermissioninfo HTTP/1.1" 200 958
+[18/Mar/2024 14:19:24] "GET /chatbot HTTP/1.1" 200 20226
+[18/Mar/2024 14:19:59] "GET /chatbot HTTP/1.1" 200 22971
+[18/Mar/2024 14:19:59] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 14:20:02] "GET /permission HTTP/1.1" 200 25560
+{'Company Law Assistant': False, 'Company Law 2': False, 'Company Law 3': False, 'default': False, 'defaulttest': False, 'Gaming Test': False, 'Terms and Conditions Compliance': True, 'Terms and Conditions Compliance 2': False, 'Company Law New': False, 'JW': False}
+[18/Mar/2024 14:20:05] "POST /getpermissioninfo HTTP/1.1" 200 958
+[18/Mar/2024 14:20:07] "GET / HTTP/1.1" 200 17789
+[18/Mar/2024 14:20:09] "GET /index HTTP/1.1" 200 66071
+[18/Mar/2024 14:20:11] "GET /permission HTTP/1.1" 200 25560
+{'Company Law Assistant': False, 'Company Law 2': False, 'Company Law 3': False, 'default': False, 'defaulttest': False, 'Gaming Test': False, 'Terms and Conditions Compliance': True, 'Terms and Conditions Compliance 2': False, 'Company Law New': False, 'JW': False}
+[18/Mar/2024 14:20:14] "POST /getpermissioninfo HTTP/1.1" 200 958
+[18/Mar/2024 14:20:52] "GET /prompt HTTP/1.1" 200 50492
+[18/Mar/2024 14:20:52] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 14:20:53] "GET /permission HTTP/1.1" 200 25560
+{'Company Law Assistant': False, 'Company Law 2': False, 'Company Law 3': False, 'default': False, 'defaulttest': False, 'Gaming Test': False, 'Terms and Conditions Compliance': True, 'Terms and Conditions Compliance 2': False, 'Company Law New': False, 'JW': False}
+[18/Mar/2024 14:20:56] "POST /getpermissioninfo HTTP/1.1" 200 958
+[18/Mar/2024 14:21:15] "GET /chatbot HTTP/1.1" 200 22971
+[18/Mar/2024 14:22:09] "GET /chatbot HTTP/1.1" 200 22991
+[18/Mar/2024 14:22:09] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 14:22:11] "GET /accounts/signout/ HTTP/1.1" 302 0
+[18/Mar/2024 14:22:11] "GET /accounts/signin/ HTTP/1.1" 200 3805
+[18/Mar/2024 14:22:14] "POST /accounts/signin/ HTTP/1.1" 302 0
+[18/Mar/2024 14:22:15] "GET / HTTP/1.1" 200 16266
+[18/Mar/2024 14:22:16] "GET /chatbot HTTP/1.1" 200 17645
+[18/Mar/2024 14:22:25] "GET /accounts/signout/ HTTP/1.1" 302 0
+[18/Mar/2024 14:22:25] "GET /accounts/signin/ HTTP/1.1" 200 3805
+[18/Mar/2024 14:22:31] "POST /accounts/signin/ HTTP/1.1" 302 0
+[18/Mar/2024 14:22:31] "GET / HTTP/1.1" 200 17789
+[18/Mar/2024 14:22:34] "GET /chatbot HTTP/1.1" 200 22991
+[18/Mar/2024 14:22:38] "GET /permission HTTP/1.1" 200 25560
+{'Company Law Assistant': False, 'Company Law 2': False, 'Company Law 3': False, 'default': False, 'defaulttest': False, 'Gaming Test': False, 'Terms and Conditions Compliance': False, 'Terms and Conditions Compliance 2': False, 'Company Law New': False, 'JW': False}
+[18/Mar/2024 14:22:42] "POST /getpermissioninfo HTTP/1.1" 200 970
+[18/Mar/2024 14:22:49] "POST /setpromptpermission HTTP/1.1" 200 17
+[18/Mar/2024 14:22:51] "GET /accounts/signout/ HTTP/1.1" 302 0
+[18/Mar/2024 14:22:51] "GET /accounts/signin/ HTTP/1.1" 200 3805
+[18/Mar/2024 14:22:54] "POST /accounts/signin/ HTTP/1.1" 302 0
+[18/Mar/2024 14:22:54] "GET / HTTP/1.1" 200 16266
+[18/Mar/2024 14:22:55] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 14:22:56] "GET /chatbot HTTP/1.1" 200 19215
+[18/Mar/2024 14:25:50] "GET /chatbot HTTP/1.1" 200 19215
+[18/Mar/2024 14:25:51] "GET /static/js/init.js HTTP/1.1" 304 0
+[18/Mar/2024 14:25:55] "GET /chatbot HTTP/1.1" 200 19213
+[18/Mar/2024 14:26:02] "GET /chatbot HTTP/1.1" 200 19211
+[18/Mar/2024 14:26:07] "GET /chatbot HTTP/1.1" 200 19211
+[18/Mar/2024 14:26:16] "GET /chatbot HTTP/1.1" 200 19213
+[18/Mar/2024 14:26:30] "GET /chatbot HTTP/1.1" 200 19213
+[18/Mar/2024 14:26:38] "GET /chatbot HTTP/1.1" 200 19213
+[18/Mar/2024 14:26:46] "GET /chatbot HTTP/1.1" 200 19213

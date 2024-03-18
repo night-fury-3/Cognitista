@@ -69,11 +69,21 @@ def chatbot(request):
             content = promptmodel.objects.get(title=title).prompt
             prompt_list.append({"title": title, "content": content})
     
+    show_prompt_select = False
+    if len(prompt_list) > 1:
+        show_prompt_select = True
+
     index_list = []
     index_data = indexmodel.objects.all()
 
     for index in index_data:
-        index_list.append(index.index_name)
+        count = indexpermissionmodel.objects.filter(index_name=index.index_name, status=True, email=email).count()
+        if count > 0:
+            index_list.append(index.index_name)
+
+    show_index_select = False
+    if len(index_list) > 1:
+        show_index_select = True
 
     model_list = []
     
@@ -85,7 +95,7 @@ def chatbot(request):
         
         model_list.append({"llm": key, "value": value})
     data = {
-        'prompt_list': prompt_list, 'index_list': index_list, 'name': name, 'email': email, 'model_list': model_list, 'is_admin': check_admin(email)
+        'prompt_list': prompt_list, 'index_list': index_list, 'name': name, 'email': email, 'model_list': model_list, 'is_admin': check_admin(email), 'show_index_select': show_index_select, 'show_prompt_select': show_prompt_select
     }
     return render(request, 'ai-chat-bot.html', data)
 
@@ -371,9 +381,11 @@ def getCollectionList(request):
         for result in results:
             collection_lists.append({'name': result.collection_name})
     
-    print(collection_lists)
-    
-    data = {"success": "ok", "data": collection_lists}
+    show_collection_select = False
+    if len(collection_lists) > 1:
+        show_collection_select = True
+
+    data = {"success": "ok", "data": collection_lists, "show_collection_select": show_collection_select}
     return JsonResponse(data)
 
 def query(request):

@@ -113,8 +113,8 @@ var new_chat = true;
 							var status = llm_data[llm];
 							var status_str = "";
 							if (status)
-							status_str="checked";
-							var model_content = "<label class='fn__toggle' style='padding: 25px'>" + llm +"<span class='t_in'><input type='checkbox'" + status_str + " onchange='llm_permission(this.name)' name='" + llm + "'><span class='t_slider'></span><span class='t_content'></span></span></label>";
+								status_str = "checked";
+							var model_content = "<label class='fn__toggle' style='padding: 25px'>" + llm + "<span class='t_in'><input type='checkbox'" + status_str + " onchange='llm_permission(this.name)' name='" + llm + "'><span class='t_slider'></span><span class='t_content'></span></span></label>";
 
 							$("#llm_permission_bar").append(model_content);
 						}
@@ -124,18 +124,18 @@ var new_chat = true;
 						for (var index in index_data) {
 							var index_status_str = "";
 							if (index_data[index]['total_status'])
-							index_status_str = "checked";
+								index_status_str = "checked";
 
-							var index_content = "<div class='header'><label class='fn__toggle'>"+ index +"<span class='t_in'><input type='checkbox' " + index_status_str + " name='"+ index+"' onchange='index_permission(this.name)'><span class='t_slider'></span><span class='t_content'></span></span></label>";
+							var index_content = "<div class='header'><label class='fn__toggle'>" + index + "<span class='t_in'><input type='checkbox' " + index_status_str + " name='" + index + "' onchange='index_permission(this.name)'><span class='t_slider'></span><span class='t_content'></span></span></label>";
 
 							var collection_label_content = "";
 							for (var collection in index_data[index]['collections']) {
 								var collection_status_str = "";
 
 								if (index_data[index]['collections'][collection])
-								collection_status_str="checked";
+									collection_status_str = "checked";
 
-								collection_label_content += "<label class='fn__toggle' style='padding: 25px'>" + collection +"<span class='t_in'><input type='checkbox' " + collection_status_str + " name='"+  collection +"' onchange='collection_permission(this.name, this.id)' id='"+ index +"' class='"+ index +"'><span class='t_slider'></span><span class='t_content'></span></span></label>";
+								collection_label_content += "<label class='fn__toggle' style='padding: 25px'>" + collection + "<span class='t_in'><input type='checkbox' " + collection_status_str + " name='" + collection + "' onchange='collection_permission(this.name, this.id)' id='" + index + "' class='" + index + "'><span class='t_slider'></span><span class='t_content'></span></span></label>";
 							}
 
 							var content = "<div class='divider'>" + index_content + "<div class='content'>" + collection_label_content + "</div>" + "</div>";
@@ -149,12 +149,12 @@ var new_chat = true;
 							var status = prompt_data[prompt];
 							var status_str = "";
 							if (status)
-							status_str="checked";
-							var model_content = "<label class='fn__toggle' style='padding: 25px'>" + prompt +"<span class='t_in'><input type='checkbox'" + status_str + " onchange='prompt_permission(this.name)' name='" + prompt + "'><span class='t_slider'></span><span class='t_content'></span></span></label>";
+								status_str = "checked";
+							var model_content = "<label class='fn__toggle' style='padding: 25px'>" + prompt + "<span class='t_in'><input type='checkbox'" + status_str + " onchange='prompt_permission(this.name)' name='" + prompt + "'><span class='t_slider'></span><span class='t_content'></span></span></label>";
 
 							$("#prompt_permission_bar").append(model_content);
 						}
-						
+
 					},
 					error: function (xhr, status, error) {
 						console.error('Error occurred: ', error);
@@ -162,7 +162,7 @@ var new_chat = true;
 				});
 			});
 
-			
+
 
 		},
 		openindexmodal: function () {
@@ -2183,10 +2183,18 @@ var new_chat = true;
 							select.empty();
 
 							// Add options based on the JSON data
-							select.append($('<option selected disabled></option>').attr('value', "").text("Select a Collection"));
-							$.each(result.data, function (index, option) {
-								select.append($('<option></option>').attr('value', option.name).text(option.name));
-							});
+							if (result.show_collection_select) {
+								select.append($('<option selected disabled></option>').attr('value', "").text("Select a Collection"));
+								$.each(result.data, function (index, option) {
+									select.append($('<option></option>').attr('value', option.name).text(option.name));
+								});
+							}
+							else {
+								$.each(result.data, function (index, option) {
+									select.append($('<option selected></option>').attr('value', option.name).text(option.name));
+								});
+							}
+
 
 							FrenifyTechWave.collectionValue = "";
 						}
@@ -2238,7 +2246,7 @@ var new_chat = true;
 
 			// flag Value
 			$('#show_switcher').change(function () {
-				
+
 				FrenifyTechWave.showFlag = $(this).is(':checked');
 				if (FrenifyTechWave.showFlag) $("#propmt_preview").show(true);
 				else $("#propmt_preview").hide(true);
@@ -2258,7 +2266,7 @@ var new_chat = true;
 	});
 
 
-	
+
 
 	// RESIZE Functions
 	$(window).on('resize', function () {

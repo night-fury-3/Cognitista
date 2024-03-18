@@ -55,3 +55,8 @@ class llmpermissionmodel(models.Model):
 class llmmodel(models.Model):
     llm = models.CharField(max_length=50)
     value = models.CharField(max_length=50)
+    
+class promptpermissionmodel(models.Model):
+    email = models.CharField(max_length=50)
+    value = models.CharField(max_length=50)
+    status = models.BooleanField(default=False)

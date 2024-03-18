@@ -660,9 +660,13 @@
 								<div class="header_top">
 									<h1 class="title">Index & Collection Permission</h1>
 								</div>
-								<div class="fn_permission_division" id="index_permission_bar">
-									
-									
+								<div class="fn_permission_division" id="index_permission_bar">	
+								</div>
+								<div class="header_top">
+									<h1 class="title">Prompt Permission</h1>
+								</div>
+								<div class="fn_permission_division" id="prompt_permission_bar">
+
 								</div>
 							</div>
 							<!-- !Generation Header -->
@@ -724,6 +728,31 @@
 
 		$.ajax({
 			url: '/setllmpermission',
+			method: 'POST',
+			headers: { 'X-CSRFToken': csrfToken },
+			data: sendData,
+			success: function (result) {
+				console.log(result);
+			},
+			error: function (xhr, status, error) {
+				console.error('Error occurred: ', error);
+				alert("Error occurred!");
+			}
+		});
+	}
+
+	function prompt_permission(prompt) {
+		var username = $("#permission_userSelect").val();
+		
+		var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
+
+		var sendData = {
+			"username": username,
+			"prompt": prompt,
+		};
+
+		$.ajax({
+			url: '/setpromptpermission',
 			method: 'POST',
 			headers: { 'X-CSRFToken': csrfToken },
 			data: sendData,

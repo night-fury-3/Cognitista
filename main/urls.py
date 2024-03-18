@@ -33,6 +33,7 @@ urlpatterns = [
     path('getpermissioninfo', views.getpermissioninfo, name="getpermissioninfo"),
     path('setllmpermission', views.setllmpermission, name="setllmpermission"),
     path('setcollectionpermission', views.setcollectionpermission, name="setcollectionpermission"),
+    path('setpromptpermission', views.setpromptpermission, name="setpromptpermission"),
     # Authentication
     path("accounts/signout/", views.signout, name="signout"),
     path("accounts/signin/", views.signin, name="signin"),

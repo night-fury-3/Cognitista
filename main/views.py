@@ -7,7 +7,7 @@ from django.urls import reverse
 from django.http import HttpResponseRedirect
 from django.contrib.auth import authenticate, login, logout
 from django.http import StreamingHttpResponse
-from .models import collection, filemodel, promptmodel, buffermodel, indexmodel, llmpermissionmodel, indexpermissionmodel, llmmodel
+from .models import collection, filemodel, promptmodel, buffermodel, indexmodel, llmpermissionmodel, indexpermissionmodel, llmmodel, promptpermissionmodel
 
 import json, os
 from dotenv import load_dotenv
@@ -155,8 +155,19 @@ def getpermissioninfo(request):
         except:
             pass
     
-    print(index_data)
-    return JsonResponse({"index_data": index_data, "llm_data": llm_data})
+    prompt_data = {}
+    prompt_list = [prompt.title for prompt in promptmodel.objects.all()] 
+    
+    for prompt in prompt_list:
+        prompt_data[prompt] = False
+        try:
+            status = promptpermissionmodel.objects.get(email=user_email, value=prompt).status
+            if status:
+                prompt_data[prompt] = True
+        except:
+            pass
+        
+    return JsonResponse({"index_data": index_data, "llm_data": llm_data, "prompt_data": prompt_data})
 
 def setllmpermission(request):
     username = request.POST.get('username')
@@ -171,6 +182,22 @@ def setllmpermission(request):
             llmpermissionmodel.objects.filter(email=email, value=llm).update(status=True)
     except:
         llmpermissionmodel.objects.create(email=email, value=llm, status=True).save()
+        
+    return JsonResponse({"success": "ok"})
+
+def setpromptpermission(request):
+    username = request.POST.get('username')
+    prompt = request.POST.get('prompt')
+    email = User.objects.get(username=username).email
+    try:
+        status = promptpermissionmodel.objects.get(email=email, value=prompt).status
+        
+        if status == True:
+            promptpermissionmodel.objects.filter(email=email, value=prompt).update(status=False)
+        else:
+            promptpermissionmodel.objects.filter(email=email, value=prompt).update(status=True)
+    except:
+        promptpermissionmodel.objects.create(email=email, value=prompt, status=True).save()
         
     return JsonResponse({"success": "ok"})
 
@@ -289,7 +316,7 @@ def signup(request):
             return HttpResponseRedirect(reverse('signup'))
         else:
             User.objects.create_user(username, email, password)
-            return HttpResponseRedirect(reverse('signin'))
+            return HttpResponseRedirect(reverse('accounts'))
 
 @login_required(login_url="/accounts/signin/")
 def signout(request):

@@ -59,39 +59,39 @@
 			<form class="signup" method="post" action="{% url 'signup' %}">
 				{% csrf_token %}
 				<div class="form__content">
-					<div class="form__title">Sign Up</div>
+					<div class="form__title">Create New Account</div>
 
 					<div class="form__username">
 						<label for="username">Username</label>
-						<input type="text" class="input" name="username" placeholder="Username" required>
+						<input type="text" class="input" name="username" placeholder="Username" required autocomplete="off">
 					</div>
 					<div class="form__email">
 						<label for="email">Email</label>
-						<input type="email" class="input" name="email" placeholder="yourmail@example.com" required>
+						<input type="email" class="input" name="email" placeholder="yourmail@example.com" required autocomplete="off">
 					</div>
 					<div class="form__pass">
 						<label for="user_password">Password</label>
 						<input type="password" name="password" autocomplete="current-password" spellcheck="false"
-							required>
+							required autocomplete="off">
 					</div>
 					<div class="form__submit">
 						<label class="fn__submit">
 							<input type="submit" name="submit" value="Create Account">
 						</label>
 					</div>
-					<div class="form__alternative">
+					<!-- <div class="form__alternative">
 						<div class="fn__lined_text">
 							<div class="line"></div>
 							<div class="text">Or</div>
 							<div class="line"></div>
 						</div>
 						<a href="#" class="techwave_fn_button"><span>Sign up with Google</span></a>
-					</div>
+					</div> -->
 				</div>
 			</form>
-			<div class="sign__desc">
+			<!-- <div class="sign__desc">
 				<p>Don't have an account? <a href="{% url 'signin' %}">Sign In</a></p>
-			</div>
+			</div> -->
 		</div>
 
 	</div>

@@ -104,6 +104,7 @@ var new_chat = true;
 					success: function (result) {
 						var llm_data = result['llm_data'];
 						var index_data = result['index_data'];
+						var prompt_data = result['prompt_data'];
 
 						console.log(index_data);
 						// llm replace
@@ -113,7 +114,7 @@ var new_chat = true;
 							var status_str = "";
 							if (status)
 							status_str="checked";
-							var model_content = "<label class='fn__toggle'>" + llm +"<span class='t_in'><input type='checkbox'" + status_str + " onchange='llm_permission(this.name)' name='" + llm + "'><span class='t_slider'></span><span class='t_content'></span></span></label>";
+							var model_content = "<label class='fn__toggle' style='padding: 25px'>" + llm +"<span class='t_in'><input type='checkbox'" + status_str + " onchange='llm_permission(this.name)' name='" + llm + "'><span class='t_slider'></span><span class='t_content'></span></span></label>";
 
 							$("#llm_permission_bar").append(model_content);
 						}
@@ -134,13 +135,26 @@ var new_chat = true;
 								if (index_data[index]['collections'][collection])
 								collection_status_str="checked";
 
-								collection_label_content += "<label class='fn__toggle'>" + collection +"<span class='t_in'><input type='checkbox' " + collection_status_str + " name='"+  collection +"' onchange='collection_permission(this.name, this.id)' id='"+ index +"' class='"+ index +"'><span class='t_slider'></span><span class='t_content'></span></span></label>";
+								collection_label_content += "<label class='fn__toggle' style='padding: 25px'>" + collection +"<span class='t_in'><input type='checkbox' " + collection_status_str + " name='"+  collection +"' onchange='collection_permission(this.name, this.id)' id='"+ index +"' class='"+ index +"'><span class='t_slider'></span><span class='t_content'></span></span></label>";
 							}
 
 							var content = "<div class='divider'>" + index_content + "<div class='content'>" + collection_label_content + "</div>" + "</div>";
 
 							$("#index_permission_bar").append(content);
 						}
+
+						$("#prompt_permission_bar").html("");
+						console.log(prompt_data);
+						for (var prompt in prompt_data) {
+							var status = prompt_data[prompt];
+							var status_str = "";
+							if (status)
+							status_str="checked";
+							var model_content = "<label class='fn__toggle' style='padding: 25px'>" + prompt +"<span class='t_in'><input type='checkbox'" + status_str + " onchange='prompt_permission(this.name)' name='" + prompt + "'><span class='t_slider'></span><span class='t_content'></span></span></label>";
+
+							$("#prompt_permission_bar").append(model_content);
+						}
+						
 					},
 					error: function (xhr, status, error) {
 						console.error('Error occurred: ', error);

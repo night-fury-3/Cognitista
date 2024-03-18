@@ -654,6 +654,14 @@ frenify_typing span.think {
 	margin-right: 300px;
 }
 
+.fn_newregister_div {
+	margin-top: 25px;
+	margin-left: 10%;
+}
+
+.fn_newregister_div .techwave_fn_button {
+	cursor: pointer;
+}
 .techwave_fn_content {
 	position: relative;
 	margin-left: var(--techwave-left-panel-width);
@@ -6721,8 +6729,9 @@ a.fn__like.no_border .fn__svg {
 
 .fn_permission_division {
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	margin-bottom: 20px;
+	flex-wrap: wrap;
 }
 
 .fn_permission_division .divider {

@@ -125,6 +125,12 @@
 	display: flex;
 }
 
+.fn_permission_select {
+	width: 20%;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
 .fn-index-main {
 	width: 70%;
 	margin: 0 auto;
@@ -6712,6 +6718,29 @@ a.fn__like.no_border .fn__svg {
 	letter-spacing: 0;
 	font-family: var(--techwave-heading-font-family);
 }
+
+.fn_permission_division {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.fn_permission_division .divider {
+	border-right: 2px solid var(--techwave-main-color);
+	padding-right: 25px;
+
+}
+
+.fn_permission_division .divider .header {
+	border-bottom: 1px solid var(--techwave-body-color);
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+
+.fn_permission_division .divider .content {
+	margin-top: 15px;
+}
+
 
 .fn__toggle .t_in {
 	position: relative;

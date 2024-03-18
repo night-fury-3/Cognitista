@@ -15,7 +15,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<title>Home - Cognitista</title>
+	<title>Indexes - Cognitista</title>
 
 
 	<script>
@@ -41,8 +41,6 @@
 	<!-- !Google Fonts -->
 
 	<!-- Styles -->
-
-
 	<link type="text/css" rel="stylesheet" href="{% static 'css/plugins.css' %}" />
 	<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}" />
 	<!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
@@ -52,7 +50,6 @@
 
 <body>
 
-
 	<!-- Moving Submenu -->
 	<div class="techwave_fn_fixedsub">
 		<ul></ul>
@@ -60,13 +57,272 @@
 	<!-- !Moving Submenu -->
 
 	<!-- Preloader -->
-	<!-- <div class="techwave_fn_preloader enabled">
+	<div class="techwave_fn_preloader">
 		<svg>
 			<circle class="first_circle" cx="50%" cy="50%" r="110"></circle>
 			<circle class="second_circle" cx="50%" cy="50%" r="110"></circle>
 		</svg>
-	</div> -->
+	</div>
 	<!-- !Preloader -->
+
+	<!-- Report -->
+	<div class="techwave_fn_report">
+		<a href="#" class="fn__closer fn__icon_button">
+			<img src="{% static 'svg/close.svg' %}" alt="" class="fn__svg">
+		</a>
+		<div class="report__closer"></div>
+		<div class="report__content">
+			<h3 class="title">Report Item</h3>
+			<h3 class="subtitle">What is the main reason for your report?</h3>
+			<input class="reason_field" type="text" placeholder="Type here...">
+			<div class="btns">
+				<a href="#" class="report techwave_fn_button">
+					<span>Report</span>
+				</a>
+				<a href="#" class="cancel techwave_fn_button">
+					<span>Cancel</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- !Report -->
+
+	<!-- Image Lightbox -->
+	<div class="techwave_fn_img_lightbox">
+
+		<!-- top section (of the image lightbox) -->
+		<div class="lightbox__top">
+			<div class="lightbox__tl">
+				<div class="lightbox__tlbar">
+					<div class="lightbox__tlbar_left">
+						<div class="item item__share fn__icon_options medium_size">
+							<a href="#" class="item__btn fn__icon_button">
+								<img src="{% static 'svg/share.svg' %}" alt="" class="fn__svg">
+							</a>
+							<div class="fn__icon_popup">
+								<ul>
+									<li><a href="#">Facebook</a></li>
+									<li><a href="#">Twitter</a></li>
+									<li><a href="#">Instagram</a></li>
+									<li><a href="#">Linkedin</a></li>
+									<li><a href="#">Pinterest</a></li>
+									<li><a href="#" class="fn__copy" data-copied="Copied!">Copy Link</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="item item__download fn__icon_options medium_size">
+							<a href="#" class="item__btn fn__icon_button">
+								<img src="{% static 'svg/download.svg' %}" alt="" class="fn__svg">
+							</a>
+							<div class="fn__icon_popup">
+								<ul>
+									<li><a href="#">Original Image</a></li>
+									<li><a href="#">Creative Upscaled Image</a></li>
+									<li><a href="#">HD Upscaled Image</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="item item__more fn__icon_options medium_size">
+							<a href="#" class="item__btn fn__icon_button">
+								<span class="dots"></span>
+							</a>
+							<div class="fn__icon_popup">
+								<ul>
+									<li><a href="#">Remove Background</a></li>
+									<li><a href="#">Creative Upscale</a></li>
+									<li><a href="#">Alternative Upscale</a></li>
+									<li class="high_priorety"><a href="#" class="fn__report">Report Image</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="lightbox__tlbar_center">
+						<a href="#" class="img_nav nav_prev">
+							<img src="{% static 'svg/arrow.svg' %}" alt="" class="fn__svg">
+						</a>
+						<a href="#" class="img_nav nav_next">
+							<img src="{% static 'svg/arrow.svg' %}" alt="" class="fn__svg">
+						</a>
+					</div>
+					<div class="lightbox__tlbar_right">
+						<a href="#" class="fn__like" data-id="2">
+							<span class="count">343</span>
+							<img src="{% static 'svg/like.svg' %}" alt="" class="fn__svg empty__like">
+							<img src="{% static 'svg/like-full.svg' %}" alt="" class="fn__svg full__like">
+						</a>
+					</div>
+				</div>
+				<div class="lightbox__tlimg">
+					<img src="{% static 'img/gallery/main.jpg' %}" alt="">
+				</div>
+			</div>
+			<div class="lightbox__tr">
+				<div class="user__profile">
+					<a class="profile_link" href="user-profile.html">
+						<img src="{% static 'img/user/user.jpg' %}" alt="">
+						<h2 class="user_name">LuckyLee</h2>
+					</a>
+					<a class="fn__follow" href="#" data-follow-text="Follow" data-unfollow-text="Unfollow">
+						<span class="text">Follow</span>
+					</a>
+					<a href="#" class="fn__closer fn__icon_button">
+						<img src="{% static 'svg/close.svg' %}" alt="" class="fn__svg">
+					</a>
+				</div>
+				<div class="item__details">
+					<div class="fn__model">
+						<div class="model_img">
+							<img src="{% static 'img/user/user.jpg' %}" alt="">
+						</div>
+						<div class="model_info">
+							<h4 class="model_subtitle">Model</h4>
+							<h3 class="model_title">ArtShaper v3</h3>
+						</div>
+						<a href="image-generation.html" class="fn__icon_button">
+							<img src="{% static 'svg/arrow.svg' %}" alt="" class="fn__svg">
+						</a>
+					</div>
+
+					<div class="fn__prompt_details">
+						<div class="prompt__header">
+							<div class="prompt__text">Prompt Details</div>
+							<div class="prompt__options">
+								<a href="#" class="fn__icon_button">
+									<span class="dots"></span>
+								</a>
+								<div class="prompt__popup">
+									<ul>
+										<li><a href="#">Remix</a></li>
+										<li><a href="#">Image to Image</a></li>
+										<li><a href="#" class="fn__copy" data-copied="Copied!"
+												data-text="Realistic painting, photorealistic masterpiece detailing, professional photography, natural lighting, volumetric lighting maximalist photoillustration: 8k resolution concept art intricately detailed, complex, elegant, expansive">Copy
+												Prompt</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="prompt__content">
+							<p>Realistic painting, photorealistic masterpiece detailing, professional photography,
+								natural lighting, volumetric lighting maximalist photoillustration: 8k resolution
+								concept art intricately detailed, complex, elegant, expansive</p>
+						</div>
+					</div>
+
+					<div class="techwave_fn_accordion small" data-type="accordion">
+						<!-- data-type values: accordion, toggle -->
+						<div class="acc__item">
+							<div class="acc__header">
+								<h2 class="acc__title">Negative Prompt</h2>
+								<div class="acc__icon"></div>
+							</div>
+							<div class="acc__content">
+								<p>TECH-AI is an AI-powered content production suite that empowers creators with a
+									powerful, customisable, and user-friendly platform for bringing their ideas to life.
+								</p>
+								<p>With a focus on granular control at every step of content creation, we put creators
+									at the centre of the creative process by offering granular control at every stage of
+									generation, ensuring that AI enhances, rather than replaces, human creative
+									potential.</p>
+								<p>Our custom back-end delivers advancements in model fine tuning, prompt adherence,
+									training and inference speed, and multi-image prompting functionality. We also
+									address common issues around image degradation and have implemented a custom
+									upscaling, with much more on the way!</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="fn__details_list">
+					<ul>
+						<li>
+							<div class="sub_title">Created</div>
+							<div class="title">April 05, 2023</div>
+						</li>
+						<li>
+							<div class="sub_title">Resolution</div>
+							<div class="title">768 x 1024px</div>
+						</li>
+						<li>
+							<div class="sub_title">Sampler</div>
+							<div class="title">Tech-AI-Frenify</div>
+						</li>
+						<li>
+							<div class="sub_title">Step Count</div>
+							<div class="title">30</div>
+						</li>
+						<li>
+							<div class="sub_title">Base Model</div>
+							<div class="title">Frenify v2.0</div>
+						</li>
+						<li>
+							<div class="sub_title">High Contrast</div>
+							<div class="title">Off</div>
+						</li>
+						<li>
+							<div class="sub_title">Magic Prompt</div>
+							<div class="title">On</div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		<!-- !top section (of the image lightbox) -->
+
+		<!-- related section (of the image lightbox) -->
+		<div class="lightbox__related">
+
+			<div class="fn__title_holder">
+				<h2 class="title">Related Images</h2>
+			</div>
+
+			<div class="fn__grid_items">
+				<ul>
+					<li>
+						<a href="#" data-id="1"><img src="{% static 'img/related/1.jpg' %}" alt=""></a>
+					</li>
+					<li>
+						<a href="#" data-id="2"><img src="{% static 'img/related/2.jpg' %}" alt=""></a>
+					</li>
+					<li>
+						<a href="#" data-id="3"><img src="{% static 'img/related/3.jpg' %}" alt=""></a>
+					</li>
+					<li>
+						<a href="#" data-id="4"><img src="{% static 'img/related/4.jpg' %}" alt=""></a>
+					</li>
+					<li>
+						<a href="#" data-id="5"><img src="{% static 'img/related/5.jpg' %}" alt=""></a>
+					</li>
+					<li>
+						<a href="#" data-id="6"><img src="{% static 'img/related/6.jpg' %}" alt=""></a>
+					</li>
+					<li>
+						<a href="#" data-id="7"><img src="{% static 'img/related/7.jpg' %}" alt=""></a>
+					</li>
+					<li>
+						<a href="#" data-id="8"><img src="{% static 'img/related/8.jpg' %}" alt=""></a>
+					</li>
+					<li>
+						<a href="#" data-id="9"><img src="{% static 'img/related/9.jpg' %}" alt=""></a>
+					</li>
+					<li>
+						<a href="#" data-id="10"><img src="{% static 'img/related/10.jpg' %}" alt=""></a>
+					</li>
+					<li>
+						<a href="#" data-id="11"><img src="{% static 'img/related/11.jpg' %}" alt=""></a>
+					</li>
+					<li>
+						<a href="#" data-id="12"><img src="{% static 'img/related/12.jpg' %}" alt=""></a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<!-- !related section (of the image lightbox) -->
+
+	</div>
+	<!-- !Image Lightbox -->
 
 
 	<!-- MAIN WRAPPER -->
@@ -102,22 +358,6 @@
 
 				<!-- Header left: token information -->
 				<div class="header__left">
-					<div class="fn__token_info">
-						<!-- <span class="token_summary">
-							<span class="count">0</span>
-							<span class="text">Tokens<br>Remain</span>
-						</span>
-
-						<span class="token_summary">
-							<span class="count">0</span>
-							<span class="text">Tokens<br>Remain</span>
-						</span> -->
-						<!-- <a href="pricing.html" class="token_upgrade techwave_fn_button"><span>Upgrade</span></a> -->
-						<!-- <div class="token__popup">
-							Resets in <span>19 hours.</span><br>
-							Daily limit is <span>200 tokens</span>
-						</div> -->
-					</div>
 				</div>
 				<!-- /Header left: token information -->
 
@@ -128,50 +368,16 @@
 
 						<!-- Search (bar item) -->
 						<div class="bar__item bar__item_search">
-							<a href="#" class="item_opener fn__tooltip" title="Search">
+							<a href="#" class="item_opener">
 								<img src="{% static 'svg/search.svg' %}" alt="" class="fn__svg">
 							</a>
-							<div class="item_popup" data-position="right">
+							<div class="item_popup">
 								<input type="text" placeholder="Search">
 							</div>
 						</div>
-						<!-- !Search (bar item) -->
 
-						<!-- Notification (bar item) -->
-						<!-- <div class="bar__item bar__item_notification has_notification">
-							<a href="#" class="item_opener fn__tooltip" title="Notifications">
-								<img src="{% static 'svg/bell.svg' %}" alt="" class="fn__svg">
-							</a>
-							<div class="item_popup" data-position="right">
-								<div class="ntfc_header">
-									<h2 class="ntfc_title">Notifications</h2>
-									<a href="notifications.html">View All</a>
-								</div>
-								<div class="ntfc_list">
-									<ul>
-										<li>
-											<p><a href="notification-single.html">Version 4.1.2 has been launched</a>
-											</p>
-											<span>34 Min Ago</span>
-										</li>
-										<li>
-											<p><a href="notification-single.html">Video Generation has been released</a>
-											</p>
-											<span>12 Apr</span>
-										</li>
-										<li>
-											<p><a href="notification-single.html">Terms has been updated</a></p>
-											<span>12 Apr</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div> -->
-						<!-- !Notification (bar item) -->
-
-						<!-- Full Screen (bar item) -->
 						<div class="bar__item bar__item_fullscreen">
-							<a href="#" class="item_opener fn__tooltip" title="Full Screen">
+							<a href="#" class="item_opener">
 								<img src="{% static 'svg/fullscreen.svg' %}" alt="" class="fn__svg f_screen">
 								<img src="{% static 'svg/smallscreen.svg' %}" alt="" class="fn__svg s_screen">
 							</a>
@@ -180,10 +386,10 @@
 
 						<!-- Language (bar item) -->
 						<div class="bar__item bar__item_language">
-							<a href="#" class="item_opener fn__tooltip" title="Language">
+							<a href="#" class="item_opener">
 								<img src="{% static 'svg/language.svg' %}" alt="" class="fn__svg">
 							</a>
-							<div class="item_popup" data-position="right">
+							<div class="item_popup">
 								<ul>
 									<li>
 										<span class="active">English</span>
@@ -201,7 +407,7 @@
 
 						<!-- Site Skin (bar item) -->
 						<div class="bar__item bar__item_skin">
-							<a href="#" class="item_opener fn__tooltip" title="Dark/Light">
+							<a href="#" class="item_opener">
 								<img src="{% static 'svg/sun.svg' %}" alt="" class="fn__svg light_mode">
 								<img src="{% static 'svg/moon.svg' %}" alt="" class="fn__svg dark_mode">
 							</a>
@@ -210,10 +416,10 @@
 
 						<!-- User (bar item) -->
 						<div class="bar__item bar__item_user">
-							<a href="#" class="user_opener fn__tooltip" title="User Profile">
+							<a href="#" class="user_opener">
 								<img src="{% static 'img/user/user.jpg' %}" alt="">
 							</a>
-							<div class="item_popup" data-position="right">
+							<div class="item_popup">
 								<div class="user_profile">
 									<div class="user_img">
 										<img src="{% static 'img/user/user.jpg' %}" alt="">
@@ -248,7 +454,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="">
+											<a href="sign-in.html">
 												<span class="icon"><img src="{% static 'svg/logout.svg' %}" alt=""
 														class="fn__svg"></span>
 												<span class="text">Log Out</span>
@@ -303,7 +509,7 @@
 						<h2 class="group__title">Start Here</h2>
 						<ul class="group__list">
 							<li>
-								<a href="{% url 'home' %}" class="fn__tooltip active menu__item" data-position="right"
+								<a href="{% url 'home' %}" class="fn__tooltip menu__item" data-position="right"
 									title="Home">
 									<span class="icon"><img src="{% static 'svg/home.svg' %}" alt=""
 											class="fn__svg"></span>
@@ -359,8 +565,8 @@
 								</a>
 							</li>
 							<li>
-								<a href="{% url 'permission' %}" class="fn__tooltip menu__item" data-position="right"
-									title="Accounts">
+								<a href="{% url 'permission' %}" class="fn__tooltip active menu__item"
+									data-position="right" title="Accounts">
 									<span class="icon"><img src="{% static 'svg/share.svg' %}" alt=""
 											class="fn__svg"></span>
 									<span class="text">Permission</span>
@@ -411,7 +617,7 @@
 								</ul>
 							</li>
 							<li>
-								<a href="{% url 'signout' %}" class="fn__tooltip menu__item" data-position="right"
+								<a href="sign-in.html" class="fn__tooltip menu__item" data-position="right"
 									title="Log Out">
 									<span class="icon"><img src="{% static 'svg/logout.svg' %}" alt=""
 											class="fn__svg"></span>
@@ -434,79 +640,89 @@
 				<!-- PAGE (all pages go inside this div) -->
 				<div class="techwave_fn_page">
 
-					<!-- Home Page -->
-					<div class="techwave_fn_home">
-						<div class="section_home">
-							<div class="section_left">
-
-								<!-- Title Shortcode -->
-								<div class="techwave_fn_title_holder">
-									<h1 class="title">Unleash Your Creativity with AI</h1>
-									<p class="desc">Generate your ideas into stunning visuals</p>
+					<!-- Image Generation Page -->
+					<div class="techwave_fn_image_generation_page">
+						{% csrf_token %}
+						<select id="permission_userSelect" class="fn_permission_select">
+							<option value="" selected disabled>Select a User</option>
+							{% for user in user_list %}
+							<option value="{{user}}">{{user}}</option>
+							{% endfor %}
+						</select>
+						<div class="generation__page">
+							<!-- Generation Header -->
+							<div class="generation_header">
+								<div class="header_top">
+									<h1 class="title">LLM Permission</h1>
 								</div>
-								<!-- !Title Shortcode -->
-
-								<!-- Interactive List Shortcode -->
-								<div class="techwave_fn_interactive_list">
-									<ul>
-
-										<li>
-											<div class="item">
-												<a href="{% url 'chatbot' %}">
-													<span class="icon">
-														<img src="{% static 'svg/chat.svg' %}" alt="" class="fn__svg">
-													</span>
-													<h2 class="title">AI Chat Bot</h2>
-													<p class="desc">An AI chatbot, short for artificial intelligence
-														chatbot, is a computer program designed to simulate human-like
-														conversations and provide automated responses to user queries or
-														prompts. </p>
-													<span class="arrow"><img src="{% static 'svg/arrow.svg' %}" alt=""
-															class="fn__svg"></span>
-												</a>
-											</div>
-										</li>
-										<li>
-											<div class="item">
-												<!-- <a href="image-generation.html"> -->
-												<a href="#">
-													<span class="icon">
-														<img src="{% static 'svg/image.svg' %}" alt="" class="fn__svg">
-													</span>
-													<h2 class="title">New Service</h2>
-													<p class="desc"></p>
-													<span class="arrow"><img src="{% static 'svg/arrow.svg' %}" alt=""
-															class="fn__svg"></span>
-												</a>
-											</div>
-										</li>
-									</ul>
+								<div class="fn_permission_division">
+									<label class="fn__toggle">
+										Negative Prompt
+										<span class="t_in">
+											<input type="checkbox" checked id="negative_prompt">
+											<span class="t_slider"></span>
+											<span class="t_content"></span>
+										</span>
+									</label>
 								</div>
-								<!-- !Interactive List Shortcode -->
-
-							</div>
-							<div class="section_right">
-								<div class="company_info">
-									<img src="{% static 'img/logo-desktop-full.png' %}" alt="">
-									<p class="fn__animated_text">The AI server of Fonicom, a text-to-image AI
-										where your imagination is the only limit. We’re building market-leading features
-										that will give you greater control over your generations.</p>
-									<hr>
-									<div class="fn__members">
-										<div class="active item">
-											<span class="circle"></span>
-											<span class="text">{{online_users}} Online</span>
+								<div class="header_top">
+									<h1 class="title">Index & Collection Permission</h1>
+								</div>
+								<div class="fn_permission_division">
+									<div class="divider">
+										<div class="header">
+											<label class="fn__toggle">
+												Negative Prompt
+												<span class="t_in">
+													<input type="checkbox" checked id="negative_prompt">
+													<span class="t_slider"></span>
+													<span class="t_content"></span>
+												</span>
+											</label>
 										</div>
-										<div class="item">
-											<span class="circle"></span>
-											<span class="text">{{total_members}} Members</span>
+										<div class="content">
+											<label class="fn__toggle">
+												Negative Promptasdfdsa
+												<span class="t_in">
+													<input type="checkbox" checked id="negative_prompt">
+													<span class="t_slider"></span>
+													<span class="t_content"></span>
+												</span>
+											</label>
+										</div>
+									</div>
+									<div class="divider">
+										<div class="header">
+											<label class="fn__toggle">
+												Negative Prompt
+												<span class="t_in">
+													<input type="checkbox" checked id="negative_prompt">
+													<span class="t_slider"></span>
+													<span class="t_content"></span>
+												</span>
+											</label>
+										</div>
+										<div class="content">
+											<label class="fn__toggle">
+												Negative Promptasdfdsa
+												<span class="t_in">
+													<input type="checkbox" checked id="negative_prompt">
+													<span class="t_slider"></span>
+													<span class="t_content"></span>
+												</span>
+											</label>
 										</div>
 									</div>
 								</div>
 							</div>
+							<!-- !Generation Header -->
+							<div class="container">
+
+							</div>
 						</div>
+
 					</div>
-					<!-- !Home Page -->
+					<!-- !Image Generation Page -->
 
 				</div>
 				<!-- !PAGE (all pages go inside this div) -->
@@ -536,16 +752,12 @@
 	</div>
 	<!-- !MAIN WRAPPER -->
 
-
-
 	<!-- Scripts -->
-	<!-- <script type="text/javascript" src="js/jquery.js?ver=1.0.0"></script>
-	<script type="text/javascript" src="js/plugins.js?ver=1.0.0"></script>
-	<script type="text/javascript" src="js/init.js?ver=1.0.0"></script> -->
-
 	<script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
 	<script type="text/javascript" src="{% static 'js/plugins.js' %}"></script>
+	<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
 	<script type="text/javascript" src="{% static 'js/init.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/prompt.js' %}"></script>
 	<!-- !Scripts -->
 
 </body>

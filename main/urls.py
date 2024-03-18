@@ -5,6 +5,7 @@ from django.contrib.auth import views as auth_views
 from . import views
 
 urlpatterns = [
+    # Pages
     path('', views.home, name="home"),
     path('chatbot', views.chatbot, name="chatbot"),
     path('index', views.index, name="index"),
@@ -13,6 +14,8 @@ urlpatterns = [
     path('documentation', views.documentation, name="documentation"),
     path('faq', views.faq, name="faq"),
     path('contact', views.contact, name="contact"),
+    path('permission', views.permission, name="permission"),
+    # Functions
     path('addPrompt', views.addPrompt, name="addPrompt"),
     path('updatePrompt', views.updatePrompt, name="updatePrompt"),
     path('deletePrompt', views.deletePrompt, name="deletePrompt"),
@@ -27,6 +30,7 @@ urlpatterns = [
     path('changeUserAuth', views.changeUserAuth, name="changeUserAuth"),
     path('createIndex', views.createIndex, name="createIndex"),
     path('deleteIndex', views.deleteIndex, name="deleteIndex"),
+    path('getpermissioninfo', views.getpermissioninfo, name="getpermissioninfo"),
     # Authentication
     path("accounts/signout/", views.signout, name="signout"),
     path("accounts/signin/", views.signin, name="signin"),

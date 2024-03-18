@@ -7,7 +7,7 @@ from django.urls import reverse
 from django.http import HttpResponseRedirect
 from django.contrib.auth import authenticate, login, logout
 from django.http import StreamingHttpResponse
-from .models import collection, filemodel, promptmodel, buffermodel, indexmodel
+from .models import collection, filemodel, promptmodel, buffermodel, indexmodel, llmpermissionmodel, indexpermissionmodel
 
 import json, os
 from dotenv import load_dotenv
@@ -75,6 +75,64 @@ def chatbot(request):
         'prompt_list': prompt_list, 'index_list': index_list, 'name': name, 'email': email
     }
     return render(request, 'ai-chat-bot.html', data)
+
+
+@login_required(login_url="/accounts/signin/")
+def permission(request):
+    user_list = [user.username for user in User.objects.all()]    
+
+    # index_list = [index.index_name for index in indexmodel.objects.all()]
+
+    # collection_list = {}
+    # for index in index_list:
+    #     collection_list[index] = [coll.collection_name for coll in collection.filter(index_name=index)]
+    
+    # data = {}
+    # for user_email in user_list:
+    #     user_name = User.objects.get(email=user_email).username
+    #     data[user_name] = {}
+    #     for index_name, collections in collection_list.items():
+    #         data[user_name][index_name] = {}
+    #         data[user_name][index_name]['collections'] = {}
+    #         for collection_name in collections:
+    #             try:
+    #                 status = permissionmodel.objects.get(email=user_email, index_name=index_name, collection_name=collection_name).status
+    #                 if status == True:
+    #                     data[user_name][index_name]['total_status'] = True
+    #                     data[user_name][index_name]['collections'][collection_name] = True 
+    #                 else:
+    #                     data[user_name][index_name]['collections'][collection_name] = False
+    #             except:
+    #                 data[user_name][index_name]['collections'][collection_name] = False
+
+    return render(request, 'permission.html', {'user_list': user_list})
+
+def getpermissioninfo(request):
+    user_name = request.POST.get('user_name')
+    user_email = User.objects.get(username=user_name)
+
+    index_list = [index.index_name for index in indexmodel.objects.all()]
+
+    collection_list = {}
+    for index in index_list:
+        collection_list[index] = [coll.collection_name for coll in collection.objects.filter(index_name=index)]
+
+    data = {}
+    for index_name, collections in collection_list.items():
+        data[index_name] = {} 
+        data[index_name]['collections'] = {}
+        for collection_name in collections:
+            try:
+                status = indexpermissionmodel.objects.get(email=user_email, index_name=index_name, collection_name=collection_name).status
+                if status == True:
+                    data[index_name]['total_status'] = True
+                    data[index_name]['collections'][collection_name] = True 
+                else:
+                    data[index_name]['collections'][collection_name] = False
+            except:
+                data[index_name]['collections'][collection_name] = False
+
+    return JsonResponse(data)
 
 @login_required(login_url="/accounts/signin/")
 def index(request):
@@ -215,6 +273,8 @@ def deletePrompt(request):
 
     data = {"success": "ok", "data": "lkskdfjalskd"}
     return JsonResponse(data)
+
+
 
 # def getindexinfo(request):
 #     index_name = request.POST.get("index_name")

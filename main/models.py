@@ -40,3 +40,19 @@ class indexmodel(models.Model):
     index_name = models.CharField(max_length=50)
     model = models.CharField(max_length=30)
     created_at = models.DateTimeField(auto_now_add=True)
+
+class indexpermissionmodel(models.Model):
+    email = models.EmailField()
+    index_name = models.CharField(max_length=50)
+    collection_name = models.CharField(max_length=50)
+    status = models.BooleanField(default=False)
+
+class llmpermissionmodel(models.Model):
+    email = models.EmailField()
+    index_name = models.CharField(max_length=50)
+    collection_name = models.CharField(max_length=50)
+    status = models.BooleanField(default=False)
+
+class llmmodel(models.Model):
+    llm = models.CharField(max_length=50)
+    value = models.CharField(max_length=50)

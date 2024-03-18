@@ -332,8 +332,8 @@
 								</a>
 							</li>
 							<li>
-								<a href="{% url 'chatbot' %}" class="fn__tooltip active menu__item"
-									data-position="right" title="AI Chat Bot">
+								<a href="{% url 'chatbot' %}" class="fn__tooltip menu__item" data-position="right"
+									title="AI Chat Bot">
 									<span class="icon"><img src="{% static 'svg/chat.svg' %}" alt=""
 											class="fn__svg"></span>
 									<span class="text">AI Chat Bot</span>
@@ -372,11 +372,19 @@
 						<h2 class="group__title">Admin</h2>
 						<ul class="group__list">
 							<li>
-								<a href="{% url 'accounts' %}" class="fn__tooltip menu__item" data-position="right"
-									title="Accounts">
+								<a href="{% url 'accounts' %}" class="fn__tooltip active menu__item"
+									data-position="right" title="Accounts">
 									<span class="icon"><img src="{% static 'svg/person.svg' %}" alt=""
 											class="fn__svg"></span>
 									<span class="text">Accounts</span>
+								</a>
+							</li>
+							<li>
+								<a href="{% url 'permission' %}" class="fn__tooltip menu__item" data-position="right"
+									title="Accounts">
+									<span class="icon"><img src="{% static 'svg/share.svg' %}" alt=""
+											class="fn__svg"></span>
+									<span class="text">Permission</span>
 								</a>
 							</li>
 						</ul>

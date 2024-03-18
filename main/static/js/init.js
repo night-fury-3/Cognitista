@@ -85,12 +85,31 @@ var new_chat = true;
 			this.accountManager();
 			this.modalclose();
 			this.openindexmodal();
-			this.opencollectionmodal();
-			// this.refreshChat();
-			// this.stopGenerate();
+			this.permission();
 		},
 
+		permission: function () {
+			$("#permission_userSelect").on("change", function (e) {
+				var user_name = $("#permission_userSelect").val();
+				var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
 
+				var sendData = {
+					"user_name": user_name,
+				};
+				$.ajax({
+					url: '/getpermissioninfo',
+					method: 'POST',
+					headers: { 'X-CSRFToken': csrfToken },
+					data: sendData,
+					success: function (result) {
+						console.log(result);
+					},
+					error: function (xhr, status, error) {
+						console.error('Error occurred: ', error);
+					}
+				});
+			});
+		},
 		openindexmodal: function () {
 			$(".techwave_create_index_but").click(function () {
 				$("#techwave_index_modal").css("display", "block");

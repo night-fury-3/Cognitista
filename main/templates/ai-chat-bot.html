@@ -184,24 +184,7 @@
 						<!-- !Full Screen (bar item) -->
 
 						<!-- Language (bar item) -->
-						<div class="bar__item bar__item_language">
-							<a href="#" class="item_opener">
-								<img src="{% static 'svg/language.svg' %}" alt="" class="fn__svg">
-							</a>
-							<div class="item_popup">
-								<ul>
-									<li>
-										<span class="active">English</span>
-									</li>
-									<li>
-										<a href="#">Spanish</a>
-									</li>
-									<li>
-										<a href="#">French</a>
-									</li>
-								</ul>
-							</div>
-						</div>
+
 						<!-- !Language (bar item) -->
 
 						<!-- Site Skin (bar item) -->
@@ -216,52 +199,9 @@
 						<!-- User (bar item) -->
 						<div class="bar__item bar__item_user">
 							<a href="#" class="user_opener">
-								<img src="{% static 'img/user/user.jpg' %}" alt="">
+								<img src="{% static 'img/user/logo.png' %}" alt="">
 							</a>
-							<div class="item_popup">
-								<div class="user_profile">
-									<div class="user_img">
-										<img src="{% static 'img/user/user.jpg' %}" alt="">
-									</div>
-									<div class="user_info">
-										<h2 class="user_name">{{name}}</h2>
-										<p><a href="mailto:{{email}}" class="user_email">{{email}}</a>
-										</p>
-									</div>
-								</div>
-								<div class="user_nav">
-									<ul>
-										<li>
-											<a href="user-profile.html">
-												<span class="icon"><img src="{% static 'svg/person.svg' %}" alt=""
-														class="fn__svg"></span>
-												<span class="text">Profile</span>
-											</a>
-										</li>
-										<li>
-											<a href="user-settings.html">
-												<span class="icon"><img src="{% static 'svg/setting.svg' %}" alt=""
-														class="fn__svg"></span>
-												<span class="text">Settings</span>
-											</a>
-										</li>
-										<li>
-											<a href="user-billing.html">
-												<span class="icon"><img src="{% static 'svg/billing.svg' %}" alt=""
-														class="fn__svg"></span>
-												<span class="text">Billing</span>
-											</a>
-										</li>
-										<li>
-											<a href="{% url 'signout' %}">
-												<span class="icon"><img src="{% static 'svg/logout.svg' %}" alt=""
-														class="fn__svg"></span>
-												<span class="text">Log Out</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
+
 						</div>
 						<!-- !User (bar item) -->
 
@@ -369,7 +309,7 @@
 									title="Accounts">
 									<span class="icon"><img src="{% static 'svg/share.svg' %}" alt=""
 											class="fn__svg"></span>
-									<span class="text">Permission</span>
+									<span class="text">Permissions</span>
 								</a>
 							</li>
 						</ul>
@@ -399,9 +339,7 @@
 											class="fn__svg"></span>
 								</a>
 								<ul class="sub-menu">
-									<li>
-										<a href="{% url 'documentation' %}"><span class="text">Documentation</span></a>
-									</li>
+
 									<li>
 										<a href="{% url 'faq' %}"><span class="text">FAQ</span></a>
 									</li>
@@ -410,7 +348,8 @@
 													class="fn__sup">(4.1.2)</span></span></a>
 									</li> -->
 									<li>
-										<a href="{% url 'contact' %}"><span class="text">Contact Us</span></a>
+										<a href="https://www.fonicom.com/contact_us/" target="_blank"><span
+												class="text">Contact Us</span></a>
 									</li>
 									<!-- <li>
 										<a href="index-2.html"><span class="text">Home #2</span></a>
@@ -504,7 +443,7 @@
 
 									<div class="modelSelect" style="margin-top: 5px;">
 										<select id="modelSelect">
-											<option value="" selected disabled>Select a Model</option>
+											<option value="" selected disabled>Select an AI Model</option>
 											{% for model in model_list %}
 											<option value="{{model.llm}}">{{model.value}}</option>
 											{% endfor %}
@@ -542,9 +481,14 @@
 										<h6 class="title" style="margin-bottom: 5px;">Number of Vectors</h6>
 
 										<div class="fn__quantity center">
+											{% if is_admin %}
 											<a href="#" class="decrease"></a>
-											<input id="novInput" type="number" value="4" max="20" min="1">
+											<input id="novInput" type="number" value="{{vector}}" max="100" min="1">
 											<a href="#" class="increase"></a>
+											{% else %}
+											<input id="novInput" type="number" value="{{vector}}" max="100" min="1"
+												disabled>
+											{% endif %}
 										</div>
 
 									</div>
@@ -603,10 +547,8 @@
 							<p>2023© Fonicom Limited</p>
 						</div>
 						<div class="menu_items">
-							<ul>
-								<li><a href="terms.html">Terms of Service</a></li>
-								<li><a href="privacy.html">Privacy Policy</a></li>
-							</ul>
+							Content and insights from this AI system should be verified with authoritative
+							sources
 						</div>
 					</div>
 				</footer>

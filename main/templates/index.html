@@ -179,7 +179,7 @@
 						<!-- !Full Screen (bar item) -->
 
 						<!-- Language (bar item) -->
-						<div class="bar__item bar__item_language">
+						<!-- <div class="bar__item bar__item_language">
 							<a href="#" class="item_opener fn__tooltip" title="Language">
 								<img src="{% static 'svg/language.svg' %}" alt="" class="fn__svg">
 							</a>
@@ -196,7 +196,7 @@
 									</li>
 								</ul>
 							</div>
-						</div>
+						</div> -->
 						<!-- !Language (bar item) -->
 
 						<!-- Site Skin (bar item) -->
@@ -210,10 +210,10 @@
 
 						<!-- User (bar item) -->
 						<div class="bar__item bar__item_user">
-							<a href="#" class="user_opener fn__tooltip" title="User Profile">
-								<img src="{% static 'img/user/user.jpg' %}" alt="">
+							<a href="#" class="user_opener fn__tooltip" title="MBR - Malta Business Registry">
+								<img src="{% static 'img/user/logo.png' %}" alt="">
 							</a>
-							<div class="item_popup" data-position="right">
+							<!-- <div class="item_popup" data-position="right">
 								<div class="user_profile">
 									<div class="user_img">
 										<img src="{% static 'img/user/user.jpg' %}" alt="">
@@ -256,7 +256,7 @@
 										</li>
 									</ul>
 								</div>
-							</div>
+							</div> -->
 						</div>
 						<!-- !User (bar item) -->
 
@@ -364,7 +364,7 @@
 									title="Accounts">
 									<span class="icon"><img src="{% static 'svg/share.svg' %}" alt=""
 											class="fn__svg"></span>
-									<span class="text">Permission</span>
+									<span class="text">Permissions</span>
 								</a>
 							</li>
 						</ul>
@@ -394,9 +394,9 @@
 											class="fn__svg"></span>
 								</a>
 								<ul class="sub-menu">
-									<li>
+									<!-- <li>
 										<a href="{% url 'documentation' %}"><span class="text">Documentation</span></a>
-									</li>
+									</li> -->
 									<li>
 										<a href="{% url 'faq' %}"><span class="text">FAQ</span></a>
 									</li>
@@ -405,7 +405,9 @@
 													class="fn__sup">(4.1.2)</span></span></a>
 									</li> -->
 									<li>
-										<a href="{% url 'contact' %}"><span class="text">Contact Us</span></a>
+										<a href="https://www.fonicom.com/contact_us/" target="_blank"><span
+												class="text">Contact
+												Us</span></a>
 									</li>
 									<!-- <li>
 										<a href="index-2.html"><span class="text">Home #2</span></a>
@@ -443,8 +445,8 @@
 
 								<!-- Title Shortcode -->
 								<div class="techwave_fn_title_holder">
-									<h1 class="title">Unleash Your Creativity with AI</h1>
-									<p class="desc">Generate your ideas into stunning visuals</p>
+									<h1 class="title">AI Retrieval Augmented Generation</h1>
+									<p class="desc">AI-Driven Custom Data Analysis and Creative Synthesis</p>
 								</div>
 								<!-- !Title Shortcode -->
 
@@ -459,29 +461,31 @@
 														<img src="{% static 'svg/chat.svg' %}" alt="" class="fn__svg">
 													</span>
 													<h2 class="title">AI Chat Bot</h2>
-													<p class="desc">An AI chatbot, short for artificial intelligence
-														chatbot, is a computer program designed to simulate human-like
-														conversations and provide automated responses to user queries or
-														prompts. </p>
+													<p class="desc">Start a conversation with your personalized AI
+														chatbot by Cognitista AI to
+														efficiently receive insights derived from your knowledge base
+														using AI-driven
+														intelligence. </p>
 													<span class="arrow"><img src="{% static 'svg/arrow.svg' %}" alt=""
 															class="fn__svg"></span>
 												</a>
 											</div>
 										</li>
-										<li>
+										<!-- <li>
 											<div class="item">
-												<!-- <a href="image-generation.html"> -->
-												<a href="#">
-													<span class="icon">
-														<img src="{% static 'svg/image.svg' %}" alt="" class="fn__svg">
-													</span>
-													<h2 class="title">New Service</h2>
-													<p class="desc"></p>
-													<span class="arrow"><img src="{% static 'svg/arrow.svg' %}" alt=""
-															class="fn__svg"></span>
-												</a>
+												<a href="image-generation.html">
+													<a href="#">
+														<span class="icon">
+															<img src="{% static 'svg/image.svg' %}" alt=""
+																class="fn__svg">
+														</span>
+														<h2 class="title">New Service</h2>
+														<p class="desc"></p>
+														<span class="arrow"><img src="{% static 'svg/arrow.svg' %}"
+																alt="" class="fn__svg"></span>
+													</a>
 											</div>
-										</li>
+										</li> -->
 									</ul>
 								</div>
 								<!-- !Interactive List Shortcode -->
@@ -490,11 +494,15 @@
 							<div class="section_right">
 								<div class="company_info">
 									<img src="{% static 'img/logo-desktop-full.png' %}" alt="">
-									<p class="fn__animated_text">The AI server of Fonicom, a text-to-image AI
-										where your imagination is the only limit. We’re building market-leading features
-										that will give you greater control over your generations.</p>
+									<p class="fn__animated_text">Cognitista AI RAG is a platform that enhances content
+										generation through AI-driven
+										retrieval, offering efficient, accurate, and contextually relevant data
+										augmentation.</p>
 									<hr>
 									<div class="fn__members">
+										<img src="{% static 'img/user/logo.png' %}" alt="">
+									</div>
+									<!-- <div class="fn__members">
 										<div class="active item">
 											<span class="circle"></span>
 											<span class="text">{{online_users}} Online</span>
@@ -503,7 +511,7 @@
 											<span class="circle"></span>
 											<span class="text">{{total_members}} Members</span>
 										</div>
-									</div>
+									</div> -->
 								</div>
 							</div>
 						</div>
@@ -521,10 +529,12 @@
 							<p>2023© Fonicom Limited</p>
 						</div>
 						<div class="menu_items">
-							<ul>
+							<!-- <ul>
 								<li><a href="terms.html">Terms of Service</a></li>
 								<li><a href="privacy.html">Privacy Policy</a></li>
-							</ul>
+							</ul> -->
+							Content and insights from this AI system should be verified with authoritative
+							sources
 						</div>
 					</div>
 				</footer>

@@ -105,6 +105,7 @@ var new_chat = true;
 						var llm_data = result['llm_data'];
 						var index_data = result['index_data'];
 						var prompt_data = result['prompt_data'];
+						var vector = result['vector'];
 
 						console.log(index_data);
 						// llm replace
@@ -143,6 +144,7 @@ var new_chat = true;
 							$("#index_permission_bar").append(content);
 						}
 
+						// permission replace
 						$("#prompt_permission_bar").html("");
 						console.log(prompt_data);
 						for (var prompt in prompt_data) {
@@ -154,6 +156,12 @@ var new_chat = true;
 
 							$("#prompt_permission_bar").append(model_content);
 						}
+
+						// vector replace
+						$("#vector_permission_bar").html("");
+						var content = "<input type='number' value='" + vector + "' id='vector_input'><button class='fn_save_but' onclick='vector_permission()'>Save</button >";
+						$("#vector_permission_bar").append(content);
+
 
 					},
 					error: function (xhr, status, error) {
@@ -2191,7 +2199,7 @@ var new_chat = true;
 							}
 							else {
 								$.each(result.data, function (index, option) {
-									select.append($('<option selected></option>').attr('value', option.name).text(option.name));
+									select.append($('<option></option>').attr('value', option.name).text(option.name));
 								});
 							}
 

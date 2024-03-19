@@ -125,6 +125,23 @@
 	display: flex;
 }
 
+.fn_save_but {
+	margin-left: 20px;
+	font-family: var(--techwave-body-font-family);
+	background-color: transparent;
+	border: 1px solid var(--techwave-main-color1);
+	padding: 5px 30px;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 16px;
+	color: var(--techwave-body-color);
+}
+
+.fn_save_but:hover {
+	color: var(--techwave-heading-color);
+}
+
+
 .fn_permission_select {
 	width: 20%;
 	margin-top: 20px;
@@ -662,6 +679,7 @@ frenify_typing span.think {
 .fn_newregister_div .techwave_fn_button {
 	cursor: pointer;
 }
+
 .techwave_fn_content {
 	position: relative;
 	margin-left: var(--techwave-left-panel-width);
@@ -1847,6 +1865,12 @@ frenify_typing span.think {
 	font-family: var(--techwave-heading-font-family);
 }
 
+.techwave_fn_footer .menu_items {
+	/* font-weight: bold; */
+	padding-top: 4px;
+	font-size: 14px;
+}
+
 .techwave_fn_footer .menu_items ul {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -1858,6 +1882,7 @@ frenify_typing span.think {
 	padding: 0;
 	list-style-type: none;
 	margin-left: -30px;
+
 }
 
 .techwave_fn_footer .menu_items li {
@@ -1896,7 +1921,7 @@ frenify_typing span.think {
 
 .section_home .section_right {
 	width: 40%;
-	padding: 155px 40px;
+	padding: 82px 40px;
 }
 
 .section_home .company_info {

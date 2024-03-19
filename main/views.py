@@ -7,7 +7,7 @@ from django.urls import reverse
 from django.http import HttpResponseRedirect
 from django.contrib.auth import authenticate, login, logout
 from django.http import StreamingHttpResponse
-from .models import collection, filemodel, promptmodel, buffermodel, indexmodel, llmpermissionmodel, indexpermissionmodel, llmmodel, promptpermissionmodel
+from .models import collection, filemodel, promptmodel, buffermodel, indexmodel, llmpermissionmodel, indexpermissionmodel, llmmodel, promptpermissionmodel, vectormodel
 
 import json, os
 from dotenv import load_dotenv
@@ -94,8 +94,15 @@ def chatbot(request):
         key = llmmodel.objects.get(value=value).llm
         
         model_list.append({"llm": key, "value": value})
+
+    vector = 4
+    try:
+        vector = vectormodel.objects.get(email=email).value
+    except:
+        pass
+
     data = {
-        'prompt_list': prompt_list, 'index_list': index_list, 'name': name, 'email': email, 'model_list': model_list, 'is_admin': check_admin(email), 'show_index_select': show_index_select, 'show_prompt_select': show_prompt_select
+        'prompt_list': prompt_list, 'index_list': index_list, 'name': name, 'email': email, 'model_list': model_list, 'is_admin': check_admin(email), 'show_index_select': show_index_select, 'show_prompt_select': show_prompt_select, 'vector': vector
     }
     return render(request, 'ai-chat-bot.html', data)
 
@@ -158,8 +165,27 @@ def getpermissioninfo(request):
         except:
             pass
     
+    vector = 4
+    try:
+        vector = vectormodel.objects.get(email=user_email).value
+    except:
+        pass
     print(prompt_data)
-    return JsonResponse({"index_data": index_data, "llm_data": llm_data, "prompt_data": prompt_data})
+    return JsonResponse({"index_data": index_data, "llm_data": llm_data, "prompt_data": prompt_data, 'vector': vector})
+
+def setvectorpermission(request):
+    username = request.POST.get('username')
+    value = request.POST.get('value')
+    email = User.objects.get(username=username).email
+
+    value = int(value)
+
+    record = vectormodel.objects.filter(email=email).exists()
+    if record:
+        vectormodel.objects.filter(email=email).update(value=value)
+    else:
+        vectormodel.objects.create(email=email, value=value).save()
+    return JsonResponse({"success": "ok"})
 
 def setllmpermission(request):
     username = request.POST.get('username')
@@ -438,7 +464,7 @@ def query(request):
         llm = ChatOpenAI(temperature=temperature, model=model, openai_api_key=openai_api_key, streaming=True)
     elif model == "togethercomputer/llama-2-70b-chat" or model == "lmsys/vicuna-13b-v1.5":
         llm = Together(model=model, temperature=temperature, max_tokens=1024, top_k=1, together_api_key=together_api_key)
-    elif "sonnet" in model:
+    elif "sonnet" or "haiku" in model:
         llm = Sonnet(model_id="anthropic.claude-3-sonnet-20240229-v1:0", model_kwargs={"temperature": 0.1})
     else:
         llm = BedrockChat(model_id=model, model_kwargs={"temperature": float(temperature)})
@@ -481,12 +507,12 @@ def query(request):
         stuff_chain.memory.clear()
         g_token = llm.get_num_tokens(output['output_text'])
         final_answer = output["output_text"]
-        other_info = f"\nInput Tokens {token_num}. Generated Tokens {g_token}." 
+        other_info = f"\n\nInput Tokens {token_num}. Generated Tokens {g_token}." 
     else:
         reduce_res = reduce_chain({"input_documents": docs, "human_input": query, "question": query}, return_only_outputs=True)
         g_token = llm.get_num_tokens(reduce_res['output_text'])
         final_answer = reduce_res["output_text"]
-        other_info = f"\nInput Tokens {token_num}. Generated Tokens {g_token}." 
+        other_info = f"\n\nInput Tokens {token_num}. Generated Tokens {g_token}." 
         buffer = buffermodel()
         buffer.query = query
         buffer.answer = reduce_res["output_text"]

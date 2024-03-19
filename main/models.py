@@ -60,3 +60,7 @@ class promptpermissionmodel(models.Model):
     email = models.CharField(max_length=50)
     value = models.CharField(max_length=50)
     status = models.BooleanField(default=False)
+
+class vectormodel(models.Model):
+    email = models.EmailField()
+    value = models.IntegerField()

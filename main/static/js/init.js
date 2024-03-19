@@ -790,6 +790,17 @@ var new_chat = true;
 			var confirmConfig = 'Please select the options.';
 
 			// answer
+			FrenifyTechWave.indexValue = $("#indexSelect").val();
+			FrenifyTechWave.collectionValue = $("#collectionSelect").val();
+			FrenifyTechWave.modelValue = $("#modelSelect").val();
+			FrenifyTechWave.promptValue = $("#promptSelect").val();
+
+			if (FrenifyTechWave.indexValue == null) FrenifyTechWave.indexValue = "";
+			if (FrenifyTechWave.collectionValue == null) FrenifyTechWave.collectionValue = "";
+			if (FrenifyTechWave.modelValue == null) FrenifyTechWave.modelValue = "";
+			if (FrenifyTechWave.promptValue == null) FrenifyTechWave.promptValue = "";
+
+
 			if (FrenifyTechWave.indexValue.trim() == "" || FrenifyTechWave.collectionValue.trim() == "" || FrenifyTechWave.modelValue.trim() == "" || FrenifyTechWave.promptValue.trim() == "") {
 				option_select = true
 				if (FrenifyTechWave.indexValue.trim() == "") botText = "Please select the index.";
@@ -2201,8 +2212,9 @@ var new_chat = true;
 								$.each(result.data, function (index, option) {
 									select.append($('<option></option>').attr('value', option.name).text(option.name));
 								});
-							}
 
+
+							}
 
 							FrenifyTechWave.collectionValue = "";
 						}

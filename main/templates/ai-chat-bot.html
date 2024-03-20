@@ -15,7 +15,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<title>AI Chat Bot - TechWave</title>
+	<title>AI Chat Bot - Cognitista</title>
 
 	<script>
 		if (!localStorage.frenify_skin) {
@@ -435,7 +435,20 @@
 
 									<div class="collectionSelect" style="margin-top: 5px;">
 										<select id="collectionSelect">
+											{% if not show_index_select %}
+											{% if show_initial_collection_select %}
 											<option value="" selected disabled>Select a Collection</option>
+											{% for collection in collection_list %}
+											<option value="{{collection}}">{{collection}}</option>
+											{% endfor %}
+											{% else %}
+											{% for collection in collection_list %}
+											<option value="{{collection}}" selected>{{collection}}</option>
+											{% endfor %}
+											{% endif %}
+											{% else %}
+											<option value="" selected disabled>Select a Collection</option>
+											{% endif %}
 										</select>
 									</div>
 

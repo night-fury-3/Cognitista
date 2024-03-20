@@ -100,10 +100,24 @@ def chatbot(request):
         vector = vectormodel.objects.get(email=email).value
     except:
         pass
+    
+    collection_list = []
+    
+    collection_list = []
+    if show_index_select == False:
+        s_index_name = index_list[0]
+        results = indexpermissionmodel.objects.filter(index_name = s_index_name, email=email, status=True)
+        for res in results:
+            collection_list.append(res.collection_name)
+
+    show_initial_collection_select = True
+    if len(collection_list) == 1:
+        show_initial_collection_select = False
 
     data = {
-        'prompt_list': prompt_list, 'index_list': index_list, 'name': name, 'email': email, 'model_list': model_list, 'is_admin': check_admin(email), 'show_index_select': show_index_select, 'show_prompt_select': show_prompt_select, 'vector': vector
+        'prompt_list': prompt_list, 'index_list': index_list, 'name': name, 'email': email, 'model_list': model_list, 'is_admin': check_admin(email), 'show_index_select': show_index_select, 'show_prompt_select': show_prompt_select, 'vector': vector, 'show_initial_collection_select': show_initial_collection_select, 'collection_list': collection_list
     }
+    
     return render(request, 'ai-chat-bot.html', data)
 
 

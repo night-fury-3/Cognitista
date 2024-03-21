@@ -64,11 +64,12 @@ def chatbot(request):
     prompt_list = []
     if prompt_data.count() != 0:
         for prompt in prompt_data:
-            # prompt_list.append({"title": prompt.title, "content": prompt.prompt})
             title = prompt.value
+            
+            print(title)
             content = promptmodel.objects.get(title=title).prompt
             prompt_list.append({"title": title, "content": content})
-    
+            
     show_prompt_select = False
     if len(prompt_list) > 1:
         show_prompt_select = True
@@ -398,15 +399,20 @@ def updatePrompt(request):
         title = request.POST.get("title")
         prompt = request.POST.get("prompt")
 
+        origin_title = promptmodel.objects.get(id=id).title
+
+        promptpermissionmodel.objects.filter(value=origin_title).update(value=title)
         promptmodel.objects.filter(id = id).update(title = title, prompt = prompt)
+
     data = {"success": "ok", "data": "lkskdfjalskd"}
     return JsonResponse(data)
 
 def deletePrompt(request):
     if request.method == "POST":
         id = request.POST.get('id')
-        print(id)
+        title = promptmodel.objects.get(id=id).title
         promptmodel.objects.filter(id = id).delete()
+        promptpermissionmodel.objects.filter(value=title).delete()
 
     data = {"success": "ok", "data": "lkskdfjalskd"}
     return JsonResponse(data)

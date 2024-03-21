@@ -849,6 +849,11 @@ var new_chat = true;
 
 								})
 							}
+							// const regexs = /(?:https?|ftp):\/\/[\n\S]+/gi;
+							const regexs = /(?:https?|ftp):\/\/[^\s\n,]+/gi;
+							substr = substr.replace(regexs, (url) => `<a href="${url}" target="_blank">${url}</a>`);
+
+							console.log(substr);
 							$('.fn__chatbot .chat__item.active .chat__box.bot__chat:last-child .chat').html(substr);
 						}
 					},

@@ -23326,3 +23326,523 @@ Django version 4.2.7, using settings 'cognitista.settings'
 Starting development server at http://0.0.0.0:80/
 Quit the server with CONTROL-C.
 
+Company Law Assistant
+MBR Main
+[21/Mar/2024 17:51:26] "GET /chatbot HTTP/1.1" 200 22159
+[21/Mar/2024 17:51:27] "GET /static/css/plugins.css HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/svg/close.svg HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/svg/search.svg HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/svg/fullscreen.svg HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/js/plugins.js HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/js/jquery.js HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/svg/smallscreen.svg HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/js/init.js HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/svg/sun.svg HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/svg/moon.svg HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/svg/arrow.svg HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/svg/question.svg HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/svg/home.svg HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/svg/image.svg HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/svg/chat.svg HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/svg/logout.svg HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/svg/cube.svg HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/svg/share.svg HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/svg/person.svg HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/img/logo-desktop-full.png HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/img/logo-retina-full.png HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 304 0
+[21/Mar/2024 17:51:27] "GET /static/img/logo-retina-mini.png HTTP/1.1" 304 0
+[21/Mar/2024 17:52:55] "GET /chatbot HTTP/1.1" 302 0
+[21/Mar/2024 17:52:55] "GET /accounts/signin/?next=/chatbot HTTP/1.1" 200 3807
+[21/Mar/2024 17:52:55] "GET /static/js/jquery.js HTTP/1.1" 200 89501
+[21/Mar/2024 17:52:55] "GET /static/css/style.css HTTP/1.1" 200 186394
+[21/Mar/2024 17:52:55] "GET /static/js/plugins.js HTTP/1.1" 200 92951
+[21/Mar/2024 17:52:55] "GET /static/js/init.js HTTP/1.1" 200 78712
+[21/Mar/2024 17:53:11] "GET / HTTP/1.1" 200 18166
+[21/Mar/2024 17:53:12] "GET /static/img/user/logo_mbr.png HTTP/1.1" 304 0
+Company Law Assistant
+MBR Main
+[21/Mar/2024 19:07:37] "GET /chatbot HTTP/1.1" 200 22159
+[21/Mar/2024 19:07:37] "GET /static/js/init.js HTTP/1.1" 304 0
+[21/Mar/2024 19:07:40] "GET /index HTTP/1.1" 200 103520
+[21/Mar/2024 19:07:41] "GET /static/svg/check.svg HTTP/1.1" 200 834
+[21/Mar/2024 19:07:41] "GET /static/svg/option.svg HTTP/1.1" 200 2184
+[21/Mar/2024 19:07:41] "GET /static/svg/trash.svg HTTP/1.1" 200 2138
+[21/Mar/2024 19:07:41] "GET /static/img/models/1.jpg HTTP/1.1" 200 32120
+[21/Mar/2024 19:07:43] "GET /prompt HTTP/1.1" 200 58176
+[21/Mar/2024 19:07:45] "GET /index HTTP/1.1" 200 103520
+[21/Mar/2024 19:07:46] "GET / HTTP/1.1" 200 18166
+[21/Mar/2024 19:09:06] "GET / HTTP/1.1" 200 18166
+[21/Mar/2024 19:19:45] "GET / HTTP/1.1" 200 18166
+[21/Mar/2024 19:19:49] "GET / HTTP/1.1" 200 18166
+[22/Mar/2024 14:13:35] "GET / HTTP/1.1" 200 18166
+[22/Mar/2024 14:13:36] "GET /static/css/style.css HTTP/1.1" 304 0
+[22/Mar/2024 14:13:36] "GET /static/svg/close.svg HTTP/1.1" 304 0
+[22/Mar/2024 14:13:36] "GET /static/css/plugins.css HTTP/1.1" 304 0
+[22/Mar/2024 14:13:36] "GET /static/svg/search.svg HTTP/1.1" 304 0
+[22/Mar/2024 14:13:36] "GET /static/svg/fullscreen.svg HTTP/1.1" 304 0
+[22/Mar/2024 14:13:36] "GET /static/svg/smallscreen.svg HTTP/1.1" 304 0
+[22/Mar/2024 14:13:36] "GET /static/js/jquery.js HTTP/1.1" 200 89501
+[22/Mar/2024 14:13:36] "GET /static/js/init.js HTTP/1.1" 304 0
+[22/Mar/2024 14:13:36] "GET /static/js/plugins.js HTTP/1.1" 200 92951
+[22/Mar/2024 14:13:36] "GET /static/svg/sun.svg HTTP/1.1" 304 0
+[22/Mar/2024 14:13:36] "GET /static/svg/moon.svg HTTP/1.1" 304 0
+[22/Mar/2024 14:13:36] "GET /static/img/logo-desktop-full.png HTTP/1.1" 200 11542
+[22/Mar/2024 14:13:36] "GET /static/svg/home.svg HTTP/1.1" 304 0
+[22/Mar/2024 14:13:36] "GET /static/svg/arrow.svg HTTP/1.1" 304 0
+[22/Mar/2024 14:13:36] "GET /static/svg/chat.svg HTTP/1.1" 304 0
+[22/Mar/2024 14:13:36] "GET /static/svg/cube.svg HTTP/1.1" 304 0
+[22/Mar/2024 14:13:36] "GET /static/svg/person.svg HTTP/1.1" 304 0
+[22/Mar/2024 14:13:36] "GET /static/svg/image.svg HTTP/1.1" 304 0
+[22/Mar/2024 14:13:36] "GET /static/svg/share.svg HTTP/1.1" 304 0
+[22/Mar/2024 14:13:36] "GET /static/svg/logout.svg HTTP/1.1" 304 0
+[22/Mar/2024 14:13:36] "GET /static/svg/question.svg HTTP/1.1" 304 0
+[22/Mar/2024 14:13:37] "GET /static/img/user/logo_mbr.png HTTP/1.1" 304 0
+[22/Mar/2024 14:13:37] "GET /static/img/logo-retina-full.png HTTP/1.1" 200 11542
+[22/Mar/2024 14:13:37] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 200 1079
+[22/Mar/2024 14:13:37] "GET /static/img/logo-retina-mini.png HTTP/1.1" 200 1197
+[22/Mar/2024 14:24:00] "GET /chatbot HTTP/1.1" 302 0
+[22/Mar/2024 14:24:00] "GET /accounts/signin/?next=/chatbot HTTP/1.1" 200 3807
+[22/Mar/2024 14:24:01] "GET /static/css/style.css HTTP/1.1" 304 0
+[22/Mar/2024 14:24:01] "GET /static/js/jquery.js HTTP/1.1" 200 89501
+[22/Mar/2024 14:24:01] "GET /static/js/plugins.js HTTP/1.1" 200 92951
+[22/Mar/2024 14:24:01] "GET /static/js/init.js HTTP/1.1" 304 0
+[22/Mar/2024 14:24:12] "GET /chatbot HTTP/1.1" 302 0
+[22/Mar/2024 14:24:12] "GET /accounts/signin/?next=/chatbot HTTP/1.1" 200 3807
+[22/Mar/2024 15:43:18] "GET /chatbot HTTP/1.1" 302 0
+[22/Mar/2024 15:43:18] "GET /accounts/signin/?next=/chatbot HTTP/1.1" 200 3807
+[22/Mar/2024 18:56:09] "GET /chatbot HTTP/1.1" 302 0
+[22/Mar/2024 18:56:09] "GET /accounts/signin/?next=/chatbot HTTP/1.1" 200 3807
+[22/Mar/2024 18:56:10] "GET /static/js/init.js HTTP/1.1" 304 0
+[22/Mar/2024 18:57:17,844] - Broken pipe from ('195.158.107.11', 56562)
+[25/Mar/2024 07:27:33] "GET / HTTP/1.1" 302 0
+[25/Mar/2024 07:27:33] "GET /accounts/signin/?next=/ HTTP/1.1" 200 3807
+[25/Mar/2024 07:27:33] "GET /static/css/style.css HTTP/1.1" 200 186394
+[25/Mar/2024 07:27:33] "GET /static/js/init.js HTTP/1.1" 200 78712
+Not Found: /favicon.ico
+[25/Mar/2024 07:27:34] "GET /favicon.ico HTTP/1.1" 404 7875
+[26/Mar/2024 14:46:55] "GET / HTTP/1.1" 302 0
+[26/Mar/2024 14:46:55] "GET /accounts/signin/?next=/ HTTP/1.1" 200 3807
+[26/Mar/2024 14:46:55] "GET /static/css/plugins.css HTTP/1.1" 200 19908
+[26/Mar/2024 14:46:55] "GET /static/css/style.css HTTP/1.1" 200 186394
+[26/Mar/2024 14:46:55] "GET /static/js/init.js HTTP/1.1" 200 78712
+[26/Mar/2024 14:46:55] "GET /static/js/plugins.js HTTP/1.1" 200 92951
+[26/Mar/2024 14:46:55] "GET /static/js/jquery.js HTTP/1.1" 200 89501
+Not Found: /favicon.ico
+[26/Mar/2024 14:46:56] "GET /favicon.ico HTTP/1.1" 404 7875
+[26/Mar/2024 14:48:33] "GET / HTTP/1.1" 302 0
+[26/Mar/2024 14:48:33] "GET /accounts/signin/?next=/ HTTP/1.1" 200 3807
+[26/Mar/2024 14:48:33] "GET /static/css/plugins.css HTTP/1.1" 200 19908
+[26/Mar/2024 14:48:33] "GET /static/css/style.css HTTP/1.1" 200 186394
+[26/Mar/2024 14:48:33] "GET /static/js/jquery.js HTTP/1.1" 200 89501
+[26/Mar/2024 14:48:33] "GET /static/js/plugins.js HTTP/1.1" 200 92951
+[26/Mar/2024 14:48:33] "GET /static/js/init.js HTTP/1.1" 200 78712
+Not Found: /favicon.ico
+[26/Mar/2024 14:48:34] "GET /favicon.ico HTTP/1.1" 404 7875
+[26/Mar/2024 18:20:30] "GET /chatbot HTTP/1.1" 302 0
+[26/Mar/2024 18:20:30] "GET /accounts/signin/?next=/chatbot HTTP/1.1" 200 3807
+[26/Mar/2024 18:20:31] "GET /static/css/plugins.css HTTP/1.1" 200 19908
+[26/Mar/2024 18:20:31] "GET /static/css/style.css HTTP/1.1" 304 0
+[26/Mar/2024 18:20:31] "GET /static/js/jquery.js HTTP/1.1" 200 89501
+[26/Mar/2024 18:20:31] "GET /static/js/plugins.js HTTP/1.1" 200 92951
+[26/Mar/2024 18:20:31] "GET /static/js/init.js HTTP/1.1" 304 0
+[26/Mar/2024 18:20:32] "GET / HTTP/1.1" 200 18166
+[26/Mar/2024 18:20:32] "GET /static/css/plugins.css HTTP/1.1" 304 0
+[26/Mar/2024 18:20:32] "GET /static/css/style.css HTTP/1.1" 304 0
+[26/Mar/2024 18:20:32] "GET /static/svg/search.svg HTTP/1.1" 304 0
+[26/Mar/2024 18:20:32] "GET /static/svg/close.svg HTTP/1.1" 304 0
+[26/Mar/2024 18:20:32] "GET /static/js/jquery.js HTTP/1.1" 304 0
+[26/Mar/2024 18:20:32] "GET /static/svg/fullscreen.svg HTTP/1.1" 304 0
+[26/Mar/2024 18:20:32] "GET /static/svg/smallscreen.svg HTTP/1.1" 304 0
+[26/Mar/2024 18:20:32] "GET /static/js/plugins.js HTTP/1.1" 304 0
+[26/Mar/2024 18:20:32] "GET /static/js/init.js HTTP/1.1" 304 0
+[26/Mar/2024 18:20:32] "GET /static/svg/sun.svg HTTP/1.1" 304 0
+[26/Mar/2024 18:20:33] "GET /static/svg/question.svg HTTP/1.1" 304 0
+[26/Mar/2024 18:20:33] "GET /static/svg/logout.svg HTTP/1.1" 304 0
+[26/Mar/2024 18:20:33] "GET /static/svg/chat.svg HTTP/1.1" 304 0
+[26/Mar/2024 18:20:33] "GET /static/svg/moon.svg HTTP/1.1" 304 0
+[26/Mar/2024 18:20:33] "GET /static/svg/image.svg HTTP/1.1" 304 0
+[26/Mar/2024 18:20:33] "GET /static/svg/share.svg HTTP/1.1" 304 0
+[26/Mar/2024 18:20:33] "GET /static/img/logo-desktop-full.png HTTP/1.1" 304 0
+[26/Mar/2024 18:20:33] "GET /static/svg/arrow.svg HTTP/1.1" 304 0
+[26/Mar/2024 18:20:33] "GET /static/svg/home.svg HTTP/1.1" 304 0
+[26/Mar/2024 18:20:33] "GET /static/svg/cube.svg HTTP/1.1" 304 0
+[26/Mar/2024 18:20:33] "GET /static/img/user/logo_mbr.png HTTP/1.1" 304 0
+[26/Mar/2024 18:20:33] "GET /static/svg/person.svg HTTP/1.1" 304 0
+[26/Mar/2024 18:20:33] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 304 0
+[26/Mar/2024 18:20:33] "GET /static/img/logo-retina-full.png HTTP/1.1" 304 0
+[26/Mar/2024 18:20:33] "GET /static/img/logo-retina-mini.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[26/Mar/2024 18:20:33] "GET /favicon.ico HTTP/1.1" 404 7874
+Company Law Assistant
+MBR Main
+[26/Mar/2024 18:20:44] "GET /chatbot HTTP/1.1" 200 22159
+[26/Mar/2024 18:20:44] "GET /static/svg/enter.svg HTTP/1.1" 304 0
+[26/Mar/2024 18:20:49] "POST /getCollectionList HTTP/1.1" 200 195
+claude-3-haiku-20240307
+text-embedding-3-large
+/usr/local/lib/python3.8/dist-packages/langchain_core/_api/deprecation.py:117: LangChainDeprecationWarning: The function `__call__` was deprecated in LangChain 0.1.0 and will be removed in 0.2.0. Use invoke instead.
+  warn_deprecated(
+[26/Mar/2024 18:21:46] "POST /query HTTP/1.1" 200 1677
+claude-3-haiku-20240307
+text-embedding-3-large
+[26/Mar/2024 18:22:24] "POST /query HTTP/1.1" 200 827
+claude-3-haiku-20240307
+text-embedding-3-large
+Query =>  when were the xmas holidays in 2023
+Answer =>  Based on the information provided, the Malta Business Registry offices were closed on Tuesday, 26th December 2023 for the Christmas holidays.
+
+This can be seen from the following excerpt:
+
+Source: http://mbr.mt/?p=1446 (Opening Hours during the Festive Season, Date: 2023-12-01)
+"The general public is kindly being informed that the Malta Business Registry offices will be closed on Tuesday 26th December, 2023."
+
+However, the online services were still available on that day, as mentioned:
+
+"On the said day, the online services shall continue to be available as usual on the MBR's website: https://register.mbr.mt/"
+
+So in summary, the Christmas holiday closure for the Malta Business Registry offices in 2023 was on Tuesday, 26th December, while online services remained operational.
+[26/Mar/2024 18:23:18] "POST /query HTTP/1.1" 200 1362
+claude-3-haiku-20240307
+text-embedding-3-large
+[26/Mar/2024 18:29:35] "POST /query HTTP/1.1" 200 1649
+claude-3-haiku-20240307
+text-embedding-3-large
+[26/Mar/2024 18:30:27] "POST /query HTTP/1.1" 200 2660
+[26/Mar/2024 21:41:50] "GET /accounts/signin/?next=/ HTTP/1.1" 200 3807
+[27/Mar/2024 06:11:24] "POST /accounts/signin/ HTTP/1.1" 302 0
+[27/Mar/2024 06:11:24] "GET / HTTP/1.1" 200 18166
+[27/Mar/2024 06:11:24] "GET /static/svg/search.svg HTTP/1.1" 200 1096
+[27/Mar/2024 06:11:24] "GET /static/svg/close.svg HTTP/1.1" 200 1266
+[27/Mar/2024 06:11:24] "GET /static/svg/fullscreen.svg HTTP/1.1" 200 1223
+[27/Mar/2024 06:11:24] "GET /static/svg/smallscreen.svg HTTP/1.1" 200 1283
+[27/Mar/2024 06:11:24] "GET /static/svg/sun.svg HTTP/1.1" 200 2396
+[27/Mar/2024 06:11:24] "GET /static/svg/moon.svg HTTP/1.1" 200 1090
+[27/Mar/2024 06:11:24] "GET /static/img/logo-retina-full.png HTTP/1.1" 200 11542
+[27/Mar/2024 06:11:24] "GET /static/img/logo-desktop-full.png HTTP/1.1" 200 11542
+[27/Mar/2024 06:11:24] "GET /static/svg/home.svg HTTP/1.1" 200 1341
+[27/Mar/2024 06:11:24] "GET /static/svg/arrow.svg HTTP/1.1" 200 779
+[27/Mar/2024 06:11:24] "GET /static/svg/question.svg HTTP/1.1" 200 1617
+[27/Mar/2024 06:11:24] "GET /static/svg/cube.svg HTTP/1.1" 200 1608
+[27/Mar/2024 06:11:24] "GET /static/svg/share.svg HTTP/1.1" 200 1564
+[27/Mar/2024 06:11:24] "GET /static/svg/image.svg HTTP/1.1" 200 1916
+[27/Mar/2024 06:11:24] "GET /static/svg/chat.svg HTTP/1.1" 200 1998
+[27/Mar/2024 06:11:24] "GET /static/svg/person.svg HTTP/1.1" 200 1114
+[27/Mar/2024 06:11:24] "GET /static/svg/logout.svg HTTP/1.1" 200 1410
+[27/Mar/2024 06:11:24] "GET /static/js/init.js HTTP/1.1" 304 0
+[27/Mar/2024 06:11:24] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 200 1079
+[27/Mar/2024 06:11:24] "GET /static/img/user/logo_mbr.png HTTP/1.1" 200 11563
+[27/Mar/2024 06:11:24] "GET /static/img/logo-retina-mini.png HTTP/1.1" 200 1197
+[27/Mar/2024 06:11:24] "GET /static/img/logo-retina-full.png HTTP/1.1" 200 11542
+[27/Mar/2024 06:11:24] "GET /static/img/user/logo_mbr.png HTTP/1.1" 200 11563
+Company Law Assistant
+MBR Main
+[27/Mar/2024 06:11:34] "GET /chatbot HTTP/1.1" 200 22159
+[27/Mar/2024 06:11:34] "GET /static/svg/enter.svg HTTP/1.1" 200 1025
+[27/Mar/2024 06:11:36] "GET /index HTTP/1.1" 200 103520
+[27/Mar/2024 06:11:36] "GET /static/img/logo-desktop-full.png HTTP/1.1" 200 11542
+[27/Mar/2024 06:11:36] "GET /static/svg/trash.svg HTTP/1.1" 200 2138
+[27/Mar/2024 06:11:36] "GET /static/svg/check.svg HTTP/1.1" 200 834
+[27/Mar/2024 06:11:36] "GET /static/svg/option.svg HTTP/1.1" 200 2184
+[27/Mar/2024 06:11:36] "GET /static/svg/close.svg HTTP/1.1" 200 1266
+[27/Mar/2024 06:11:36] "GET /static/img/models/1.jpg HTTP/1.1" 200 32120
+[27/Mar/2024 06:11:36] "GET /static/svg/search.svg HTTP/1.1" 200 1096
+[27/Mar/2024 06:11:36] "GET /static/img/models/1.jpg HTTP/1.1" 200 32120
+[27/Mar/2024 06:11:36] "GET /static/svg/trash.svg HTTP/1.1" 200 2138
+[27/Mar/2024 06:11:37] "GET /static/svg/moon.svg HTTP/1.1" 200 1090
+[27/Mar/2024 06:11:37] "GET /static/svg/cube.svg HTTP/1.1" 200 1608
+[27/Mar/2024 06:11:37] "GET /static/svg/chat.svg HTTP/1.1" 200 1998
+[27/Mar/2024 06:11:37] "GET /static/svg/fullscreen.svg HTTP/1.1" 200 1223
+[27/Mar/2024 06:11:37] "GET /static/svg/smallscreen.svg HTTP/1.1" 200 1283
+[27/Mar/2024 06:11:37] "GET /static/svg/sun.svg HTTP/1.1" 200 2396
+[27/Mar/2024 06:11:38] "GET /static/svg/arrow.svg HTTP/1.1" 200 779
+[27/Mar/2024 06:11:38] "GET /static/svg/home.svg HTTP/1.1" 200 1341
+[27/Mar/2024 06:11:38] "GET /static/svg/image.svg HTTP/1.1" 200 1916
+[27/Mar/2024 06:11:38] "GET /static/svg/person.svg HTTP/1.1" 200 1114
+[27/Mar/2024 06:11:38] "GET /static/svg/share.svg HTTP/1.1" 200 1564
+[27/Mar/2024 06:11:38] "GET /static/svg/question.svg HTTP/1.1" 200 1617
+[27/Mar/2024 06:11:39] "GET /prompt HTTP/1.1" 200 58176
+[27/Mar/2024 06:11:39] "GET /static/svg/download.svg HTTP/1.1" 200 1297
+[27/Mar/2024 06:11:39] "GET /static/svg/like-full.svg HTTP/1.1" 200 1015
+[27/Mar/2024 06:11:39] "GET /static/svg/like.svg HTTP/1.1" 200 1382
+[27/Mar/2024 06:11:39] "GET /static/img/user/user.jpg HTTP/1.1" 200 4355
+[27/Mar/2024 06:11:39] "GET /static/img/gallery/main.jpg HTTP/1.1" 200 10496
+[27/Mar/2024 06:11:39] "GET /static/js/prompt.js HTTP/1.1" 200 8180
+[27/Mar/2024 06:11:39] "GET /static/img/related/1.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:39] "GET /static/img/related/2.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:39] "GET /static/img/related/3.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:39] "GET /static/img/related/5.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:39] "GET /static/img/related/4.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:39] "GET /static/img/related/6.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:39] "GET /static/img/related/7.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:39] "GET /static/img/related/9.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:39] "GET /static/img/related/8.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:39] "GET /static/img/related/10.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:39] "GET /static/img/related/11.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:39] "GET /static/img/related/12.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:39] "GET /static/img/gallery/main.jpg HTTP/1.1" 200 10496
+[27/Mar/2024 06:11:39] "GET /static/img/related/1.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:39] "GET /static/img/related/5.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:39] "GET /static/img/related/4.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:40] "GET /static/img/related/8.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:40] "GET /static/img/related/9.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:40] "GET /static/img/related/2.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:40] "GET /static/img/related/3.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:41] "GET /static/img/related/6.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:41] "GET /static/img/related/7.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:41] "GET /static/img/related/12.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:41] "GET /static/img/related/10.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:41] "GET /static/img/related/11.jpg HTTP/1.1" 200 7924
+[27/Mar/2024 06:11:47] "GET /accounts HTTP/1.1" 200 19383
+[27/Mar/2024 10:21:27] "GET /static/js/init.js HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[27/Mar/2024 10:21:28] "GET /favicon.ico HTTP/1.1" 404 7874
+[27/Mar/2024 22:51:14] "GET / HTTP/1.1" 200 18166
+[27/Mar/2024 22:51:15] "GET /static/css/style.css HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/css/plugins.css HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/svg/search.svg HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/js/jquery.js HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/svg/close.svg HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/svg/fullscreen.svg HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/svg/smallscreen.svg HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/js/plugins.js HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/svg/logout.svg HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/svg/sun.svg HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/svg/share.svg HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/svg/question.svg HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/svg/chat.svg HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/svg/arrow.svg HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/svg/cube.svg HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/svg/image.svg HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/svg/moon.svg HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/svg/home.svg HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/svg/person.svg HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/img/logo-retina-full.png HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/img/logo-desktop-full.png HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/img/user/logo_mbr.png HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 304 0
+[27/Mar/2024 22:51:15] "GET /static/img/logo-retina-mini.png HTTP/1.1" 304 0
+Company Law Assistant
+MBR Main
+[27/Mar/2024 22:51:19] "GET /chatbot HTTP/1.1" 200 22159
+[27/Mar/2024 22:51:19] "GET /static/svg/enter.svg HTTP/1.1" 304 0
+[27/Mar/2024 22:51:23] "POST /getCollectionList HTTP/1.1" 200 237
+[27/Mar/2024 22:51:26] "POST /getCollectionList HTTP/1.1" 200 195
+Company Law Assistant
+MBR Main
+[27/Mar/2024 23:26:03] "GET /chatbot HTTP/1.1" 200 22159
+Not Found: /favicon.ico
+[28/Mar/2024 08:31:51] "GET /favicon.ico HTTP/1.1" 404 7874
+[28/Mar/2024 10:48:17] "GET /prompt HTTP/1.1" 200 58176
+[28/Mar/2024 10:48:18] "GET /static/js/init.js HTTP/1.1" 304 0
+[28/Mar/2024 10:48:18] "GET /static/svg/download.svg HTTP/1.1" 304 0
+[28/Mar/2024 10:48:18] "GET /static/svg/like.svg HTTP/1.1" 304 0
+[28/Mar/2024 10:48:18] "GET /static/js/prompt.js HTTP/1.1" 200 8180
+[28/Mar/2024 10:48:18] "GET /static/img/user/user.jpg HTTP/1.1" 200 4355
+[28/Mar/2024 10:48:18] "GET /static/img/gallery/main.jpg HTTP/1.1" 200 10496
+[28/Mar/2024 10:48:18] "GET /static/svg/like-full.svg HTTP/1.1" 304 0
+[28/Mar/2024 10:48:18] "GET /static/img/related/1.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 10:48:18] "GET /static/img/related/2.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 10:48:18] "GET /static/img/related/4.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 10:48:18] "GET /static/img/related/3.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 10:48:18] "GET /static/img/related/5.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 10:48:18] "GET /static/img/related/7.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 10:48:18] "GET /static/img/related/8.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 10:48:18] "GET /static/img/related/6.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 10:48:18] "GET /static/img/related/9.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 10:48:18] "GET /static/img/related/10.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 10:48:18] "GET /static/img/related/11.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 10:48:18] "GET /static/img/related/12.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 10:49:50] "POST /updatePrompt HTTP/1.1" 200 41
+[28/Mar/2024 11:10:47] "POST /updatePrompt HTTP/1.1" 200 41
+[28/Mar/2024 17:28:51] "GET /prompt HTTP/1.1" 200 57973
+[28/Mar/2024 17:30:30] "POST /addPrompt HTTP/1.1" 200 27
+[28/Mar/2024 17:30:49] "GET /permission HTTP/1.1" 200 26209
+{'Company Law Assistant': True, 'MBR Main': True, 'Company Law 3': False, 'default': False, 'defaulttest': False, 'Gaming Test': False, 'Terms and Conditions Compliance': False, 'Terms and Conditions Compliance 2': False, 'Company Law New': False, 'JW': False, 'new test': False, 'Gaming General': False, 'new2': False, 'website bot': False, 'Adverse Media': False, 'adverse media': False, 'Articles 2': False}
+[28/Mar/2024 17:30:54] "POST /getpermissioninfo HTTP/1.1" 200 1273
+[28/Mar/2024 17:30:58] "POST /setpromptpermission HTTP/1.1" 200 17
+[28/Mar/2024 17:31:08] "POST /setvectorpermission HTTP/1.1" 200 17
+[28/Mar/2024 17:31:11] "POST /setvectorpermission HTTP/1.1" 200 17
+[28/Mar/2024 17:33:50] "GET /prompt HTTP/1.1" 200 59081
+[28/Mar/2024 17:34:04] "GET /prompt HTTP/1.1" 200 59081
+[28/Mar/2024 17:45:52] "GET /permission HTTP/1.1" 200 26209
+{'Company Law Assistant': True, 'MBR Main': True, 'Company Law 3': False, 'default': False, 'defaulttest': False, 'Gaming Test': False, 'Terms and Conditions Compliance': False, 'Terms and Conditions Compliance 2': False, 'Company Law New': False, 'JW': False, 'new test': False, 'Gaming General': False, 'new2': False, 'website bot': False, 'Adverse Media': False, 'adverse media': False, 'Articles 2': True}
+[28/Mar/2024 17:45:55] "POST /getpermissioninfo HTTP/1.1" 200 1272
+[28/Mar/2024 17:46:04] "POST /setpromptpermission HTTP/1.1" 200 17
+[28/Mar/2024 17:46:05] "POST /setpromptpermission HTTP/1.1" 200 17
+[28/Mar/2024 17:46:06] "POST /setpromptpermission HTTP/1.1" 200 17
+[28/Mar/2024 17:46:08] "POST /setpromptpermission HTTP/1.1" 200 17
+[28/Mar/2024 17:46:09] "POST /setpromptpermission HTTP/1.1" 200 17
+[28/Mar/2024 17:46:09] "POST /setpromptpermission HTTP/1.1" 200 17
+[28/Mar/2024 17:46:11] "POST /setpromptpermission HTTP/1.1" 200 17
+[28/Mar/2024 17:46:12] "POST /setpromptpermission HTTP/1.1" 200 17
+[28/Mar/2024 17:46:13] "POST /setpromptpermission HTTP/1.1" 200 17
+[28/Mar/2024 17:46:14] "POST /setpromptpermission HTTP/1.1" 200 17
+[28/Mar/2024 17:46:15] "POST /setpromptpermission HTTP/1.1" 200 17
+[28/Mar/2024 17:46:17] "POST /setpromptpermission HTTP/1.1" 200 17
+[28/Mar/2024 17:46:18] "POST /setpromptpermission HTTP/1.1" 200 17
+[28/Mar/2024 17:46:19] "POST /setpromptpermission HTTP/1.1" 200 17
+[28/Mar/2024 17:46:23] "POST /setvectorpermission HTTP/1.1" 200 17
+[28/Mar/2024 17:47:12] "GET /prompt HTTP/1.1" 200 59081
+[28/Mar/2024 17:47:22] "GET /prompt HTTP/1.1" 200 59081
+[28/Mar/2024 17:47:26] "GET /prompt HTTP/1.1" 200 59081
+[28/Mar/2024 17:53:08] "GET /prompt HTTP/1.1" 200 59081
+Not Found: /favicon.ico
+[28/Mar/2024 17:53:09] "GET /favicon.ico HTTP/1.1" 404 7874
+[28/Mar/2024 17:53:18] "GET /prompt HTTP/1.1" 200 59081
+[28/Mar/2024 17:53:18] "GET /static/css/plugins.css HTTP/1.1" 200 19908
+[28/Mar/2024 17:53:18] "GET /static/svg/close.svg HTTP/1.1" 200 1266
+[28/Mar/2024 17:53:18] "GET /static/svg/share.svg HTTP/1.1" 200 1564
+[28/Mar/2024 17:53:18] "GET /static/svg/download.svg HTTP/1.1" 200 1297
+[28/Mar/2024 17:53:18] "GET /static/svg/arrow.svg HTTP/1.1" 200 779
+[28/Mar/2024 17:53:18] "GET /static/js/jquery.js HTTP/1.1" 200 89501
+[28/Mar/2024 17:53:18] "GET /static/css/style.css HTTP/1.1" 200 186394
+[28/Mar/2024 17:53:18] "GET /static/js/prompt.js HTTP/1.1" 200 8180
+[28/Mar/2024 17:53:18] "GET /static/svg/like.svg HTTP/1.1" 200 1382
+[28/Mar/2024 17:53:19] "GET /static/js/plugins.js HTTP/1.1" 200 92951
+[28/Mar/2024 17:53:19] "GET /static/js/init.js HTTP/1.1" 200 78712
+[28/Mar/2024 17:53:19] "GET /static/svg/like-full.svg HTTP/1.1" 200 1015
+[28/Mar/2024 17:53:19] "GET /static/img/gallery/main.jpg HTTP/1.1" 200 10496
+[28/Mar/2024 17:53:19] "GET /static/img/user/user.jpg HTTP/1.1" 200 4355
+[28/Mar/2024 17:53:19] "GET /static/svg/search.svg HTTP/1.1" 200 1096
+[28/Mar/2024 17:53:19] "GET /static/img/related/1.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 17:53:19] "GET /static/img/related/5.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 17:53:19] "GET /static/svg/fullscreen.svg HTTP/1.1" 200 1223
+[28/Mar/2024 17:53:19] "GET /static/svg/home.svg HTTP/1.1" 200 1341
+[28/Mar/2024 17:53:19] "GET /static/svg/moon.svg HTTP/1.1" 200 1090
+[28/Mar/2024 17:53:19] "GET /static/svg/question.svg HTTP/1.1" 200 1617
+[28/Mar/2024 17:53:19] "GET /static/svg/smallscreen.svg HTTP/1.1" 200 1283
+[28/Mar/2024 17:53:19] "GET /static/img/logo-retina-full.png HTTP/1.1" 200 11542
+[28/Mar/2024 17:53:19] "GET /static/svg/logout.svg HTTP/1.1" 200 1410
+[28/Mar/2024 17:53:19] "GET /static/img/related/4.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 17:53:19] "GET /static/img/related/2.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 17:53:19] "GET /static/svg/sun.svg HTTP/1.1" 200 2396
+[28/Mar/2024 17:53:19] "GET /static/img/related/6.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 17:53:19] "GET /static/img/related/3.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 17:53:19] "GET /static/svg/cube.svg HTTP/1.1" 200 1608
+[28/Mar/2024 17:53:19] "GET /static/svg/chat.svg HTTP/1.1" 200 1998
+[28/Mar/2024 17:53:19] "GET /static/svg/smallscreen.svg HTTP/1.1" 200 1283
+[28/Mar/2024 17:53:19] "GET /static/svg/sun.svg HTTP/1.1" 200 2396
+[28/Mar/2024 17:53:19] "GET /static/svg/image.svg HTTP/1.1" 200 1916
+[28/Mar/2024 17:53:19] "GET /static/svg/person.svg HTTP/1.1" 200 1114
+[28/Mar/2024 17:53:19] "GET /static/svg/moon.svg HTTP/1.1" 200 1090
+[28/Mar/2024 17:53:19] "GET /static/svg/home.svg HTTP/1.1" 200 1341
+[28/Mar/2024 17:53:19] "GET /static/svg/cube.svg HTTP/1.1" 200 1608
+[28/Mar/2024 17:53:19] "GET /static/svg/chat.svg HTTP/1.1" 200 1998
+[28/Mar/2024 17:53:19] "GET /static/svg/image.svg HTTP/1.1" 200 1916
+[28/Mar/2024 17:53:19] "GET /static/svg/person.svg HTTP/1.1" 200 1114
+[28/Mar/2024 17:53:19] "GET /static/svg/question.svg HTTP/1.1" 200 1617
+[28/Mar/2024 17:53:19] "GET /static/svg/logout.svg HTTP/1.1" 200 1410
+[28/Mar/2024 17:53:19] "GET /static/svg/share.svg HTTP/1.1" 200 1564
+[28/Mar/2024 17:53:19] "GET /static/svg/close.svg HTTP/1.1" 200 1266
+[28/Mar/2024 17:53:19] "GET /static/svg/download.svg HTTP/1.1" 200 1297
+[28/Mar/2024 17:53:19] "GET /static/svg/arrow.svg HTTP/1.1" 200 779
+[28/Mar/2024 17:53:20] "GET /static/svg/like.svg HTTP/1.1" 200 1382
+[28/Mar/2024 17:53:20] "GET /static/svg/like-full.svg HTTP/1.1" 200 1015
+[28/Mar/2024 17:53:20] "GET /static/svg/search.svg HTTP/1.1" 200 1096
+[28/Mar/2024 17:53:20] "GET /static/svg/fullscreen.svg HTTP/1.1" 200 1223
+[28/Mar/2024 17:53:20] "GET /static/svg/close.svg HTTP/1.1" 200 1266
+[28/Mar/2024 17:53:20] "GET /static/svg/share.svg HTTP/1.1" 200 1564
+[28/Mar/2024 17:53:20] "GET /static/svg/arrow.svg HTTP/1.1" 200 779
+[28/Mar/2024 17:53:20] "GET /static/svg/search.svg HTTP/1.1" 200 1096
+[28/Mar/2024 17:53:20] "GET /static/svg/close.svg HTTP/1.1" 200 1266
+[28/Mar/2024 17:53:20] "GET /static/svg/arrow.svg HTTP/1.1" 200 779
+[28/Mar/2024 17:53:20] "GET /static/svg/arrow.svg HTTP/1.1" 200 779
+[28/Mar/2024 17:53:20] "GET /static/svg/arrow.svg HTTP/1.1" 200 779
+[28/Mar/2024 17:53:20] "GET /static/svg/arrow.svg HTTP/1.1" 200 779
+[28/Mar/2024 17:53:20] "GET /static/img/related/7.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 17:53:20] "GET /static/img/related/8.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 17:53:20] "GET /static/img/related/10.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 17:53:20] "GET /static/img/related/9.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 17:53:20] "GET /static/img/related/11.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 17:53:20] "GET /static/img/related/12.jpg HTTP/1.1" 200 7924
+[28/Mar/2024 17:53:20] "GET /static/img/logo-desktop-full.png HTTP/1.1" 200 11542
+[28/Mar/2024 17:53:20] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 200 1079
+[28/Mar/2024 17:53:20] "GET /static/img/logo-retina-mini.png HTTP/1.1" 200 1197
+Not Found: /favicon.ico
+[28/Mar/2024 17:53:20] "GET /favicon.ico HTTP/1.1" 404 7874
+[28/Mar/2024 17:53:24] "GET /prompt HTTP/1.1" 200 59081
+[28/Mar/2024 17:53:35] "GET /accounts HTTP/1.1" 200 19383
+[28/Mar/2024 17:53:36] "GET /prompt HTTP/1.1" 200 59081
+[28/Mar/2024 17:54:02] "POST /deletePrompt HTTP/1.1" 200 41
+[28/Mar/2024 17:54:04] "GET /prompt HTTP/1.1" 200 57973
+[28/Mar/2024 17:54:44] "GET /permission HTTP/1.1" 200 26209
+{'Company Law Assistant': True, 'MBR Main': True, 'Company Law 3': True, 'default': True, 'defaulttest': True, 'Gaming Test': True, 'Terms and Conditions Compliance': True, 'Terms and Conditions Compliance 2': True, 'Company Law New': True, 'JW': True, 'new test': True, 'Gaming General': True, 'new2': True, 'website bot': True, 'Adverse Media': True, 'adverse media': True}
+[28/Mar/2024 17:54:47] "POST /getpermissioninfo HTTP/1.1" 200 1238
+[28/Mar/2024 17:54:51] "GET /permission HTTP/1.1" 200 26209
+{'Company Law Assistant': True, 'MBR Main': True, 'Company Law 3': True, 'default': True, 'defaulttest': True, 'Gaming Test': True, 'Terms and Conditions Compliance': True, 'Terms and Conditions Compliance 2': True, 'Company Law New': True, 'JW': True, 'new test': True, 'Gaming General': True, 'new2': True, 'website bot': True, 'Adverse Media': True, 'adverse media': True}
+[28/Mar/2024 17:54:58] "POST /getpermissioninfo HTTP/1.1" 200 1238
+[28/Mar/2024 17:55:07] "POST /setpromptpermission HTTP/1.1" 200 17
+[28/Mar/2024 17:55:10] "POST /setpromptpermission HTTP/1.1" 200 17
+[28/Mar/2024 17:55:10] "GET /permission HTTP/1.1" 200 26209
+{'Company Law Assistant': False, 'MBR Main': False, 'Company Law 3': False, 'default': False, 'defaulttest': False, 'Gaming Test': False, 'Terms and Conditions Compliance': False, 'Terms and Conditions Compliance 2': False, 'Company Law New': False, 'JW': False, 'new test': False, 'Gaming General': False, 'new2': False, 'website bot': False, 'Adverse Media': False, 'adverse media': False}
+[28/Mar/2024 17:55:20] "POST /getpermissioninfo HTTP/1.1" 200 1277
+[28/Mar/2024 17:55:35] "GET /prompt HTTP/1.1" 200 57973
+[28/Mar/2024 17:56:47] "GET /index HTTP/1.1" 200 103520
+[28/Mar/2024 17:56:48] "GET /static/img/models/1.jpg HTTP/1.1" 304 0
+[28/Mar/2024 17:56:50] "GET /permission HTTP/1.1" 200 26209
+{'Company Law Assistant': True, 'MBR Main': True, 'Company Law 3': True, 'default': True, 'defaulttest': True, 'Gaming Test': True, 'Terms and Conditions Compliance': True, 'Terms and Conditions Compliance 2': True, 'Company Law New': True, 'JW': True, 'new test': True, 'Gaming General': True, 'new2': True, 'website bot': True, 'Adverse Media': True, 'adverse media': True}
+[28/Mar/2024 17:56:53] "POST /getpermissioninfo HTTP/1.1" 200 1238
+[28/Mar/2024 17:56:59] "GET /permission HTTP/1.1" 200 26209
+[28/Mar/2024 18:38:53] "GET /prompt HTTP/1.1" 200 57973
+[28/Mar/2024 18:39:02] "GET /prompt HTTP/1.1" 200 57973
+[28/Mar/2024 18:39:48] "GET / HTTP/1.1" 200 18166
+Company Law Assistant
+MBR Main
+Adverse Media
+adverse media
+Terms and Conditions Compliance
+new test
+Gaming General
+new2
+Terms and Conditions Compliance 2
+website bot
+Company Law 3
+default
+defaulttest
+Company Law New
+JW
+Gaming Test
+[29/Mar/2024 15:32:49] "GET /chatbot HTTP/1.1" 200 41008
+[29/Mar/2024 15:32:50] "GET /static/js/jquery.js HTTP/1.1" 200 89501
+[29/Mar/2024 15:32:50] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 200 1079
+[29/Mar/2024 15:32:50] "GET /static/img/logo-desktop-full.png HTTP/1.1" 200 11542
+[29/Mar/2024 15:32:50] "GET /static/img/logo-retina-full.png HTTP/1.1" 200 11542
+[29/Mar/2024 15:32:50] "GET /static/js/plugins.js HTTP/1.1" 200 92951
+[29/Mar/2024 15:32:50] "GET /static/js/init.js HTTP/1.1" 200 78712
+[29/Mar/2024 15:32:50] "GET /static/svg/enter.svg HTTP/1.1" 304 0
+[29/Mar/2024 15:32:50] "GET /static/img/logo-retina-mini.png HTTP/1.1" 200 1197
+[31/Mar/2024 22:31:08] "GET / HTTP/1.1" 200 18166
+[31/Mar/2024 22:31:08] "GET /static/css/style.css HTTP/1.1" 304 0
+[31/Mar/2024 22:31:08] "GET /static/css/plugins.css HTTP/1.1" 304 0
+[31/Mar/2024 22:31:08] "GET /static/svg/search.svg HTTP/1.1" 304 0
+[31/Mar/2024 22:31:08] "GET /static/svg/smallscreen.svg HTTP/1.1" 304 0
+[31/Mar/2024 22:31:08] "GET /static/svg/close.svg HTTP/1.1" 304 0
+[31/Mar/2024 22:31:09] "GET /static/js/jquery.js HTTP/1.1" 200 89501
+[31/Mar/2024 22:31:09] "GET /static/svg/fullscreen.svg HTTP/1.1" 304 0
+[31/Mar/2024 22:31:09] "GET /static/img/logo-retina-full.png HTTP/1.1" 200 11542
+[31/Mar/2024 22:31:09] "GET /static/img/logo-desktop-full.png HTTP/1.1" 200 11542
+[31/Mar/2024 22:31:09] "GET /static/js/plugins.js HTTP/1.1" 200 92951
+[31/Mar/2024 22:31:09] "GET /static/js/init.js HTTP/1.1" 200 78712
+[31/Mar/2024 22:31:09] "GET /static/svg/sun.svg HTTP/1.1" 304 0
+[31/Mar/2024 22:31:09] "GET /static/svg/question.svg HTTP/1.1" 304 0
+[31/Mar/2024 22:31:09] "GET /static/svg/logout.svg HTTP/1.1" 304 0
+[31/Mar/2024 22:31:09] "GET /static/svg/chat.svg HTTP/1.1" 304 0
+[31/Mar/2024 22:31:09] "GET /static/svg/moon.svg HTTP/1.1" 304 0
+[31/Mar/2024 22:31:09] "GET /static/svg/cube.svg HTTP/1.1" 304 0
+[31/Mar/2024 22:31:09] "GET /static/svg/arrow.svg HTTP/1.1" 304 0
+[31/Mar/2024 22:31:09] "GET /static/svg/image.svg HTTP/1.1" 304 0
+[31/Mar/2024 22:31:09] "GET /static/svg/share.svg HTTP/1.1" 304 0
+[31/Mar/2024 22:31:09] "GET /static/svg/person.svg HTTP/1.1" 304 0
+[31/Mar/2024 22:31:09] "GET /static/img/user/logo_mbr.png HTTP/1.1" 304 0
+[31/Mar/2024 22:31:09] "GET /static/svg/home.svg HTTP/1.1" 304 0
+[31/Mar/2024 22:31:09] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 200 1079
+[31/Mar/2024 22:31:09] "GET /static/img/logo-retina-mini.png HTTP/1.1" 200 1197
+[01/Apr/2024 09:56:29] "GET / HTTP/1.1" 200 18166
+[01/Apr/2024 09:56:29] "GET /static/img/logo-desktop-full.png HTTP/1.1" 200 11542
+[01/Apr/2024 09:56:29] "GET /static/img/logo-retina-full.png HTTP/1.1" 200 11542
+[01/Apr/2024 09:56:29] "GET /static/img/logo-desktop-mini.png HTTP/1.1" 200 1079
+[01/Apr/2024 09:56:29] "GET /static/img/logo-retina-mini.png HTTP/1.1" 200 1197
+[01/Apr/2024 09:56:29] "GET /static/js/init.js HTTP/1.1" 200 78712
+[01/Apr/2024 09:56:29] "GET /static/js/plugins.js HTTP/1.1" 200 92951
+[01/Apr/2024 09:56:29] "GET /static/js/jquery.js HTTP/1.1" 200 89501

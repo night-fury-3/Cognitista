@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-8swzq1cqspcj&7bm2h+ieqoamm1uk6m+4vc3dv!5vsiryoa&j1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['83.149.97.167', '10.200.70.23', '127.0.0.1:8000', '127.0.0.1']
+ALLOWED_HOSTS = ['83.149.97.167', '10.200.70.23', '127.0.0.1:8000', '127.0.0.1', '83.149.97.166']
 DATA_UPLOAD_MAX_NUMBER_FILES = 10240
 
 # Application definition

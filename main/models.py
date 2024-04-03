@@ -1,12 +1,6 @@
 from django.db import models
 
 # Create your models here.
-class config(models.Model):
-    openai_api_key = models.CharField(max_length=60)
-    pinecone_api_key = models.CharField(max_length=50)
-    pinecone_env = models.CharField(max_length=50)
-    created_at = models.DateField(auto_now_add=True)
-    updated_at = models.DateField(auto_now=True)
 
 class collection(models.Model):
     index_name = models.CharField(max_length=50)
@@ -26,6 +20,10 @@ class filemodel(models.Model):
     created_at = models.DateField(auto_now_add=True)
     uploaded_name = models.CharField(max_length=50)
     
+    class Meta:
+        indexes = [
+            models.Index(fields=['index_name']),
+        ]
 class promptmodel(models.Model):
     email = models.EmailField()
     prompt = models.TextField()

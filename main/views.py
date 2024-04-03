@@ -28,7 +28,7 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain_pinecone import PineconeVectorStore
 
 # from langchain.document_loaders import PyMuPDFLoader
-from langchain_community.document_loaders import PyMuPDFLoader
+from langchain_community.document_loaders import PyMuPDFLoader, TextLoader
 
 from langchain_community.chat_models import BedrockChat as Sonnet
 
@@ -292,12 +292,16 @@ def index(request):
     for col in collection_list:
         collections.append({'id': col.id, 'name': col.collection_name})
 
-    for doc in document_list:
-        filename = doc.file_name[:-4]
-        if len(filename) > 24:
-            filename = filename[:24] + "..."
-        documents.append({'id': doc.id, 'index':index, 'collection': doc.collection_name, 'name': filename, 'created_at': doc.created_at, 'size': doc.size})
-    
+
+    print("Length of Documents =>", len(document_list))
+    for order, doc in enumerate(document_list):
+        if order <= 20:
+            filename = doc.file_name[:-4]
+            if len(filename) > 24:
+                filename = filename[:24] + "..."
+            documents.append({'id': doc.id, 'index':index, 'collection': doc.collection_name, 'name': filename, 'created_at': doc.created_at, 'size': doc.size})
+        else:
+            break   
 
     eindex_list = index_list[1:]
     data = {'collections': collections, 'documents': documents, "index_list": eindex_list, "selected_index": selected_index, 'aindex_list': index_list, 'is_admin': check_admin(email)}
@@ -672,8 +676,12 @@ def uploadDocuments(request):
                 upload_model.save()
                 
                 file = os.path.join("uploads", my_file.name)
-
-                loader = PyMuPDFLoader(file)
+        
+                if file.endswith("pdf"):
+                    loader = PyMuPDFLoader(file)
+                elif file.endswith("txt"):
+                    loader = TextLoader(file, encoding='utf-8')
+                    
                 data = loader.load()
                 texts = text_splitter.split_documents(data)
                 all_texts = []

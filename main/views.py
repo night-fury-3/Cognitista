@@ -564,12 +564,14 @@ def getDocuments(request):
     for col in collection_list:
         collections.append({'id': col.id, 'name': col.collection_name})
     
-    for doc in document_list:
-        filename = doc.file_name[:-4]
-        if len(filename) > 24:
-            filename = filename[:24] + "..."
-        documents.append({'id': doc.id, 'index': 'index-1', 'collection': doc.collection_name, 'name': filename, 'created_at': doc.created_at, 'size': doc.size})
-    
+    for order, doc in enumerate(document_list):
+        if order <= 20:
+            filename = doc.file_name[:-4]
+            if len(filename) > 24:
+                filename = filename[:24] + "..."
+            documents.append({'id': doc.id, 'index': 'index-1', 'collection': doc.collection_name, 'name': filename, 'created_at': doc.created_at, 'size': doc.size})
+        else:
+            break
     data = {'collections': collections, 'documents': documents}
     
     # data = {
@@ -686,6 +688,13 @@ def uploadDocuments(request):
                 texts = text_splitter.split_documents(data)
                 all_texts = []
                 all_texts.extend(texts)
+
+                #for parent document retrieval
+                alltext = ""
+                for datum in data:
+                    alltext += datum.page_content
+                
+                # end
                 
                 res = filemodel.objects.get(uploaded_name = uploaded_filename)
                 res.size = len(all_texts)
@@ -697,7 +706,21 @@ def uploadDocuments(request):
                     text.metadata['collection_name'] = collection_name
                     text.metadata['file_name'] = real_filename
 
-                PineconeVectorStore.from_documents(texts, embeddings, index_name=index_name)
+                # PineconeVectorStore.from_documents(texts, embeddings, index_name=index_name)
+                pc_index = pc.Index(index_name)
+                for text in texts:
+                    id = str(uuid.uuid4())
+                    values = embeddings.embed_query(text.page_content)
+                    metadata = {"collection_name": collection_name, "file_name": real_filename, "text": alltext}
+                    pc_index.upsert(
+                        vectors=[
+                            {
+                            "id": id, 
+                            "values": values, 
+                            "metadata": metadata
+                            }
+                        ]
+                    )
 
                 os.remove(file)
                 

@@ -18,6 +18,7 @@ And please install aws-cli and set the aws configuration settings like aws secre
 pip install -r requirements.txt
 
 <h2>Database Migration</h2>
+
 python manage.py migrate
 
 And to create superuser for this system, run following command
